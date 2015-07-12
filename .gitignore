@@ -210,3 +210,8 @@ ExportedObj/
 Icon?
 ehthumbs.db
 Thumbs.db
+
+
+# Some special Unity stuff
+src/Xyz/Assets/DialoguerExamples
+src/Xyz/Assets/DialoguerExamples.meta
