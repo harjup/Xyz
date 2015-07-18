@@ -132,7 +132,7 @@ namespace Assets.Scripts.Managers
             //Get all the inputs for da frame
             VerticalAxis = Input.GetAxis("Vertical");
 
-            DeltaVerticalAxis = _prevVertialAxis - VerticalAxis;
+            DeltaVerticalAxis = Mathf.Abs(_prevVertialAxis - VerticalAxis);
             _prevVertialAxis = VerticalAxis;
 
             RawVerticalAxis = Input.GetAxisRaw("Vertical");
@@ -140,7 +140,7 @@ namespace Assets.Scripts.Managers
             HoritzontalAxis = Input.GetAxis("Horizontal");
             RawHoritzontalAxis = Input.GetAxisRaw("Horizontal");
 
-            DeltaVerticalAxis = _prevHorizontalAxis - HoritzontalAxis;
+            DeltaHorizontalAxis = Mathf.Abs(_prevHorizontalAxis - HoritzontalAxis);
             _prevHorizontalAxis = HoritzontalAxis;
 
             InteractAction = Input.GetKeyDown(KeyCode.E);

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Managers;
 using Assets.Xyz.Scripts;
 using TreeEditor;
 
@@ -11,11 +12,24 @@ public class Player : MonoBehaviour
 
     private ChaserContainer _chaserContainer;
 
+    private InputManager _inputManager;
+
     public void Start()
     {
         _move = GetComponent<Move>();
         _chaserContainer = transform.GetComponentInChildren<ChaserContainer>();
+
+        _inputManager = InputManager.Instance;
     }
+
+    public void Update()
+    {
+        /*Debug.Log(string.Format(
+            "{0}, {1}",
+            _inputManager.DeltaHorizontalAxis,
+            _inputManager.DeltaVerticalAxis));*/
+    }
+
 
     public void AddChaser(Chaser chaser)
     {

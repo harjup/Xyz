@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Assets.Scripts.Managers;
 using UnityEditor;
 using UnityEngine;
 
@@ -13,6 +14,9 @@ namespace Assets.Xyz.Scripts
         public float Acceleration = 640;
         public float Friction = 40f;
         public float MaxSpeed = 10f;
+        public float GrabStaminaMax = 20f;
+
+        private float _grabStamina;
 
         private GameObject _player;
         private Rigidbody _rigidbody;
@@ -26,7 +30,8 @@ namespace Assets.Xyz.Scripts
             Unknown,
             Run,
             Charge,
-            Grabbed
+            Grabbed,
+            Fall
         }
 
         public State _state = State.Unknown;
@@ -42,21 +47,26 @@ namespace Assets.Xyz.Scripts
 
             _grabLayer = LayerMask.NameToLayer("Chaser-Grab");
             _defaultLayer = gameObject.layer;
+
+            _grabStamina = GrabStaminaMax;
         }
 
         private IEnumerator _chargeInDirectionRoutine;
+        private IEnumerator _fallWaitRoutine ;
         void Update()
         {
-            if (_state == State.Grabbed)
+            if (_state == State.Grabbed || _state == State.Fall)
             {
                 return;
             }
 
             var playerPosition = GetRelativePlayerPosition();
             const float chargeDistance = 10f;
-            var shouldCharge = playerPosition.sqrMagnitude < Mathf.Pow(chargeDistance, 2f);
 
-            if (shouldCharge && _state != State.Charge)
+            var shouldCharge = playerPosition.sqrMagnitude < Mathf.Pow(chargeDistance, 2f);
+            shouldCharge = shouldCharge && _state != State.Charge;
+
+            if (shouldCharge)
             {
                 _state = State.Charge;
             }
@@ -131,6 +141,30 @@ namespace Assets.Xyz.Scripts
             }
         }
 
+        public IEnumerator FallRecovery()
+        {
+            _grabStamina = GrabStaminaMax;
+            _state = State.Fall;
+            transform.parent = null;
+
+            var inputDirection = Camera.main.GetComponent<CameraInput>().GetInputDirection();
+
+            _rigidbody.constraints =
+                RigidbodyConstraints.FreezePositionY
+                | RigidbodyConstraints.FreezeRotation;
+
+            _rigidbody.velocity = inputDirection * 40f;
+
+            yield return new WaitForSeconds(.5f);
+
+            _rigidbody.velocity = Vector3.zero;;
+
+            yield return new WaitForSeconds(2f);
+
+            gameObject.layer = _defaultLayer;
+            _state = State.Run;
+        }
+
         private Vector3 ApplyFriction(Vector3 vector, float friction, float deltaTime)
         {
             return vector - vector.normalized * (friction * deltaTime);
@@ -154,6 +188,15 @@ namespace Assets.Xyz.Scripts
             if (player != null)
             {
                 GrabPlayer(player);
+            }
+        }
+
+        public void ApplyWaggle(float deltaTotal)
+        {
+            _grabStamina -= deltaTotal;
+            if (_grabStamina < 0f)
+            {
+                StartCoroutine(FallRecovery());
             }
         }
     }
