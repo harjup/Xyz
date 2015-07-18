@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections;
+using DialoguerEditor;
 using UnityEngine;
 
 //This will need to be first in script execution order so other scripts can get inputs on the same frame
@@ -13,9 +14,14 @@ namespace Assets.Scripts.Managers
     /// </summary>
     public class InputManager : Singleton<InputManager>
     {
-        private float _horitzontalAxis;
+        private float _prevVertialAxis = 0f;
+        private float _deltaVerticalAxis;
         private float _verticalAxis;
         private float _rawVerticalAxis;
+
+        private float _prevHorizontalAxis = 0f;
+        private float _deltaHorizontalAxis;
+        private float _horitzontalAxis;
         private float _rawHoritzontalAxis;
         private bool _cameraAction;
         private bool _interactAction;
@@ -48,6 +54,24 @@ namespace Assets.Scripts.Managers
                 return _playerMovementEnabled && PlayerInputEnabled ? _verticalAxis : 0;
             }
             private set { _verticalAxis = value; }
+        }
+
+        public float DeltaVerticalAxis
+        {
+            get
+            {
+                return _playerMovementEnabled && PlayerInputEnabled ? _deltaVerticalAxis : 0;
+            }
+            private set { _deltaVerticalAxis = value; }
+        }
+
+        public float DeltaHorizontalAxis
+        {
+            get
+            {
+                return _playerMovementEnabled && PlayerInputEnabled ? _deltaHorizontalAxis : 0;
+            }
+            private set { _deltaHorizontalAxis = value; }
         }
 
         public float RawHoritzontalAxis
@@ -107,11 +131,18 @@ namespace Assets.Scripts.Managers
         {
             //Get all the inputs for da frame
             VerticalAxis = Input.GetAxis("Vertical");
+
+            DeltaVerticalAxis = _prevVertialAxis - VerticalAxis;
+            _prevVertialAxis = VerticalAxis;
+
             RawVerticalAxis = Input.GetAxisRaw("Vertical");
 
             HoritzontalAxis = Input.GetAxis("Horizontal");
             RawHoritzontalAxis = Input.GetAxisRaw("Horizontal");
-            
+
+            DeltaVerticalAxis = _prevHorizontalAxis - HoritzontalAxis;
+            _prevHorizontalAxis = HoritzontalAxis;
+
             InteractAction = Input.GetKeyDown(KeyCode.E);
             CameraAction = Input.GetKeyDown(KeyCode.Q);
             ClimbButton = Input.GetKeyDown(KeyCode.Space);
