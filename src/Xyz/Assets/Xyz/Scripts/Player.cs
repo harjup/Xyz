@@ -2,34 +2,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using Assets.Xyz.Scripts;
+using TreeEditor;
 
 public class Player : MonoBehaviour
 {
-    private List<Chaser> Chasers;
     private Move _move;
-    private Transform _playerTransform;
+    //private Transform _chaserContainer;
+
+    private ChaserContainer _chaserContainer;
 
     public void Start()
     {
         _move = GetComponent<Move>();
-        _playerTransform = transform.GetChild(0);
+        _chaserContainer = transform.GetComponentInChildren<ChaserContainer>();
     }
 
     public void AddChaser(Chaser chaser)
     {
-        chaser.transform.parent = _playerTransform;
-        var rigidbody = chaser.GetComponent<Rigidbody>();
-        var collider = chaser.GetComponent<Collider>();
+        _chaserContainer.AddChaser(chaser);
+    }
 
-        // TODO Wrap the following lines in a function on chaser.cs
-        var velocity = rigidbody.velocity;
+    public List<Chaser> GetGrabbedChasers()
+    {
+        return _chaserContainer.GetChasers();
+    }
 
-        rigidbody.velocity = Vector3.zero;
-        rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-
-        // Change chaser tags in collision matrix so they won't collide with player
-        //
-        
+    public void PushPlayer(Vector3 velocity)
+    {
         _move.AddVelocity(velocity);
     }
 }

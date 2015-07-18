@@ -8,6 +8,7 @@ public class Move : MonoBehaviour
 {
     private Rigidbody _rigidbody;
     private Camera _camera;
+    private Player _player;
 
     public float Acceleration = 640;
     public float Friction = 40f;
@@ -17,20 +18,30 @@ public class Move : MonoBehaviour
 	{
 	    _camera = Camera.main;
 	    _rigidbody = GetComponent<Rigidbody>();
+	    _player = GetComponent<Player>();
 	}
 	
 	void Update()
 	{
+        var grabCount = _player.GetGrabbedChasers().Count;
+	    var acceleration = Acceleration;
+	    var maxSpeed = MaxSpeed;
+	    if (grabCount > 0)
+	    {
+            acceleration = Acceleration / grabCount * 2;
+	        maxSpeed = MaxSpeed / grabCount;
+	    }
+
 	    var inputVector = GetInputDirection(_camera);
-        var playerForce = (inputVector * Acceleration * Time.smoothDeltaTime);
+        var playerForce = (inputVector * acceleration * Time.smoothDeltaTime);
 	    var currentVelocity = _rigidbody.velocity.SetY(0);
 
         // Apply friction
         currentVelocity = ApplyFriction(currentVelocity, Friction, Time.smoothDeltaTime);
 
-        if (currentVelocity.magnitude > MaxSpeed)
+        if (currentVelocity.magnitude > maxSpeed)
 	    {
-            currentVelocity = currentVelocity.normalized * MaxSpeed;
+            currentVelocity = currentVelocity.normalized * maxSpeed;
 	    }
 	    else
 	    {
@@ -45,7 +56,7 @@ public class Move : MonoBehaviour
     public void AddVelocity(Vector3 velocity)
     {
         var difference = _rigidbody.velocity - velocity;
-        _rigidbody.velocity += difference;
+        _rigidbody.velocity += difference * 2f;
     }
 
     private Vector3 ApplyFriction(Vector3 vector, float friction, float deltaTime)

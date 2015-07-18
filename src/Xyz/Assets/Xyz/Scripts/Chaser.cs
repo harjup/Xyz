@@ -10,13 +10,16 @@ namespace Assets.Xyz.Scripts
 {
     public class Chaser : MonoBehaviour
     {
+        public float Acceleration = 640;
+        public float Friction = 40f;
+        public float MaxSpeed = 10f;
+
         private GameObject _player;
         private Rigidbody _rigidbody;
         private Collider _collider;
 
-        public float Acceleration = 640;
-        public float Friction = 40f;
-        public float MaxSpeed = 10f;
+        private int _grabLayer;
+        private int _defaultLayer;
 
         public enum State
         {
@@ -36,6 +39,9 @@ namespace Assets.Xyz.Scripts
             _player = FindObjectOfType<Move>().gameObject;
             _rigidbody = GetComponent<Rigidbody>();
             _collider = GetComponent<Collider>();
+
+            _grabLayer = LayerMask.NameToLayer("Chaser-Grab");
+            _defaultLayer = gameObject.layer;
         }
 
         private IEnumerator _chargeInDirectionRoutine;
@@ -130,13 +136,24 @@ namespace Assets.Xyz.Scripts
             return vector - vector.normalized * (friction * deltaTime);
         }
 
+        public void GrabPlayer(Player player)
+        {
+            _state = State.Grabbed;
+            player.AddChaser(this);
+            player.PushPlayer(_rigidbody.velocity);
+
+            _rigidbody.velocity = Vector3.zero;
+            _rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+
+            gameObject.layer = _grabLayer;
+        }
+
         void OnCollisionEnter(Collision collision)
         {
             var player = collision.gameObject.GetComponent<Player>();
             if (player != null)
             {
-                _state = State.Grabbed;
-                player.AddChaser(this);
+                GrabPlayer(player);
             }
         }
     }
