@@ -42,6 +42,12 @@ public class Move : MonoBehaviour
         _rigidbody.velocity = currentVelocity;
 	}
 
+    public void AddVelocity(Vector3 velocity)
+    {
+        var difference = _rigidbody.velocity - velocity;
+        _rigidbody.velocity += difference;
+    }
+
     private Vector3 ApplyFriction(Vector3 vector, float friction, float deltaTime)
     {
         return vector - vector.normalized * (friction * deltaTime);
