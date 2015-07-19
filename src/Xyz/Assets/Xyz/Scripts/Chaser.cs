@@ -21,6 +21,7 @@ namespace Assets.Xyz.Scripts
         private GameObject _player;
         private Rigidbody _rigidbody;
         private Collider _collider;
+        private CameraInput _cameraInput;
 
         private int _grabLayer;
         private int _defaultLayer;
@@ -49,6 +50,8 @@ namespace Assets.Xyz.Scripts
             _defaultLayer = gameObject.layer;
 
             _grabStamina = GrabStaminaMax;
+
+            _cameraInput = Camera.main.GetComponent<CameraInput>();
         }
 
         private IEnumerator _chargeInDirectionRoutine;
@@ -141,13 +144,13 @@ namespace Assets.Xyz.Scripts
             }
         }
 
-        public IEnumerator FallRecovery()
+        private IEnumerator _fallRecoveryRoutine;
+        public IEnumerator FallRecovery(Vector3 fallDirection)
         {
-            _grabStamina = GrabStaminaMax;
             _state = State.Fall;
             transform.parent = null;
 
-            var inputDirection = Camera.main.GetComponent<CameraInput>().GetInputDirection();
+            var inputDirection = fallDirection.normalized;
 
             _rigidbody.constraints =
                 RigidbodyConstraints.FreezePositionY
@@ -161,6 +164,7 @@ namespace Assets.Xyz.Scripts
 
             yield return new WaitForSeconds(2f);
 
+            _fallRecoveryRoutine = null;
             gameObject.layer = _defaultLayer;
             _state = State.Run;
         }
@@ -189,6 +193,28 @@ namespace Assets.Xyz.Scripts
             {
                 GrabPlayer(player);
             }
+
+
+            if (_fallRecoveryRoutine != null)
+            {
+                return;
+            }
+
+            // TODO: Need to check if hitting wall at a vaugely 90 degree angle. Steal from wizcombat probably
+            var chaser = collision.gameObject.GetComponent<Chaser>();
+            if (chaser != null)
+            {
+                _fallRecoveryRoutine = FallRecovery(_rigidbody.velocity * -1);
+                StartCoroutine(_fallRecoveryRoutine);
+            }
+
+            // TODO: Need to check if both are charging in the general direction of each other
+            var isWall = collision.gameObject.tag == "Barrier";
+            if (isWall)
+            {
+                _fallRecoveryRoutine = FallRecovery(_rigidbody.velocity*-1);
+                StartCoroutine(_fallRecoveryRoutine);
+            }
         }
 
         public void ApplyWaggle(float deltaTotal)
@@ -196,7 +222,10 @@ namespace Assets.Xyz.Scripts
             _grabStamina -= deltaTotal;
             if (_grabStamina < 0f)
             {
-                StartCoroutine(FallRecovery());
+                var inputDirection = _cameraInput.GetInputDirection();
+                _fallRecoveryRoutine = FallRecovery(inputDirection);
+                StartCoroutine(_fallRecoveryRoutine);
+                _grabStamina = GrabStaminaMax;
             }
         }
     }
