@@ -55,7 +55,6 @@ namespace Assets.Xyz.Scripts
         }
 
         private IEnumerator _chargeInDirectionRoutine;
-        private IEnumerator _fallWaitRoutine ;
         void Update()
         {
             if (_state == State.Grabbed || _state == State.Fall)
@@ -158,6 +157,8 @@ namespace Assets.Xyz.Scripts
 
             _rigidbody.velocity = inputDirection * 40f;
 
+            gameObject.layer = _defaultLayer;
+
             yield return new WaitForSeconds(.5f);
 
             _rigidbody.velocity = Vector3.zero;;
@@ -165,7 +166,6 @@ namespace Assets.Xyz.Scripts
             yield return new WaitForSeconds(2f);
 
             _fallRecoveryRoutine = null;
-            gameObject.layer = _defaultLayer;
             _state = State.Run;
         }
 
@@ -188,6 +188,11 @@ namespace Assets.Xyz.Scripts
 
         void OnCollisionEnter(Collision collision)
         {
+            if (_state == State.Fall || _state == State.Grabbed)
+            {
+                return;
+            }
+
             var player = collision.gameObject.GetComponent<Player>();
             if (player != null)
             {
@@ -195,7 +200,7 @@ namespace Assets.Xyz.Scripts
             }
 
 
-            if (_fallRecoveryRoutine != null)
+            if (_fallRecoveryRoutine != null || _state != State.Charge)
             {
                 return;
             }
@@ -204,7 +209,10 @@ namespace Assets.Xyz.Scripts
             var chaser = collision.gameObject.GetComponent<Chaser>();
             if (chaser != null)
             {
-                _fallRecoveryRoutine = FallRecovery(_rigidbody.velocity * -1);
+                var direction = transform.position - chaser.transform.position;
+                StopCoroutine(_chargeInDirectionRoutine);
+                _chargeInDirectionRoutine = null;
+                _fallRecoveryRoutine = FallRecovery(direction);
                 StartCoroutine(_fallRecoveryRoutine);
             }
 
@@ -212,7 +220,15 @@ namespace Assets.Xyz.Scripts
             var isWall = collision.gameObject.tag == "Barrier";
             if (isWall)
             {
-                _fallRecoveryRoutine = FallRecovery(_rigidbody.velocity*-1);
+                //var direction = transform.position - collision..transform.position;
+
+                var directionViaNormal = collision.transform.forward;
+                Debug.DrawRay(collision.contacts.First().point, directionViaNormal, Color.cyan, 10f);
+
+                var direction = collision.transform.forward;
+                StopCoroutine(_chargeInDirectionRoutine);
+                _chargeInDirectionRoutine = null;
+                _fallRecoveryRoutine = FallRecovery(direction);
                 StartCoroutine(_fallRecoveryRoutine);
             }
         }
