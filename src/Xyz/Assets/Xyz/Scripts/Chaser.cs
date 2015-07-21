@@ -20,11 +20,15 @@ namespace Assets.Xyz.Scripts
 
         private GameObject _player;
         private Rigidbody _rigidbody;
-        private Collider _collider;
         private CameraInput _cameraInput;
+        private GameObject _collider;
 
         private int _grabLayer;
         private int _defaultLayer;
+        private int _stunnedLayer;
+
+        private GameObject _defaultMesh;
+        private GameObject _stunnedMesh;
 
         public enum State
         {
@@ -44,14 +48,20 @@ namespace Assets.Xyz.Scripts
 
             _player = FindObjectOfType<Move>().gameObject;
             _rigidbody = GetComponent<Rigidbody>();
-            _collider = GetComponent<Collider>();
 
-            _grabLayer = LayerMask.NameToLayer("Chaser-Grab");
             _defaultLayer = gameObject.layer;
-
+            _grabLayer = LayerMask.NameToLayer("Chaser-Grab");
+            _stunnedLayer = LayerMask.NameToLayer("Chaser-Stun");
+            
             _grabStamina = GrabStaminaMax;
 
             _cameraInput = Camera.main.GetComponent<CameraInput>();
+
+            _defaultMesh = transform.FindChild("Mesh").gameObject;
+            _stunnedMesh = transform.FindChild("Mesh-Stunned").gameObject;
+
+            _defaultMesh.SetActive(true);
+            _stunnedMesh.SetActive(false);
         }
 
         private IEnumerator _chargeInDirectionRoutine;
@@ -146,7 +156,12 @@ namespace Assets.Xyz.Scripts
         private IEnumerator _fallRecoveryRoutine;
         public IEnumerator FallRecovery(Vector3 fallDirection)
         {
+            _defaultMesh.SetActive(false);
+            _stunnedMesh.SetActive(true);
+
             _state = State.Fall;
+           
+            gameObject.SetLayerRecursively(_stunnedLayer);
             transform.parent = null;
 
             var inputDirection = fallDirection.normalized;
@@ -157,8 +172,6 @@ namespace Assets.Xyz.Scripts
 
             _rigidbody.velocity = inputDirection * 40f;
 
-            gameObject.layer = _defaultLayer;
-
             yield return new WaitForSeconds(.5f);
 
             _rigidbody.velocity = Vector3.zero;;
@@ -167,6 +180,10 @@ namespace Assets.Xyz.Scripts
 
             _fallRecoveryRoutine = null;
             _state = State.Run;
+            gameObject.SetLayerRecursively(_defaultLayer);
+
+            _defaultMesh.SetActive(true);
+            _stunnedMesh.SetActive(false);
         }
 
         private Vector3 ApplyFriction(Vector3 vector, float friction, float deltaTime)
@@ -183,7 +200,8 @@ namespace Assets.Xyz.Scripts
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.constraints = RigidbodyConstraints.FreezeAll;
 
-            gameObject.layer = _grabLayer;
+            gameObject.SetLayerRecursively(_grabLayer);
+            
         }
 
         void OnCollisionEnter(Collision collision)
@@ -244,5 +262,7 @@ namespace Assets.Xyz.Scripts
                 _grabStamina = GrabStaminaMax;
             }
         }
+
+        
     }
 }

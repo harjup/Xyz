@@ -112,35 +112,34 @@ Transform:
   m_LocalPosition: {x: -8.64257145, y: 9.24996758, z: 3.3105278}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 143104255}
   - {fileID: 1147866148}
   - {fileID: 891842311}
   - {fileID: 211553638}
   - {fileID: 2065635969}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &98120758 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 185706, guid: f3d633ceaeaf6204eb09073c3b8b54fb, type: 2}
   m_PrefabInternal: {fileID: 692201372}
---- !u!1001 &143104249
+--- !u!1001 &126402804
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 12487165}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.92000008
+      value: -11.8497744
       objectReference: {fileID: 0}
     - target: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -8.71000004
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 3.1099999
+      value: 14.782361
       objectReference: {fileID: 0}
     - target: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -160,19 +159,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11441298, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
-      propertyPath: GrabStaminaMax
-      value: 20
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &143104255 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
-  m_PrefabInternal: {fileID: 143104249}
 --- !u!1001 &211553637
 Prefab:
   m_ObjectHideFlags: 0
@@ -210,7 +201,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11441298, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: GrabStaminaMax
@@ -264,7 +255,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11441298, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: GrabStaminaMax
@@ -314,7 +305,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 421786, guid: 8a667748bb46d134bb967b4ea165e5db, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 194022, guid: 8a667748bb46d134bb967b4ea165e5db, type: 2}
       propertyPath: m_TagString
@@ -766,7 +757,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11441298, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: GrabStaminaMax
@@ -820,11 +811,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11441298, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
-      propertyPath: GrabStaminaMax
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 167124, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
       propertyPath: m_Name
@@ -967,7 +954,7 @@ Transform:
   m_Children:
   - {fileID: 850247518}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &2065635969 stripped
 Transform:
   m_PrefabParentObject: {fileID: 405576, guid: e206051bf3a51804bbf669d5a50550f1, type: 2}
