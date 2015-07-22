@@ -32,8 +32,6 @@ public class Player : MonoBehaviour
         if (grabbedChaserCount > 0)
         {
             _stamina -= Time.smoothDeltaTime;
-            _staminaCounter.SetImagePercent(_stamina / StaminaMax);
-
             if (_stamina < 0f)
             {
                 _move.Knockout();
@@ -47,6 +45,8 @@ public class Player : MonoBehaviour
         {
             _stamina = StaminaMax;
         }
+
+        _staminaCounter.SetImagePercent(_stamina / StaminaMax);
     }
     
     public void AddChaser(Chaser chaser)
