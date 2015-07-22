@@ -13,6 +13,16 @@ public class Move : MonoBehaviour
     private Player _player;
     private InputManager _inputManger;
 
+    public enum State
+    {
+        Run, 
+        Dance,
+        Knockout
+    }
+
+    [SerializeField]
+    private State _state;
+
     public float Acceleration = 640;
     public float Friction = 40f;
     public float MaxSpeed = 20f;
@@ -24,19 +34,28 @@ public class Move : MonoBehaviour
 	    _rigidbody = GetComponent<Rigidbody>();
 	    _player = GetComponent<Player>();
         _inputManger = InputManager.Instance;
+
+	    _state = State.Run;
 	}
 	
 	void Update()
 	{
-	    var grabbedChasers = _player.GetGrabbedChasers();
+	    if (_state == State.Knockout)
+	    {
+	        return;
+	    }
+
+
+        var acceleration = Acceleration;
+        var maxSpeed = MaxSpeed;
+
+        var grabbedChasers = _player.GetGrabbedChasers();
         var grabCount = grabbedChasers.Count;
-	    var acceleration = Acceleration;
-	    var maxSpeed = MaxSpeed;
+	    
 	    if (grabCount > 0)
 	    {
             acceleration = Acceleration / grabCount * 2;
 	        maxSpeed = MaxSpeed / grabCount;
-
 
 	        var deltaTotal = _inputManger.DeltaHorizontalAxis + _inputManger.DeltaVerticalAxis;
 
@@ -44,20 +63,12 @@ public class Move : MonoBehaviour
 	    }
 
         var inputVector = _cameraInput.GetInputDirection(_camera);
-        var playerForce = (inputVector * acceleration * Time.smoothDeltaTime);
-	    var currentVelocity = _rigidbody.velocity.SetY(0);
+        var playerForce = inputVector * acceleration * Time.smoothDeltaTime;	    
+        var currentVelocity = _rigidbody.velocity.SetY(0);
 
-        // Apply friction
         currentVelocity = ApplyFriction(currentVelocity, Friction, Time.smoothDeltaTime);
-
-        if (currentVelocity.magnitude > maxSpeed)
-	    {
-            currentVelocity = currentVelocity.normalized * maxSpeed;
-	    }
-	    else
-	    {
-	        currentVelocity = currentVelocity + playerForce;
-	    }
+	    currentVelocity = ApplyInputForce(currentVelocity, playerForce);
+        currentVelocity = ApplySpeedCap(currentVelocity, maxSpeed);
 
 	    RotatePlayer(transform, currentVelocity);
 
@@ -75,6 +86,21 @@ public class Move : MonoBehaviour
         return vector - vector.normalized * (friction * deltaTime);
     }
 
+    public Vector3 ApplyInputForce(Vector3 velocity, Vector3 force)
+    {  
+        return velocity + force;    
+    }
+
+    public Vector3 ApplySpeedCap(Vector3 velocity, float maxSpeed)
+    {
+        if (velocity.magnitude > maxSpeed)
+        {
+            return velocity.normalized * maxSpeed;
+        }
+        
+        return velocity;
+    }
+
     private void RotatePlayer(Transform playerTransform, Vector3 direction)
     {
         //Rotate the player to face direction of movement only when input keys are pressed
@@ -83,5 +109,22 @@ public class Move : MonoBehaviour
         {       
             playerTransform.rotation = Quaternion.LookRotation(direction.SetY(0), Vector3.up);
         }
+    }
+
+    public void Run()
+    {
+        _state = State.Run;
+    }
+
+    public void Dance()
+    {
+        _state = State.Dance;
+    }
+
+    public void Knockout()
+    {
+        _rigidbody.velocity = Vector3.zero;
+        _state = State.Knockout;
+        _rigidbody.DORotate(new Vector3(0, 180, 90), .5f, RotateMode.Fast);
     }
 }

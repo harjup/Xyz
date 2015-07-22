@@ -8,11 +8,12 @@ using TreeEditor;
 public class Player : MonoBehaviour
 {
     private Move _move;
-    //private Transform _chaserContainer;
-
     private ChaserContainer _chaserContainer;
-
     private InputManager _inputManager;
+    private StaminaCounter _staminaCounter;
+
+    private const float StaminaMax = 3f;
+    private float _stamina;
 
     public void Start()
     {
@@ -20,17 +21,34 @@ public class Player : MonoBehaviour
         _chaserContainer = transform.GetComponentInChildren<ChaserContainer>();
 
         _inputManager = InputManager.Instance;
+
+        _stamina = StaminaMax;
+        _staminaCounter = StaminaCounter.Instance;
     }
 
     public void Update()
     {
-        /*Debug.Log(string.Format(
-            "{0}, {1}",
-            _inputManager.DeltaHorizontalAxis,
-            _inputManager.DeltaVerticalAxis));*/
+        var grabbedChaserCount = GetGrabbedChasers().Count;
+        if (grabbedChaserCount > 0)
+        {
+            _stamina -= Time.smoothDeltaTime;
+            _staminaCounter.SetImagePercent(_stamina / StaminaMax);
+
+            if (_stamina < 0f)
+            {
+                _move.Knockout();
+            }
+        }
+        else if (_stamina < StaminaMax)
+        {
+            _stamina += Time.smoothDeltaTime * 2f;
+        }
+        else if (_stamina > StaminaMax)
+        {
+            _stamina = StaminaMax;
+        }
     }
-
-
+    
     public void AddChaser(Chaser chaser)
     {
         _chaserContainer.AddChaser(chaser);

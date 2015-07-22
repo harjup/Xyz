@@ -420,6 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1553d08500cbf794b95dc20d4fd581a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 0
   Acceleration: 640
   Friction: 40
   MaxSpeed: 20
