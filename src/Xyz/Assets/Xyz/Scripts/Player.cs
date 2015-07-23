@@ -47,8 +47,36 @@ public class Player : MonoBehaviour
         }
 
         _staminaCounter.SetImagePercent(_stamina / StaminaMax);
+
+        if (_currentBeacon != null)
+        {
+            _currentBeacon.DecrementCounter(Time.smoothDeltaTime * 2f);
+        }
+    }
+
+    private Beacon _currentBeacon;
+    void OnTriggerEnter(Collider other)
+    {
+        var beacon = other.GetComponentInParent<Beacon>();
+        if (beacon != null)
+        {
+            _currentBeacon = beacon;
+            _currentBeacon.SetState(Beacon.State.Capture);
+        }
     }
     
+    void OnTriggerExit(Collider other)
+    {
+        var beacon = other.GetComponentInParent<Beacon>();
+        if (beacon != null)
+        {
+            beacon.SetState(Beacon.State.Idle);
+            _currentBeacon = null;
+        }
+    }
+    
+    
+
     public void AddChaser(Chaser chaser)
     {
         _chaserContainer.AddChaser(chaser);
