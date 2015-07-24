@@ -12,6 +12,7 @@ public class Move : MonoBehaviour
     private CameraInput _cameraInput;
     private Player _player;
     private InputManager _inputManger;
+    private PlayerMesh _mesh;
 
     public enum State
     {
@@ -35,6 +36,8 @@ public class Move : MonoBehaviour
 	    _player = GetComponent<Player>();
         _inputManger = InputManager.Instance;
 
+	    _mesh = transform.GetComponentInChildren<PlayerMesh>();
+
 	    _state = State.Run;
 	}
 	
@@ -45,35 +48,48 @@ public class Move : MonoBehaviour
 	        return;
 	    }
 
+	    RunUpdate();
+	}
 
+    public void RunUpdate()
+    {
         var acceleration = Acceleration;
         var maxSpeed = MaxSpeed;
 
         var grabbedChasers = _player.GetGrabbedChasers();
         var grabCount = grabbedChasers.Count;
-	    
-	    if (grabCount > 0)
-	    {
-            acceleration = Acceleration / grabCount * 2;
-	        maxSpeed = MaxSpeed / grabCount;
 
-	        var deltaTotal = _inputManger.DeltaHorizontalAxis + _inputManger.DeltaVerticalAxis;
+        if (grabCount > 0)
+        {
+            acceleration = Acceleration/grabCount*2;
+            maxSpeed = MaxSpeed/grabCount;
+
+            var deltaTotal = _inputManger.DeltaHorizontalAxis + _inputManger.DeltaVerticalAxis;
 
             grabbedChasers.First().ApplyWaggle(deltaTotal);
-	    }
+        }
 
         var inputVector = _cameraInput.GetInputDirection(_camera);
-        var playerForce = inputVector * acceleration * Time.smoothDeltaTime;	    
+        var playerForce = inputVector * acceleration * Time.smoothDeltaTime;
         var currentVelocity = _rigidbody.velocity.SetY(0);
 
         currentVelocity = ApplyFriction(currentVelocity, Friction, Time.smoothDeltaTime);
-	    currentVelocity = ApplyInputForce(currentVelocity, playerForce);
+        currentVelocity = ApplyInputForce(currentVelocity, playerForce);
         currentVelocity = ApplySpeedCap(currentVelocity, maxSpeed);
 
-	    RotatePlayer(transform, currentVelocity);
+        RotatePlayer(transform, currentVelocity);
 
         _rigidbody.velocity = currentVelocity;
-	}
+
+        if (currentVelocity.sqrMagnitude > 1f || grabCount > 0)
+        {
+            Run();
+        }
+        else
+        {
+            Dance();
+        }
+    }
 
     public void AddVelocity(Vector3 velocity)
     {
@@ -114,11 +130,19 @@ public class Move : MonoBehaviour
     public void Run()
     {
         _state = State.Run;
+        _mesh.StopDancing();
+        // mess with animations
     }
 
+    private Tweener _danceTweener;
     public void Dance()
     {
-        _state = State.Dance;
+        if (_state != State.Dance)
+        {
+            _state = State.Dance;
+            // play animations
+            _mesh.DanceTween();
+        }
     }
 
     public void Knockout()
@@ -126,5 +150,10 @@ public class Move : MonoBehaviour
         _rigidbody.velocity = Vector3.zero;
         _state = State.Knockout;
         _rigidbody.DORotate(new Vector3(0, 180, 90), .5f, RotateMode.Fast);
+    }
+
+    public bool IsDancing()
+    {
+        return _state == State.Dance;
     }
 }

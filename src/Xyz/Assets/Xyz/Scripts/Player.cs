@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private StaminaCounter _staminaCounter;
 
     private const float StaminaMax = 3f;
+    private const float DancingMultiplier = 2f;
     private float _stamina;
 
     public void Start()
@@ -50,7 +51,8 @@ public class Player : MonoBehaviour
 
         if (_currentBeacon != null)
         {
-            _currentBeacon.DecrementCounter(Time.smoothDeltaTime * 2f);
+            var amount = GetBeaconDecrementAmount(DancingMultiplier, _move.IsDancing());
+            _currentBeacon.DecrementCounter(amount);
         }
     }
 
@@ -75,8 +77,6 @@ public class Player : MonoBehaviour
         }
     }
     
-    
-
     public void AddChaser(Chaser chaser)
     {
         _chaserContainer.AddChaser(chaser);
@@ -90,5 +90,16 @@ public class Player : MonoBehaviour
     public void PushPlayer(Vector3 velocity)
     {
         _move.AddVelocity(velocity);
+    }
+
+    public float GetBeaconDecrementAmount(float multiplier, bool isDancing)
+    {
+        var amount = Time.smoothDeltaTime * 2f;
+        if (_move.IsDancing())
+        {
+            amount *= DancingMultiplier;
+        }
+
+        return amount;
     }
 }
