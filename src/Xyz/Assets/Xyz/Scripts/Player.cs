@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private InputManager _inputManager;
     private StaminaCounter _staminaCounter;
 
-    private const float StaminaMax = 3f;
+    private const float StaminaMax = 6f;
     private const float DancingMultiplier = 2f;
     private float _stamina;
 
@@ -101,5 +101,10 @@ public class Player : MonoBehaviour
         }
 
         return amount;
+    }
+
+    public void ResetAt(Vector3 position)
+    {
+        transform.position = position;
     }
 }

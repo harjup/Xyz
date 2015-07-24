@@ -13,12 +13,16 @@ public class CameraMove : MonoBehaviour
     public float cameraFreeX = 2.5f;
     public float cameraFreeZ = 1.25f;
 
-    //TODO: These should be acquired in start eventually. Bad.
-    public GameObject player;
+    public GameObject Player;
     public GameObject cameraCenter;
 
+    public void Start()
+    {
+        Player = FindObjectOfType<Player>().gameObject;
+    }
+
 	private void FixedUpdate () {
-        MoveCamera(cameraCenter.transform, player.transform);
+        MoveCamera(cameraCenter.transform, Player.transform);
 	}
 
     public void MoveCamera(Transform cameraTransform, Transform targetTransform)

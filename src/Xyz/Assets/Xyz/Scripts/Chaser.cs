@@ -6,6 +6,7 @@ using System.Text;
 using Assets.Scripts.Managers;
 using UnityEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Assets.Xyz.Scripts
 {
@@ -41,9 +42,10 @@ namespace Assets.Xyz.Scripts
 
         public State _state = State.Unknown;
 
-
         public void Start()
         {
+            MaxSpeed = Random.Range(8, 14);
+
             _state = State.Run;
 
             _player = FindObjectOfType<Move>().gameObject;

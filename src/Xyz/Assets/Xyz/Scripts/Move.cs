@@ -14,6 +14,8 @@ public class Move : MonoBehaviour
     private InputManager _inputManger;
     private PlayerMesh _mesh;
 
+
+
     public enum State
     {
         Run, 
@@ -79,7 +81,7 @@ public class Move : MonoBehaviour
 
         RotatePlayer(transform, currentVelocity);
 
-        _rigidbody.velocity = currentVelocity;
+        _rigidbody.velocity = currentVelocity.SetY(-10f);
 
         if (currentVelocity.sqrMagnitude > 1f || grabCount > 0)
         {
