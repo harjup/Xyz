@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
 {
     private Move _move;
     private ChaserContainer _chaserContainer;
-    private InputManager _inputManager;
     private StaminaCounter _staminaCounter;
 
     private const float StaminaMax = 6f;
@@ -20,8 +19,6 @@ public class Player : MonoBehaviour
     {
         _move = GetComponent<Move>();
         _chaserContainer = transform.GetComponentInChildren<ChaserContainer>();
-
-        _inputManager = InputManager.Instance;
 
         _stamina = StaminaMax;
         _staminaCounter = StaminaCounter.Instance;
@@ -63,6 +60,10 @@ public class Player : MonoBehaviour
         other.GetComponentAndExecuteIfExists<StadiumActiveArea>(OnStadiumActiveEnter);
     }
 
+    void OnTriggerExit(Collider other)
+    {
+        other.GetComponentInParentAndExecuteIfExists<Beacon>(OnBeaconExit);
+    }
 
     public void OnBeaconEnter(Beacon beacon)
     {
@@ -76,16 +77,12 @@ public class Player : MonoBehaviour
         MainSessionManager.Instance.PlayerHasEnteredArena();
     }
 
-    void OnTriggerExit(Collider other)
+    public void OnBeaconExit(Beacon beacon)
     {
-        var beacon = other.GetComponentInParent<Beacon>();
-        if (beacon != null)
-        {
-            beacon.SetState(Beacon.State.Idle);
-            _currentBeacon = null;
-        }
+        beacon.SetState(Beacon.State.Idle);
+        _currentBeacon = null;
     }
-    
+
     public void AddChaser(Chaser chaser)
     {
         _chaserContainer.AddChaser(chaser);
