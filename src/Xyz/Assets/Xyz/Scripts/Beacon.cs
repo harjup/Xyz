@@ -25,10 +25,22 @@ public class Beacon : MonoBehaviour
         _beaconCounter = GetComponentInChildren<BeaconCounter>();
     }
 
+    private IEnumerator _replaceRoutine;
     public void Update()
     {
         if (_state == State.Done)
         {
+            if (_replaceRoutine == null)
+            {
+                _replaceRoutine = UsefulCoroutines.ExecuteAfterDelay(.5f, () =>
+                {
+                    Destroy(gameObject);
+                    BeaconSpawner.Instance.SpawnBeacons();
+                });
+
+                StartCoroutine(_replaceRoutine);
+            }
+
             return;
         }
         

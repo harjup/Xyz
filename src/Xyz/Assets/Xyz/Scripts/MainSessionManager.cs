@@ -20,6 +20,9 @@ public class MainSessionManager : Singleton<MainSessionManager>
 
     List<int> _difficultIncreaseTimes = new List<int>{ 10, 30, 60, 90, 120};
 
+    private int _beaconsRequired = 10;
+    private int beaconCount;
+
     public void Start()
     {
         // Move player to random spawn point
@@ -35,6 +38,7 @@ public class MainSessionManager : Singleton<MainSessionManager>
         player.ResetAt(spawn.transform.position);
 
         _timer = GameTimer.Instance;
+        _beaconsRequired = beaconCount;
     }
 
     public void Update()
@@ -60,7 +64,7 @@ public class MainSessionManager : Singleton<MainSessionManager>
         // We have reached maximum security! GET OUT OF HERE!!!
 
         // Add 5 chasers to spawn queue
-
+        ChaserSpawner.Instance.SpawnChasers(3);
     }
 
     public bool IsOutInField()
@@ -84,6 +88,6 @@ public class MainSessionManager : Singleton<MainSessionManager>
 
     private void SpawnBeacons()
     {
-        
+        BeaconSpawner.Instance.SpawnBeacons(4);
     }
 }
