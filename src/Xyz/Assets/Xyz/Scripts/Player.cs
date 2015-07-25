@@ -59,14 +59,23 @@ public class Player : MonoBehaviour
     private Beacon _currentBeacon;
     void OnTriggerEnter(Collider other)
     {
-        var beacon = other.GetComponentInParent<Beacon>();
-        if (beacon != null)
-        {
-            _currentBeacon = beacon;
-            _currentBeacon.SetState(Beacon.State.Capture);
-        }
+        other.GetComponentInParentAndExecuteIfExists<Beacon>(OnBeaconEnter);
+        other.GetComponentAndExecuteIfExists<StadiumActiveArea>(OnStadiumActiveEnter);
     }
-    
+
+
+    public void OnBeaconEnter(Beacon beacon)
+    {
+        _currentBeacon = beacon;
+        _currentBeacon.SetState(Beacon.State.Capture);
+    }
+
+
+    public void OnStadiumActiveEnter()
+    {
+        MainSessionManager.Instance.PlayerHasEnteredArena();
+    }
+
     void OnTriggerExit(Collider other)
     {
         var beacon = other.GetComponentInParent<Beacon>();

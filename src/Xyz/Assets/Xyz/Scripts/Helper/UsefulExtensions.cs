@@ -121,3 +121,33 @@ public static class ColorExtension
         return new Color(c.r, c.g, c.b, a);
     }
 }
+
+public static class ColliderExtensions
+{
+    public static void GetComponentInParentAndExecuteIfExists<T>(this Collider collider, Action<T> action)
+    {
+        var component = collider.GetComponentInParent<T>();
+        if (component != null)
+        {
+            action(component);
+        }
+    }
+
+    public static void GetComponentAndExecuteIfExists<T>(this Collider collider, Action<T> action)
+    {
+        var component = collider.GetComponent<T>();
+        if (component != null)
+        {
+            action(component);
+        }
+    }
+
+    public static void GetComponentAndExecuteIfExists<T>(this Collider collider, Action action)
+    {
+        var component = collider.GetComponent<T>();
+        if (component != null)
+        {
+            action();
+        }
+    }
+}
