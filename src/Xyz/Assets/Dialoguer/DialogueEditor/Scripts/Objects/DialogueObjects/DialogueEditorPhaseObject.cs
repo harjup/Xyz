@@ -213,8 +213,10 @@ namespace DialoguerEditor{
 			//iconPath += (EditorGUIUtility.isProSkin) ? "Dark/" : "Light/";
 			iconPath += "Dark/";
 			iconPath += "icon_"+icon+".png";
-			
-			return UnityEditor.AssetDatabase.LoadAssetAtPath(iconPath, typeof(Texture)) as Texture;
+
+            // TODO: UNDO THIS
+		    return null;
+		    //return UnityEditor.AssetDatabase.LoadAssetAtPath(iconPath, typeof(Texture)) as Texture;
 		}
 		
 		private static Texture getLightIcon(string icon){
@@ -223,8 +225,10 @@ namespace DialoguerEditor{
 			//iconPath += (EditorGUIUtility.isProSkin) ? "Dark/" : "Light/";
 			iconPath += "Light/";
 			iconPath += "icon_"+icon+".png";
-			
-			return UnityEditor.AssetDatabase.LoadAssetAtPath(iconPath, typeof(Texture)) as Texture;
+
+            // TODO: UNDO THIS
+		    return null;
+		    //return UnityEditor.AssetDatabase.LoadAssetAtPath(iconPath, typeof(Texture)) as Texture;
 		}
 	}
 	

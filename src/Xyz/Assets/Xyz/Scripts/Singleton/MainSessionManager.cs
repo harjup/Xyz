@@ -29,6 +29,11 @@ public class MainSessionManager : Singleton<MainSessionManager>
 
     private MessageManager _messageManager;
     private DoorwayManager _doorwayManager;
+
+    public int BeaconsRequired { get { return _beaconsRequired; }}
+    public int BeaconCount { get { return beaconCount; }}
+    
+
     private int _beaconsRequired = 5;
     private int _chasersPerWave = 3;
     private int beaconCount;
