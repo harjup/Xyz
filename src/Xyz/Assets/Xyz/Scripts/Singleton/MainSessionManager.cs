@@ -99,6 +99,8 @@ public class MainSessionManager : Singleton<MainSessionManager>
         }
 
         _messageManager.ShowMessage("Show the world your cause!");
+        SoundManager.Instance.PlayMainTheme();
+
 
         _timer.StartTimer();
         // Start timer
@@ -140,6 +142,5 @@ public class MainSessionManager : Singleton<MainSessionManager>
     public void SetDifficulty(int clearedLevels)
     {
         _beaconsRequired = 5 + (clearedLevels * 3);
-        //_chasersPerWave = 3 + clearedLevels;
     }
 }
