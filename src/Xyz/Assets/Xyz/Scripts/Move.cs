@@ -10,17 +10,17 @@ public class Move : MonoBehaviour
     private Rigidbody _rigidbody;
     private Camera _camera;
     private CameraInput _cameraInput;
+    private CameraMove _cameraMove;
     private Player _player;
     private InputManager _inputManger;
     private PlayerMesh _mesh;
-
-
 
     public enum State
     {
         Run, 
         Dance,
-        Knockout
+        Knockout,
+        LeavingArena
     }
 
     [SerializeField]
@@ -33,6 +33,7 @@ public class Move : MonoBehaviour
 	void Start()
 	{
 	    _camera = Camera.main;
+	    _cameraMove = _camera.GetComponent<CameraMove>();
 	    _cameraInput = _camera.GetComponent<CameraInput>();
 	    _rigidbody = GetComponent<Rigidbody>();
 	    _player = GetComponent<Player>();
@@ -45,7 +46,7 @@ public class Move : MonoBehaviour
 	
 	void Update()
 	{
-	    if (_state == State.Knockout)
+	    if (_state == State.Knockout || _state == State.LeavingArena)
 	    {
 	        return;
 	    }
@@ -152,6 +153,18 @@ public class Move : MonoBehaviour
         _rigidbody.velocity = Vector3.zero;
         _state = State.Knockout;
         _rigidbody.DORotate(new Vector3(0, 180, 90), .5f, RotateMode.Fast);
+    }
+
+    public void LeaveArena(Vector3 target)
+    {
+        _state = State.LeavingArena;
+        var untouchableLayer = LayerMask.NameToLayer("Untouchable");
+        gameObject.SetLayerRecursively(untouchableLayer);
+
+        var direction = (target - transform.position).normalized;
+        _rigidbody.velocity = direction*MaxSpeed;
+
+        _cameraMove.Pause = true;
     }
 
     public bool IsDancing()

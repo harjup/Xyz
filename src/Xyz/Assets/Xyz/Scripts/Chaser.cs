@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using System.Linq;
-using System.Text;
-using Assets.Scripts.Managers;
-using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 

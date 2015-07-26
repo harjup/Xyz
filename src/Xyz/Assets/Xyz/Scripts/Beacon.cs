@@ -34,8 +34,14 @@ public class Beacon : MonoBehaviour
             {
                 _replaceRoutine = UsefulCoroutines.ExecuteAfterDelay(.5f, () =>
                 {
+                    var mainSessionManager = MainSessionManager.Instance;
+                    var newBeaconNeeded = mainSessionManager.CaptureBeacon();
+                    if (newBeaconNeeded)
+                    {
+                        BeaconSpawner.Instance.SpawnBeacons();
+                    }
+
                     Destroy(gameObject);
-                    BeaconSpawner.Instance.SpawnBeacons();
                 });
 
                 StartCoroutine(_replaceRoutine);

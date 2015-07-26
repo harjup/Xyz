@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using Assets.Scripts.Managers;
 using Assets.Xyz.Scripts;
-using TreeEditor;
 
 public class Player : MonoBehaviour
 {
@@ -58,6 +56,7 @@ public class Player : MonoBehaviour
     {
         other.GetComponentInParentAndExecuteIfExists<Beacon>(OnBeaconEnter);
         other.GetComponentAndExecuteIfExists<StadiumActiveArea>(OnStadiumActiveEnter);
+        other.GetComponentInParentAndExecuteIfExists<Doorway>(OnDoorwayEnter);
     }
 
     void OnTriggerExit(Collider other)
@@ -75,6 +74,19 @@ public class Player : MonoBehaviour
     public void OnStadiumActiveEnter()
     {
         MainSessionManager.Instance.PlayerHasEnteredArena();
+    }
+
+    public void OnDoorwayEnter(Doorway doorway)
+    {
+        StartCoroutine(OnDoorwayEnterCoroutine(doorway));
+    }
+
+    private IEnumerator OnDoorwayEnterCoroutine(Doorway doorway)
+    {
+        var enterTarget = doorway.EnterTarget;
+        _move.LeaveArena(enterTarget.transform.position);
+        yield return new WaitForSeconds(1f);
+        DifficultyManager.Instance.LevelComplete();
     }
 
     public void OnBeaconExit(Beacon beacon)

@@ -15,12 +15,10 @@ public class TimerDisplay : MonoBehaviour
         _text = GetComponent<Text>();
     }
 
-    public void OnGUI()
+    public void Update()
     {
         var seconds = _gameTimer.GetSeconds();
         var timeSpan = TimeSpan.FromSeconds(seconds);
-        _text.text = string.Format("{0:D2}:{1:D2}", timeSpan.Minutes ,timeSpan.Seconds);
+        _text.text = string.Format("{0:D2}:{1:D2}", timeSpan.Minutes, timeSpan.Seconds);
     }
-
-
 }

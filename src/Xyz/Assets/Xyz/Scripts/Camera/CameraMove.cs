@@ -16,12 +16,21 @@ public class CameraMove : MonoBehaviour
     public GameObject Player;
     public GameObject cameraCenter;
 
+    public bool Pause { get; set; }
+    
+
     public void Start()
     {
+        Pause = false;
         Player = FindObjectOfType<Player>().gameObject;
     }
 
 	private void FixedUpdate () {
+	    if (Pause)
+	    {
+	        return;
+	    }
+
         MoveCamera(cameraCenter.transform, Player.transform);
 	}
 

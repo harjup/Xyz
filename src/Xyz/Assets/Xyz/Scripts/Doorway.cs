@@ -6,6 +6,7 @@ public class Doorway : MonoBehaviour
 {
     public GameObject EnterTarget { get; private set; }
 
+    private GameObject _collider;
     private GameObject _getoutArrow;
 
     public void Start()
@@ -13,11 +14,15 @@ public class Doorway : MonoBehaviour
         EnterTarget = transform.FindChild("EnterTarget").gameObject;
 
         _getoutArrow = transform.FindChild("Getout").gameObject;
+        _collider = transform.FindChild("Collider").gameObject;
+
         _getoutArrow.SetActive(false);
+        _collider.SetActive(false);
     }
 
-    public void DisplayGetoutArrow()
+    public void EnableExit()
     {
+        _collider.SetActive(true);
         _getoutArrow.SetActive(true);
     }
 }

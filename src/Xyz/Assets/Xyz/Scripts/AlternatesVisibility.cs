@@ -9,16 +9,25 @@ public class AlternatesVisibility : MonoBehaviour
 
     private Renderer _renderer;
 
-    
+    private IEnumerator _visibilityRoutine;
     public void Start()
     {
         _renderer = gameObject.GetComponent<Renderer>();
         gameObject.GetComponent<Renderer>().enabled = true;
-        StartCoroutine(ToggleVisibility());
+    }
+
+    public void Update()
+    {
+        if (_visibilityRoutine == null)
+        {
+            _visibilityRoutine = ToggleVisibility();
+            StartCoroutine(ToggleVisibility());
+        }
     }
 
     // This only gets called once in start. 
     // If our object is set as disabled and enabled again, then visibility won't get toggled.
+    // If it starts as disabled we're fine
     private IEnumerator ToggleVisibility()
     {
         _renderer.enabled = !_renderer.enabled;
@@ -30,7 +39,7 @@ public class AlternatesVisibility : MonoBehaviour
 
         yield return new WaitForSeconds(ToggleRate);
 
-        StartCoroutine(ToggleVisibility());
+        _visibilityRoutine = null;
     }
 
 }
