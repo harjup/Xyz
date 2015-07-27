@@ -104,6 +104,8 @@ public class Player : MonoBehaviour
 
     public void AddChaser(Chaser chaser)
     {
+        PlayerSpeechBubbleDisplay.Instance.DisplayText("If you cannot catch me how can we be safe?");
+
         _chaserContainer.AddChaser(chaser);
     }
 

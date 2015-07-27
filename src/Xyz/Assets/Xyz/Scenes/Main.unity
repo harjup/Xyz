@@ -1608,11 +1608,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 411551914}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &450490349 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 196686, guid: f1675c06db0cd8147ae8b93b503beb24, type: 2}
+  m_PrefabInternal: {fileID: 1515293816}
 --- !u!224 &450490350 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22439472, guid: f1675c06db0cd8147ae8b93b503beb24,
     type: 2}
   m_PrefabInternal: {fileID: 1515293816}
+--- !u!114 &450490351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450490349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b67859828d85f4b945c3980a3c0840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &453729661
 Prefab:
   m_ObjectHideFlags: 0
@@ -5190,6 +5205,14 @@ Prefab:
     - target: {fileID: 22439472, guid: f1675c06db0cd8147ae8b93b503beb24, type: 2}
       propertyPath: m_Pivot.y
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 173112, guid: f1675c06db0cd8147ae8b93b503beb24, type: 2}
+      propertyPath: m_Name
+      value: SpeechBubbleText
+      objectReference: {fileID: 0}
+    - target: {fileID: 109850, guid: f1675c06db0cd8147ae8b93b503beb24, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f1675c06db0cd8147ae8b93b503beb24, type: 2}
