@@ -32,6 +32,11 @@ public class DifficultyManager : Singleton<DifficultyManager>
         return 2 + _clearedLevels;
     }
 
+    public int GetAudienceMemberCount()
+    {
+        return 5 + _clearedLevels * 2;
+    }
+
     public void LevelComplete()
     {
         _clearedLevels++;
