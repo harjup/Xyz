@@ -1,0 +1,34 @@
+Intro Script
+
+(In silhouette)
+- In a recent news story, it was reported that demand for security positions have been dwindling.
+- Eric Eiselhauser has just finished viewing this report in the nude, a Sunday tradition.
+- I can't believe this! Less security!
+- What if some weirdo showed up at the sports game! They could do whatever they pleased!
+- ...
+- I know!
+- I'll protest by running around the field!
+- That way they'll understand the risks of no security.
+- Let's get dressed and get going.
+
+[Pants on chair, PC leaving in background]
+
+Start Level
+- Fade in "Mon/Tues/Wed/Thurs/Fri (last)"
+
+During Level (Speech bubble)
+- I only want to help!
+- Yes! Chase me!
+- Prove your mediocrity!
+- If you cannot catch me how can we be safe?
+- I only want to you to be safe!
+- I respect your position!
+- New hires probably won't decrease your wages!
+- I just want the world to see my message!
+
+Level Fail
+- You have been caught. Our safety will stagnate in this small victory.
+
+Post level briefing
++ N new security positions have opened
++ N more protests caught on camera will increase security
