@@ -35,7 +35,7 @@ public class MainSessionManager : Singleton<MainSessionManager>
     
 
     private int _beaconsRequired = 5;
-    private int _chasersPerWave = 3;
+    private int _chasersPerWave = 2;
     private int beaconCount;
 
     public void Start()
@@ -98,7 +98,7 @@ public class MainSessionManager : Singleton<MainSessionManager>
             return;
         }
 
-        _messageManager.ShowMessage("Show the world your cause!");
+        _messageManager.ShowMessage("Show the cameras your cause!");
         SoundManager.Instance.PlayMainTheme();
 
 
@@ -111,9 +111,8 @@ public class MainSessionManager : Singleton<MainSessionManager>
 
     private void SpawnInitialBeacons()
     {
-        BeaconSpawner.Instance.SpawnBeacons(4);
+        BeaconSpawner.Instance.SpawnBeacons(3);
     }
-
 
     private bool _newBeaconsNeeded;
 
@@ -141,6 +140,7 @@ public class MainSessionManager : Singleton<MainSessionManager>
 
     public void SetDifficulty(int clearedLevels)
     {
-        _beaconsRequired = 5 + (clearedLevels * 3);
+        _beaconsRequired = 5 + (clearedLevels);
+        _chasersPerWave = 2 + clearedLevels;
     }
 }

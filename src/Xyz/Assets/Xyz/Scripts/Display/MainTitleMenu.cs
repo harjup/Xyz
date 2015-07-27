@@ -17,7 +17,7 @@ public class MainTitleMenu : MonoBehaviour
 
     public void OnStartButtonClick()
     {
-        
+        Application.LoadLevel(SceneResolver.GetSceneName(SceneResolver.Scene.Intro));
     }
 
     public void OnCreditsButtonClick()
