@@ -18,4 +18,10 @@ public static class EnumerableRandomizer
             indexes[position] = indexes[i];
         }
     }
+
+    public static T GetRandom<T>(this IList<T> list)
+    {
+        int index = Random.Range(0, list.Count);
+        return list[index];
+    }
 }

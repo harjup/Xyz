@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Assets.Xyz.Scripts;
+using DG.Tweening;
 
 public class Player : MonoBehaviour
 {
@@ -116,9 +117,13 @@ public class Player : MonoBehaviour
 
     public void LoseChaser(Chaser chaser)
     {
-        _speechBubbleDisplay.HideWaggleGraphic();
-        _speechBubbleDisplay.DisplayText("If you cannot catch me how can we be safe?");
         _chaserContainer.RemoveChaser(chaser);
+
+        if (_chaserContainer.GetChasers().Count == 0)
+        {
+            _speechBubbleDisplay.HideWaggleGraphic();
+            _speechBubbleDisplay.DisplayText(PlayerTaunts.GetRandomTaunt());
+        }
     }
 
     public List<Chaser> GetGrabbedChasers()
@@ -129,6 +134,7 @@ public class Player : MonoBehaviour
     public void PushPlayer(Vector3 velocity)
     {
         _move.AddVelocity(velocity);
+        _move.ShakeCamera();
     }
 
     public float GetBeaconDecrementAmount(float multiplier, bool isDancing)
