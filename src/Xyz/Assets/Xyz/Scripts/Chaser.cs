@@ -83,6 +83,7 @@ namespace Assets.Xyz.Scripts
             if (_state == State.Run)
             {    
                 FollowPlayer(playerPosition);
+                LookAtPlayer(playerPosition);
             }
 
             if (_state == State.Charge && _chargeInDirectionRoutine == null)
@@ -116,6 +117,11 @@ namespace Assets.Xyz.Scripts
             }
 
             _rigidbody.velocity = currentVelocity;
+        }
+
+        public void LookAtPlayer(Vector3 direction)
+        {
+            _defaultMesh.transform.rotation = Quaternion.LookRotation(direction.SetY(0), Vector3.up);
         }
 
 
