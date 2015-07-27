@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Linq;
+using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -178,7 +179,11 @@ namespace Assets.Xyz.Scripts
 
             _rigidbody.velocity = Vector3.zero;;
 
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1.5f);
+
+            transform.DOShakePosition(.5f, Vector3.one.SetY(0f), 40);
+
+            yield return new WaitForSeconds(.5f);
 
             _fallRecoveryRoutine = null;
             _state = State.Run;
