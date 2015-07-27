@@ -14,7 +14,7 @@ namespace Assets.Xyz.Scripts
 
         private float _grabStamina;
 
-        private GameObject _player;
+        private GameObject _playerMove;
         private Rigidbody _rigidbody;
         private CameraInput _cameraInput;
         private GameObject _collider;
@@ -43,7 +43,7 @@ namespace Assets.Xyz.Scripts
 
             _state = State.Run;
 
-            _player = FindObjectOfType<Move>().gameObject;
+            _playerMove = FindObjectOfType<Move>().gameObject;
             _rigidbody = GetComponent<Rigidbody>();
 
             _defaultLayer = gameObject.layer;
@@ -95,7 +95,7 @@ namespace Assets.Xyz.Scripts
 
         public Vector3 GetRelativePlayerPosition()
         {
-            return _player.transform.position - transform.position;
+            return _playerMove.transform.position - transform.position;
         }
 
         public void FollowPlayer(Vector3 movementDirection)
@@ -165,7 +165,6 @@ namespace Assets.Xyz.Scripts
             _state = State.Fall;
            
             gameObject.SetLayerRecursively(_stunnedLayer);
-            transform.parent = null;
 
             var inputDirection = fallDirection.normalized;
 
@@ -194,11 +193,14 @@ namespace Assets.Xyz.Scripts
             return vector - vector.normalized * (friction * deltaTime);
         }
 
+        private Player _player;
         public void GrabPlayer(Player player)
         {
+            _player = player;
+
             _state = State.Grabbed;
-            player.AddChaser(this);
-            player.PushPlayer(_rigidbody.velocity);
+            _player.AddChaser(this);
+            _player.PushPlayer(_rigidbody.velocity);
 
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.constraints = RigidbodyConstraints.FreezeAll;
@@ -263,6 +265,12 @@ namespace Assets.Xyz.Scripts
                 _fallRecoveryRoutine = FallRecovery(inputDirection);
                 StartCoroutine(_fallRecoveryRoutine);
                 _grabStamina = GrabStaminaMax;
+
+                if (_player != null)
+                {
+                    _player.LoseChaser(this);
+                    _player = null;
+                }
             }
         }
 

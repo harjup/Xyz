@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private ChaserContainer _chaserContainer;
     private StaminaCounter _staminaCounter;
     private MainSessionManager _mainSessionManager;
+    private PlayerSpeechBubbleDisplay _speechBubbleDisplay;
 
     private const float StaminaMax = 6f;
     private const float DancingMultiplier = 2f;
@@ -22,6 +23,8 @@ public class Player : MonoBehaviour
 
         _stamina = StaminaMax;
         _staminaCounter = StaminaCounter.Instance;
+        
+        _speechBubbleDisplay = PlayerSpeechBubbleDisplay.Instance;
     }
 
     public void Update()
@@ -36,13 +39,16 @@ public class Player : MonoBehaviour
                 _move.Knockout();
             }
         }
-        else if (_stamina < StaminaMax)
+        else
         {
-            _stamina += Time.smoothDeltaTime * 2f;
-        }
-        else if (_stamina > StaminaMax)
-        {
-            _stamina = StaminaMax;
+            if (_stamina < StaminaMax)
+            {
+                _stamina += Time.smoothDeltaTime*2f;
+            }
+            else
+            {
+                _stamina = StaminaMax;
+            }
         }
 
         _staminaCounter.SetImagePercent(_stamina / StaminaMax);
@@ -104,9 +110,15 @@ public class Player : MonoBehaviour
 
     public void AddChaser(Chaser chaser)
     {
-        PlayerSpeechBubbleDisplay.Instance.DisplayText("If you cannot catch me how can we be safe?");
-
+        _speechBubbleDisplay.DisplayWaggleGraphic();
         _chaserContainer.AddChaser(chaser);
+    }
+
+    public void LoseChaser(Chaser chaser)
+    {
+        _speechBubbleDisplay.HideWaggleGraphic();
+        _speechBubbleDisplay.DisplayText("If you cannot catch me how can we be safe?");
+        _chaserContainer.RemoveChaser(chaser);
     }
 
     public List<Chaser> GetGrabbedChasers()

@@ -6,7 +6,7 @@ public class PlayerSpeechBubbleDisplay : Singleton<PlayerSpeechBubbleDisplay>
 {
     private GameObject _speechBubble;
     private Text _speechBubbleText;
-
+    private GameObject _waggleGraphic;
 
     // Use this for initialization
     void Start()
@@ -19,8 +19,10 @@ public class PlayerSpeechBubbleDisplay : Singleton<PlayerSpeechBubbleDisplay>
             .gameObject
             .GetComponentSafe<Text>();
 
-        
+        _waggleGraphic = transform.FindChild("Waggle").gameObject;
+
         _speechBubble.SetActive(false);
+        _waggleGraphic.SetActive(false);
     }
 
     private IEnumerator _displayTextRoutine;
@@ -33,6 +35,16 @@ public class PlayerSpeechBubbleDisplay : Singleton<PlayerSpeechBubbleDisplay>
 
         _displayTextRoutine = DisplayTextRoutine(text); 
         StartCoroutine(_displayTextRoutine);
+    }
+
+    public void DisplayWaggleGraphic()
+    {
+        _waggleGraphic.SetActive(true);
+    }
+
+    public void HideWaggleGraphic()
+    {
+        _waggleGraphic.SetActive(false);
     }
 
 

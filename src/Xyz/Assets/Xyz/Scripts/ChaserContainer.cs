@@ -7,7 +7,12 @@ public class ChaserContainer : MonoBehaviour
 {
     public void AddChaser(Chaser chaser)
     {
-        chaser.transform.parent = transform;
+        chaser.transform.SetParent(transform);
+    }
+
+    public void RemoveChaser(Chaser chaser)
+    {
+        chaser.transform.SetParent(null);
     }
 
     public List<Chaser> GetChasers()
