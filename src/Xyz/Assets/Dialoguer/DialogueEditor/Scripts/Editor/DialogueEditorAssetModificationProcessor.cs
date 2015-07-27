@@ -8,7 +8,8 @@ public class DialogueEditorAssetModificationProcessor : UnityEditor.AssetModific
 	public static string[] OnWillSaveAssets(string[] paths){
 		//DialogueEditorWindow window = (DialogueEditorWindow)EditorWindow.GetWindow(typeof(DialogueEditorWindow));
 		if(EditorWindow.focusedWindow != null){
-			if(EditorWindow.focusedWindow.title == "Dialogue Editor" || EditorWindow.focusedWindow.title == "Variable Editor" || EditorWindow.focusedWindow.title == "Theme Editor"){
+            if (EditorWindow.focusedWindow.titleContent.text == "Dialogue Editor" || EditorWindow.focusedWindow.titleContent.text == "Variable Editor" || EditorWindow.focusedWindow.titleContent.text == "Theme Editor")
+            {
 				DialogueEditorDataManager.save();
 				DialoguerEnumGenerator.GenerateDialoguesEnum();
 			}

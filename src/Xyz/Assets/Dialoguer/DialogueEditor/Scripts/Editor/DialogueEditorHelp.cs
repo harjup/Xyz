@@ -5,6 +5,7 @@ using System.Collections;
 public class DialogueEditorHelp : Editor {
 
 	public const int PRIORITY = 2000;
+	public const int CONTACT_PRIORITY = PRIORITY + 1000;
 
 	//[MenuItem ("Dialoguer/Official Website", false, PRIORITY)]
 	[MenuItem ("Tools/Dialoguer/Official Website", false, PRIORITY)]
@@ -47,10 +48,10 @@ public class DialogueEditorHelp : Editor {
 	}
 
 	//[MenuItem ("Dialoguer/Contact", false, PRIORITY)]
-	[MenuItem ("Tools/Dialoguer/Contact", false, PRIORITY)]
+	[MenuItem ("Tools/Dialoguer/Contact", false, CONTACT_PRIORITY)]
 	//[MenuItem ("Assets/Dialoguer/Contact", false, PRIORITY)]
-	[MenuItem ("Help/Dialoguer/Contact", false, PRIORITY)]
+	[MenuItem("Help/Dialoguer/Contact", false, CONTACT_PRIORITY)]
 	public static void Contact(){
-		Application.OpenURL("mailto:email@dialoguer.info");
+		Application.OpenURL("mailto:tonycoculuzzi@gmail.com");
 	}
 }
