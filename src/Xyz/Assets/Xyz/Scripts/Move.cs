@@ -94,6 +94,22 @@ public class Move : MonoBehaviour
         }
     }
 
+    private Sequence _currentSequence;
+    public void ShakeCamera()
+    {
+        if (_currentSequence != null && _currentSequence.IsPlaying())
+        {
+            _currentSequence.Complete();
+        }
+
+        _currentSequence = DOTween.Sequence();
+
+        _currentSequence
+            .Append(_camera.DOShakePosition(.25f))
+            .OnComplete(() => { _cameraMove.ResetPosition(); })
+            .Play();
+    }
+
     public void AddVelocity(Vector3 velocity)
     {
         var difference = _rigidbody.velocity - velocity;

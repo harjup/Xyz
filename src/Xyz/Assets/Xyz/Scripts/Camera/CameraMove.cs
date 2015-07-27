@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class CameraMove : MonoBehaviour
 {
@@ -17,10 +18,13 @@ public class CameraMove : MonoBehaviour
     public GameObject cameraCenter;
 
     public bool Pause { get; set; }
-    
+
+    private Vector3 _initialPosition;
 
     public void Start()
     {
+        _initialPosition = transform.localPosition;
+
         Pause = false;
         Player = FindObjectOfType<Player>().gameObject;
     }
@@ -30,7 +34,7 @@ public class CameraMove : MonoBehaviour
 	    {
 	        return;
 	    }
-
+        
         MoveCamera(cameraCenter.transform, Player.transform);
 	}
 
@@ -53,5 +57,10 @@ public class CameraMove : MonoBehaviour
         {
             cameraTransform.position = cameraTransform.position.SetZ(iTween.FloatUpdate(cameraTransform.position.z, targetTransform.position.z, zSpeed));
         }
+    }
+
+    public void ResetPosition()
+    {
+        transform.localPosition = _initialPosition;
     }
 }
