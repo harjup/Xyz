@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     private Move _move;
     private ChaserContainer _chaserContainer;
     private StaminaCounter _staminaCounter;
+    private MainSessionManager _mainSessionManager;
 
     private const float StaminaMax = 6f;
     private const float DancingMultiplier = 2f;
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
     {
         _move = GetComponent<Move>();
         _chaserContainer = transform.GetComponentInChildren<ChaserContainer>();
+        _mainSessionManager = MainSessionManager.Instance;
 
         _stamina = StaminaMax;
         _staminaCounter = StaminaCounter.Instance;
@@ -30,6 +32,7 @@ public class Player : MonoBehaviour
             _stamina -= Time.smoothDeltaTime;
             if (_stamina < 0f)
             {
+                _mainSessionManager.Failure();
                 _move.Knockout();
             }
         }
@@ -70,10 +73,14 @@ public class Player : MonoBehaviour
         _currentBeacon.SetState(Beacon.State.Capture);
     }
 
+    public bool IsPreGame()
+    {
+        return _mainSessionManager.CurrentState == MainSessionManager.State.Pregame;
+    }
 
     public void OnStadiumActiveEnter()
     {
-        MainSessionManager.Instance.PlayerHasEnteredArena();
+        _mainSessionManager.PlayerHasEnteredArena();
     }
 
     public void OnDoorwayEnter(Doorway doorway)

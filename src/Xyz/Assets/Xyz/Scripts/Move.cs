@@ -84,7 +84,7 @@ public class Move : MonoBehaviour
 
         _rigidbody.velocity = currentVelocity.SetY(-10f);
 
-        if (currentVelocity.sqrMagnitude > 1f || grabCount > 0)
+        if (currentVelocity.sqrMagnitude > 1f || grabCount > 0 || _player.IsPreGame())
         {
             Run();
         }
@@ -123,8 +123,8 @@ public class Move : MonoBehaviour
     private void RotatePlayer(Transform playerTransform, Vector3 direction)
     {
         //Rotate the player to face direction of movement only when input keys are pressed
-        if (Math.Abs(_inputManger.RawHoritzontalAxis) >= .5f
-            || Math.Abs(_inputManger.RawVerticalAxis) >= .5f)
+        if (Math.Abs(_inputManger.RawHoritzontalAxis) >= .1f
+            || Math.Abs(_inputManger.RawVerticalAxis) >= .1f)
         {       
             playerTransform.rotation = Quaternion.LookRotation(direction.SetY(0), Vector3.up);
         }

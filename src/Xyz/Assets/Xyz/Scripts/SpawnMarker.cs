@@ -17,4 +17,9 @@ public class SpawnMarker : MonoBehaviour {
     {
         return SpawnType == type;
     }
+
+    public void Start()
+    {
+        gameObject.GetComponentAndExecuteIfExists<Renderer>((r) => r.enabled = false);
+    }
 }

@@ -14,17 +14,27 @@ public class DifficultyManager : Singleton<DifficultyManager>
 
     public void OnLevelWasLoaded(int level)
     {
-        var mainSessionManager = MainSessionManager.Instance;
+        var mainSessionManager = FindObjectOfType<MainSessionManager>();
         if (mainSessionManager != null)
         {
-            mainSessionManager.SetDifficulty(_clearedLevels);
+            mainSessionManager.SetRequiredBeacons(GetRequiredBeacons());
+            mainSessionManager.SetChasersPerWave(GetChasersPerWave());
         }
+    }
 
+    public int GetRequiredBeacons()
+    {
+        return 5 + _clearedLevels;
+    }
+
+    public int GetChasersPerWave()
+    {
+        return 2 + _clearedLevels;
     }
 
     public void LevelComplete()
     {
         _clearedLevels++;
-        Application.LoadLevel("Sandbox");
+        Application.LoadLevel(SceneResolver.GetSceneName(SceneResolver.Scene.Result));
     }
 }

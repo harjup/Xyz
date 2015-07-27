@@ -9,14 +9,16 @@ public static class SceneResolver
         Unknown,
         Title,
         Intro,
-        Main
+        Main,
+        Result
     }
 
     private readonly static Dictionary<Scene, string> SceneMap = new Dictionary<Scene, string>
     {
         {Scene.Title, "Title"},
         {Scene.Intro, "Intro"},
-        {Scene.Main, "Main"}
+        {Scene.Main, "Main"},
+        {Scene.Result, "Watch-News"}
     };
 
 

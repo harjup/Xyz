@@ -11,3 +11,5 @@ EditorBuildSettings:
     path: Assets/Xyz/Scenes/Intro.unity
   - enabled: 1
     path: Assets/Xyz/Scenes/Main.unity
+  - enabled: 1
+    path: Assets/Xyz/Scenes/Watch-News.unity

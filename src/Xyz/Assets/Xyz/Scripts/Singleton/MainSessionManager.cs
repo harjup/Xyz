@@ -55,6 +55,8 @@ public class MainSessionManager : Singleton<MainSessionManager>
         _timer = GameTimer.Instance;
         _messageManager = MessageManager.Instance;
         _doorwayManager = DoorwayManager.Instance;
+
+        _state = State.Pregame;
     }
 
     public void Update()
@@ -133,6 +135,11 @@ public class MainSessionManager : Singleton<MainSessionManager>
         return _newBeaconsNeeded;
     }
 
+    public void Failure()
+    {
+        MainCanvasManager.Instance.FailFailureDisplay();
+    }
+
     public bool IsNewBeaconNeeded()
     {
         return _newBeaconsNeeded;
@@ -143,4 +150,16 @@ public class MainSessionManager : Singleton<MainSessionManager>
         _beaconsRequired = 5 + (clearedLevels);
         _chasersPerWave = 2 + clearedLevels;
     }
+
+    public void SetRequiredBeacons(int amount)
+    {
+        _beaconsRequired = amount;
+        
+    }
+
+    public void SetChasersPerWave(int amount)
+    {
+        _chasersPerWave = amount;
+    }
+
 }

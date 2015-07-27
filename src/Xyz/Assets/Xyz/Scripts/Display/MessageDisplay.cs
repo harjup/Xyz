@@ -22,6 +22,12 @@ public class MessageDisplay : MonoBehaviour
 
     public void TweenMessageOnAndOffScreen()
     {
+        if (_currentSequence != null 
+            && _currentSequence.IsPlaying())
+        {
+            _currentSequence.Complete();
+        }
+
         _currentSequence = DOTween
             .Sequence()
             .Append(transform.DOLocalMoveY(-120f, .5f))

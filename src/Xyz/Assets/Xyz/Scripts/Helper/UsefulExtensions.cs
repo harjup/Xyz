@@ -76,7 +76,16 @@ public static class TransformExtension
 
 public static class GameObjectExtension
 {
-    public static T GetSafeComponent<T>(this GameObject obj) where T : MonoBehaviour
+    public static void GetComponentAndExecuteIfExists<T>(this GameObject gameObject, Action<T> action)
+    {
+        var component = gameObject.GetComponent<T>();
+        if (component != null)
+        {
+            action(component);
+        }
+    }
+
+    public static T GetComponentSafe<T>(this GameObject obj) where T : MonoBehaviour
     {
         T component = obj.GetComponent<T>();
 
