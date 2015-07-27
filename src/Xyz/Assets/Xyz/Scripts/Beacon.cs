@@ -9,6 +9,7 @@ public class Beacon : MonoBehaviour
     private State _state;
 
     private BeaconCounter _beaconCounter;
+    private Camera _localCamera;
 
     public enum State
     {
@@ -23,6 +24,8 @@ public class Beacon : MonoBehaviour
         _state = State.Idle;
         _counter = CounterMax;
         _beaconCounter = GetComponentInChildren<BeaconCounter>();
+        _localCamera = GetComponentInChildren<Camera>();
+        _localCamera.enabled = false;
     }
 
     private IEnumerator _replaceRoutine;
@@ -72,6 +75,8 @@ public class Beacon : MonoBehaviour
 
     public void SetState(State state)
     {
+        _localCamera.enabled = state == State.Capture;
+        
         if (_state == State.Done)
         {
             return;
