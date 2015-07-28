@@ -57,7 +57,7 @@ public class Beacon : MonoBehaviour
 
         if (_state == State.Idle)
         {
-            IncrementCounter(Time.smoothDeltaTime);
+            IncrementCounter(Time.smoothDeltaTime / 2f);
         }
     }
 

@@ -179,7 +179,7 @@ namespace Assets.Xyz.Scripts
 
             _rigidbody.velocity = Vector3.zero;;
 
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(3.5f);
 
             transform.DOShakePosition(.5f, Vector3.one.SetY(0f), 40);
 

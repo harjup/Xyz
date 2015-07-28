@@ -5,14 +5,26 @@ using DG.Tweening;
 public class DifficultyManager : Singleton<DifficultyManager>
 {
     private int _clearedLevels;
+    public int ClearedLevelsInitialValue = 0;
 
     public void Start()
     {
-        _clearedLevels = 0;
+        if (_clearedLevels == 0)
+        {
+            _clearedLevels = ClearedLevelsInitialValue;
+        }
+
         DontDestroyOnLoad(gameObject);
+        InitializeMainSessionManager();
     }
 
     public void OnLevelWasLoaded(int level)
+    {
+        InitializeMainSessionManager();
+    }
+
+
+    private void InitializeMainSessionManager()
     {
         var mainSessionManager = FindObjectOfType<MainSessionManager>();
         if (mainSessionManager != null)
@@ -24,12 +36,12 @@ public class DifficultyManager : Singleton<DifficultyManager>
 
     public int GetRequiredBeacons()
     {
-        return 5 + _clearedLevels;
+        return 5 + (int)_clearedLevels;
     }
 
     public int GetChasersPerWave()
     {
-        return 2 + _clearedLevels;
+        return 3 + (int)_clearedLevels / 2;
     }
 
     public int GetAudienceMemberCount()

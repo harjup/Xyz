@@ -29,6 +29,7 @@ public class Move : MonoBehaviour
     public float Acceleration = 640;
     public float Friction = 40f;
     public float MaxSpeed = 20f;
+    public float SpeedLostFromGrapple = 2f;
 
 	void Start()
 	{
@@ -64,8 +65,8 @@ public class Move : MonoBehaviour
 
         if (grabCount > 0)
         {
-            acceleration = Acceleration/grabCount*2;
-            maxSpeed = MaxSpeed/grabCount;
+            acceleration = Acceleration/grabCount;
+            maxSpeed = MaxSpeed - SpeedLostFromGrapple;
 
             var deltaTotal = _inputManger.DeltaHorizontalAxis + _inputManger.DeltaVerticalAxis;
 

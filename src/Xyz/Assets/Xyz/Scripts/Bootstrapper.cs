@@ -14,4 +14,5 @@ public class Bootstrapper : MonoBehaviour
             result.name = "DifficultyManager";
         }
     }
+
 }

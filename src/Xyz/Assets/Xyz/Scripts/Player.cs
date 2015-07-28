@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     private PlayerSpeechBubbleDisplay _speechBubbleDisplay;
 
     private const float StaminaMax = 6f;
-    private const float DancingMultiplier = 2f;
+    private const float DancingMultiplier = 4f;
     private float _stamina;
 
     public void Start()
