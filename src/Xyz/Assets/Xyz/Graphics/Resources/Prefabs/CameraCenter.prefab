@@ -46,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174912}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.2536201, y: .133480072, z: 2.29999995}
+  m_LocalPosition: {x: -107.199997, y: 5.34000015, z: 50.1800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 403412}
@@ -58,8 +58,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104136}
-  m_LocalRotation: {x: -.130029529, y: .0864097774, z: -.0113760643, w: -.98767215}
-  m_LocalPosition: {x: 4.69999981, y: 4.5, z: -15.6000004}
+  m_LocalRotation: {x: -.381227225, y: .0805210918, z: -.0333529301, w: -.920363903}
+  m_LocalPosition: {x: 5.19999981, y: 19.5, z: -21.2999992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 401492}
@@ -80,10 +80,10 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: -50
+  near clip plane: .00999999978
   far clip plane: 1000
-  field of view: 52.5
-  orthographic: 1
+  field of view: 65
+  orthographic: 0
   orthographic size: 17.5
   m_Depth: -1
   m_CullingMask:
@@ -103,7 +103,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174912}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -179,7 +179,7 @@ MonoBehaviour:
   cameraSnapZ: .400000006
   cameraFreeX: 2.5
   cameraFreeZ: 1.25
-  player: {fileID: 0}
+  Player: {fileID: 0}
   cameraCenter: {fileID: 174912}
 --- !u!124 &12420342
 Behaviour:
