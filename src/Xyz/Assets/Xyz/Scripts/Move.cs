@@ -15,6 +15,10 @@ public class Move : MonoBehaviour
     private InputManager _inputManger;
     private PlayerMesh _mesh;
 
+    // This is here so we can trade a push the the player's input for the current frame
+    // I am paranoid about async problems if we're assigning rigidbody velocity in multiple spots
+    private Vector3? _outstandingPush;
+
     public enum State
     {
         Run, 
@@ -46,6 +50,7 @@ public class Move : MonoBehaviour
 	    _mesh = transform.GetComponentInChildren<PlayerMesh>();
 
 	    _state = State.Run;
+	    _outstandingPush = null;
 	}
 	
 	void Update()
@@ -86,6 +91,13 @@ public class Move : MonoBehaviour
         RotatePlayer(transform, currentVelocity);
 
         _rigidbody.velocity = currentVelocity.SetY(-10f);
+        if (_outstandingPush.HasValue)
+        {
+            _rigidbody.velocity = _outstandingPush.Value;
+            _outstandingPush = null;
+        }
+
+        
 
         if (currentVelocity.sqrMagnitude > 1f || grabCount > 0 || _player.IsPreGame())
         {
@@ -141,17 +153,21 @@ public class Move : MonoBehaviour
             //TODO: Also remember to renable the stage trigger
             // We need to eliminate all force in the direction of velocity when applying our own force
 
-            /*var normal = velocity.normalized;
-            var v1 = Vector3.Dot(normal, force);
-            var v2 = force - (normal * v1);
+            var normal = velocity.normalized;
+            var normalV2 = new Vector2(normal.x, normal.z);
+            var forceV2 = new Vector2(force.x, force.z);
 
-            Debug.DrawRay(transform.position, velocity, Color.magenta, 3f);
-            Debug.DrawRay(transform.position, force, Color.grey, 3f);
-            Debug.DrawRay(transform.position, v2, Color.cyan, 3f);
+            var v1 = Vector2.Dot(normalV2, forceV2);
+            if (v1 < 0)
+            {
+                Debug.DrawRay(transform.position, force, Color.cyan, 3f);
+                return velocity + force;
+            }
+            var v2 = forceV2 - (normalV2 * v1);
 
-            return velocity + v2;*/
+            Debug.DrawRay(transform.position, new Vector3(v2.x, 0 ,v2.y), Color.cyan, 3f);
 
-            return velocity + force;
+            return velocity + new Vector3(v2.x, 0 ,v2.y);
         }
 
         
@@ -237,7 +253,8 @@ public class Move : MonoBehaviour
     private IEnumerator _pushRoutine;
     IEnumerator PushRoutine(Vector3 force)
     {
-        _rigidbody.velocity = force;
+        _outstandingPush = force;
+        ShakeCamera();
         yield return null;
     }
 }
