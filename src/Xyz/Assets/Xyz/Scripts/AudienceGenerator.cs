@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 
 public class AudienceGenerator : MonoBehaviour
 {
-    private GameObject _malePrefab;
-    private GameObject _femalePrefab;
     
     // Use this for initialization
     void Start()
@@ -18,20 +17,23 @@ public class AudienceGenerator : MonoBehaviour
             amount = difficultyManager.GetAudienceMemberCount();
         }
 
-        SpawnAudienceMembers(amount);
+        var audiencePrefabs = new List<GameObject>
+        {
+            Resources.Load<GameObject>("Prefabs/Audience_Male"),
+            Resources.Load<GameObject>("Prefabs/Audience_Female")
+        };
+
+        SpawnAudienceMembers(amount, audiencePrefabs);
     }
 
 
-    public void SpawnAudienceMembers(int spawnAmount)
+    public void SpawnAudienceMembers(int spawnAmount, List<GameObject> prefabs)
     {
         var render = gameObject.GetComponent<Renderer>();
         if (render != null)
         {
             render.enabled = false;
         }
-
-        _malePrefab = Resources.Load<GameObject>("Prefabs/Audience_Male");
-        _femalePrefab = Resources.Load<GameObject>("Prefabs/Audience_Female");
 
         var position = transform.position;
 
@@ -55,7 +57,9 @@ public class AudienceGenerator : MonoBehaviour
             Vector3 rotatedPosition = Quaternion.AngleAxis(transform.eulerAngles.y, transform.up) * targetVector;
             Quaternion targetRotation = Quaternion.AngleAxis(transform.rotation.eulerAngles.y + Random.Range(-45, 45f), Vector3.up);
 
-            Instantiate(_malePrefab, position + rotatedPosition, targetRotation);
+            var prefab = prefabs.GetRandom();
+
+            Instantiate(prefab, position + rotatedPosition, targetRotation);
         }
     }
 
