@@ -67,6 +67,13 @@ public class Player : MonoBehaviour
         other.GetComponentInParentAndExecuteIfExists<Beacon>(OnBeaconEnter);
         other.GetComponentAndExecuteIfExists<StadiumActiveArea>(OnStadiumActiveEnter);
         other.GetComponentInParentAndExecuteIfExists<Doorway>(OnDoorwayEnter);
+        other.GetComponentInParentAndExecuteIfExists<Pusher>(OnPusherEnter);
+    }
+
+    private void OnPusherEnter(Pusher pusher)
+    {
+        Vector3 force = pusher.GetPushForce(this);
+        _move.Push(force);
     }
 
     void OnTriggerExit(Collider other)

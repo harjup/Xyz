@@ -20,6 +20,7 @@ public class Move : MonoBehaviour
         Run, 
         Dance,
         Knockout,
+        Bumped,
         LeavingArena
     }
 
@@ -30,6 +31,8 @@ public class Move : MonoBehaviour
     public float Friction = 40f;
     public float MaxSpeed = 20f;
     public float SpeedLostFromGrapple = 2f;
+    public float inputMultiplier = 1f;
+
 
 	void Start()
 	{
@@ -77,9 +80,8 @@ public class Move : MonoBehaviour
         var playerForce = inputVector * acceleration * Time.smoothDeltaTime;
         var currentVelocity = _rigidbody.velocity.SetY(0);
 
-        currentVelocity = ApplyFriction(currentVelocity, Friction, Time.smoothDeltaTime);
-        currentVelocity = ApplyInputForce(currentVelocity, playerForce);
-        currentVelocity = ApplySpeedCap(currentVelocity, maxSpeed);
+        currentVelocity = ApplyFriction(currentVelocity, Friction, maxSpeed, Time.smoothDeltaTime);
+        currentVelocity = ApplyInputForce(currentVelocity, playerForce, maxSpeed);
 
         RotatePlayer(transform, currentVelocity);
 
@@ -117,21 +119,52 @@ public class Move : MonoBehaviour
         _rigidbody.velocity += difference * 2f;
     }
 
-    private Vector3 ApplyFriction(Vector3 vector, float friction, float deltaTime)
+    private Vector3 ApplyFriction(Vector3 velocity, float friction, float maxSpeed, float deltaTime)
     {
-        return vector - vector.normalized * (friction * deltaTime);
+        if (velocity.magnitude > maxSpeed)
+        {
+            friction *= 2f;
+        }
+
+        return velocity - velocity.normalized * (friction * deltaTime);
     }
 
-    public Vector3 ApplyInputForce(Vector3 velocity, Vector3 force)
-    {  
-        return velocity + force;    
+    public Vector3 ApplyInputForce(Vector3 velocity, Vector3 force, float maxSpeed)
+    {
+        var newVelocity = velocity + force;
+
+        if (velocity.magnitude > maxSpeed)
+        {
+            force = force / 8f;
+
+            //TODO: You can steer or slow down, but not speed up
+            //TODO: Also remember to renable the stage trigger
+            // We need to eliminate all force in the direction of velocity when applying our own force
+
+            /*var normal = velocity.normalized;
+            var v1 = Vector3.Dot(normal, force);
+            var v2 = force - (normal * v1);
+
+            Debug.DrawRay(transform.position, velocity, Color.magenta, 3f);
+            Debug.DrawRay(transform.position, force, Color.grey, 3f);
+            Debug.DrawRay(transform.position, v2, Color.cyan, 3f);
+
+            return velocity + v2;*/
+
+            return velocity + force;
+        }
+
+        
+        return ApplySpeedCap(newVelocity, maxSpeed);
+        // If velocity + force <= maxSpeed return it
+        // If velocity < maxSpeed && velocity
     }
 
     public Vector3 ApplySpeedCap(Vector3 velocity, float maxSpeed)
     {
         if (velocity.magnitude > maxSpeed)
         {
-            return velocity.normalized * maxSpeed;
+            return velocity.normalized * (maxSpeed);
         }
         
         return velocity;
@@ -187,5 +220,24 @@ public class Move : MonoBehaviour
     public bool IsDancing()
     {
         return _state == State.Dance;
+    }
+
+    public void Push(Vector3 force)
+    {
+        // Reduce acceleration effect for .25 seconds
+        // Set velocity to push force
+        if (_pushRoutine != null)
+        {
+            StopCoroutine(_pushRoutine);
+        }
+        _pushRoutine = PushRoutine(force);
+        StartCoroutine(_pushRoutine);
+    }
+
+    private IEnumerator _pushRoutine;
+    IEnumerator PushRoutine(Vector3 force)
+    {
+        _rigidbody.velocity = force;
+        yield return null;
     }
 }
