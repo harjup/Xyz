@@ -32,7 +32,7 @@ public class MessageDisplay : MonoBehaviour
             .Sequence()
             .Append(transform.DOLocalMoveY(-120f, .5f))
             .AppendInterval(2.5f)
-            .Append(transform.DOLocalMoveY(-380f, .5f))
+            .Append(transform.DOLocalMoveY(-600f, .5f))
             .Play();
     }
 

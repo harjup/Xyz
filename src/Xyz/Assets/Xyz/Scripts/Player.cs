@@ -108,6 +108,7 @@ public class Player : MonoBehaviour
 
     public IEnumerator Failure()
     {
+        _speechBubbleDisplay.HideWaggleGraphic();
         _move.Knockout();
         SoundManager.Instance.PlayLossTrack();
         yield return new WaitForSeconds(5.5f);
@@ -123,7 +124,11 @@ public class Player : MonoBehaviour
 
     public void AddChaser(Chaser chaser)
     {
-        _speechBubbleDisplay.DisplayWaggleGraphic();
+        if (!_move.IsKnockedOut())
+        {
+            _speechBubbleDisplay.DisplayWaggleGraphic();
+        }
+
         _chaserContainer.AddChaser(chaser);
     }
 
