@@ -13,8 +13,20 @@ public class Pusher : MonoBehaviour
         _player = FindObjectOfType<Player>();
 
         Vector3 location = PushCoordinator.Instance.GetPushingSpot();
-        transform.DOMove(location, 20f).SetSpeedBased().SetEase(Ease.Linear);
+        StartCoroutine(MoveToPushingSpot(location));
     }
+
+    public IEnumerator MoveToPushingSpot(Vector3 location)
+    {
+        while (true)
+        {
+            yield return transform.DOMove(location, 20f).SetSpeedBased().SetEase(Ease.Linear).WaitForCompletion();
+            yield return new WaitForSeconds(Random.Range(.5f, 3f));
+
+            location = PushCoordinator.Instance.GetPushingSpot();
+        }
+    }
+
 
     public void Update()
     {

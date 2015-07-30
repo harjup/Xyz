@@ -28,7 +28,7 @@ public class PushCoordinator : Singleton<PushCoordinator>
         lock (_pushingSpots)
         {
             var value = _pushingSpots.GetRandom();
-            _pushingSpots.Remove(value);
+            //_pushingSpots.Remove(value);
             return value.transform.position;
         }
     }
