@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -146,6 +147,7 @@ public class MainSessionManager : Singleton<MainSessionManager>
 
     public void Failure()
     {
+        _timer.StopTimer();
         MainCanvasManager.Instance.FailFailureDisplay();
     }
 
@@ -168,5 +170,16 @@ public class MainSessionManager : Singleton<MainSessionManager>
     public void SetPushersPerWave(int amount)
     {
         _pushersPerWave = amount;
+    }
+
+    public IEnumerator LevelComplete()
+    {
+        _timer.StopTimer();
+        yield return new WaitForSeconds(3f);
+        MainCanvasManager.Instance.ShowWinDisplay();
+        yield return new WaitForSeconds(2f);
+        MainCanvasManager.Instance.HideAll();
+        yield return new WaitForSeconds(1.5f);
+        DifficultyManager.Instance.LevelComplete();
     }
 }

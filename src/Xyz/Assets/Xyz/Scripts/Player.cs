@@ -34,10 +34,9 @@ public class Player : MonoBehaviour
         if (grabbedChaserCount > 0)
         {
             _stamina -= Time.smoothDeltaTime;
-            if (_stamina < 0f)
+            if (_stamina < 0f && !_move.IsKnockedOut())
             {
-                _mainSessionManager.Failure();
-                _move.Knockout();
+                StartCoroutine(Failure());
             }
         }
         else
@@ -100,16 +99,21 @@ public class Player : MonoBehaviour
 
     public void OnDoorwayEnter(Doorway doorway)
     {
-        StartCoroutine(OnDoorwayEnterCoroutine(doorway));
-    }
-
-    private IEnumerator OnDoorwayEnterCoroutine(Doorway doorway)
-    {
         var enterTarget = doorway.EnterTarget;
         _move.LeaveArena(enterTarget.transform.position);
-        yield return new WaitForSeconds(1f);
-        DifficultyManager.Instance.LevelComplete();
+        SoundManager.Instance.PlayWinTrack();
+
+        StartCoroutine(MainSessionManager.Instance.LevelComplete());
     }
+
+    public IEnumerator Failure()
+    {
+        _move.Knockout();
+        SoundManager.Instance.PlayLossTrack();
+        yield return new WaitForSeconds(5.5f);
+        _mainSessionManager.Failure();
+    }
+
 
     public void OnBeaconExit(Beacon beacon)
     {

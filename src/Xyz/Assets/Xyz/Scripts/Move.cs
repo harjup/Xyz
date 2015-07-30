@@ -243,6 +243,11 @@ public class Move : MonoBehaviour
         return _state == State.Dance;
     }
 
+    public bool IsKnockedOut()
+    {
+        return _state == State.Knockout;
+    }
+
     public void Push(Vector3 force)
     {
         // Reduce acceleration effect for .25 seconds
