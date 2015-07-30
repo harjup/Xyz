@@ -3,7 +3,8 @@
     public enum Type
     {
         Unknown,
-        AddChasers
+        AddChasers,
+        AddPushers
     }
 
     public int Time { get; private set; }

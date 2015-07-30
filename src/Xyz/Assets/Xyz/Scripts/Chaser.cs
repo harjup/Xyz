@@ -205,7 +205,7 @@ namespace Assets.Xyz.Scripts
 
             _state = State.Grabbed;
             _player.AddChaser(this);
-            _player.PushPlayer(_rigidbody.velocity);
+            _player.PushPlayer(_rigidbody.velocity, 60);
 
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.constraints = RigidbodyConstraints.FreezeAll;

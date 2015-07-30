@@ -22,9 +22,11 @@ public class MainSessionManager : Singleton<MainSessionManager>
     List<DifficultyEvent> _difficultIncreaseTimes = new List<DifficultyEvent>
     {
         new DifficultyEvent(10, "Security has arrived!", DifficultyEvent.Type.AddChasers),
+        new DifficultyEvent(10, "", DifficultyEvent.Type.AddPushers),
         new DifficultyEvent(30, "Security has increased.", DifficultyEvent.Type.AddChasers),
+        new DifficultyEvent(30, "", DifficultyEvent.Type.AddPushers),
         new DifficultyEvent(60, "Security has increased again.", DifficultyEvent.Type.AddChasers),
-        new DifficultyEvent(90, "We have reached max security!", DifficultyEvent.Type.AddChasers)
+        new DifficultyEvent(90, "We have reached max security!", DifficultyEvent.Type.AddChasers),
     };
 
     private MessageManager _messageManager;
@@ -36,6 +38,7 @@ public class MainSessionManager : Singleton<MainSessionManager>
 
     private int _beaconsRequired = 5;
     private int _chasersPerWave = 2;
+    private int _pushersPerWave = 0;
     private int beaconCount;
 
     public void Start()
@@ -68,7 +71,8 @@ public class MainSessionManager : Singleton<MainSessionManager>
 
         var chaserSpawnEvent = _difficultIncreaseTimes
             .Where(d => !d.Fired)
-            .Where(d => d.EventType == DifficultyEvent.Type.AddChasers)
+            .Where(d => d.EventType == DifficultyEvent.Type.AddChasers 
+                || d.EventType == DifficultyEvent.Type.AddPushers)
             .FirstOrDefault(d => d.Time < _timer.GetSeconds());
 
         if (chaserSpawnEvent != null)
@@ -85,6 +89,11 @@ public class MainSessionManager : Singleton<MainSessionManager>
         {
             ChaserSpawner.Instance.SpawnChasers(_chasersPerWave);
             _messageManager.ShowMessage(difficultyEvent.Message);
+        }
+
+        if (difficultyEvent.EventType == DifficultyEvent.Type.AddPushers)
+        {
+            ChaserSpawner.Instance.SpawnPushers(_pushersPerWave);
         }
     }
 
@@ -145,12 +154,6 @@ public class MainSessionManager : Singleton<MainSessionManager>
         return _newBeaconsNeeded;
     }
 
-    public void SetDifficulty(int clearedLevels)
-    {
-        _beaconsRequired = 5 + (clearedLevels);
-        _chasersPerWave = 2 + clearedLevels;
-    }
-
     public void SetRequiredBeacons(int amount)
     {
         _beaconsRequired = amount;
@@ -162,4 +165,8 @@ public class MainSessionManager : Singleton<MainSessionManager>
         _chasersPerWave = amount;
     }
 
+    public void SetPushersPerWave(int amount)
+    {
+        _pushersPerWave = amount;
+    }
 }

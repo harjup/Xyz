@@ -73,6 +73,7 @@ public class Player : MonoBehaviour
     private void OnPusherEnter(Pusher pusher)
     {
         Vector3 force = pusher.GetPushForce(this);
+        pusher.PunchTowards(transform.position);
         _move.Push(force);
     }
 
@@ -138,9 +139,9 @@ public class Player : MonoBehaviour
         return _chaserContainer.GetChasers();
     }
 
-    public void PushPlayer(Vector3 velocity)
+    public void PushPlayer(Vector3 velocity, int max)
     {
-        _move.AddVelocity(velocity);
+        _move.AddVelocity(velocity, max);
         _move.ShakeCamera();
     }
 

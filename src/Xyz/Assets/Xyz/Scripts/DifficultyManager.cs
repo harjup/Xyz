@@ -31,6 +31,7 @@ public class DifficultyManager : Singleton<DifficultyManager>
         {
             mainSessionManager.SetRequiredBeacons(GetRequiredBeacons());
             mainSessionManager.SetChasersPerWave(GetChasersPerWave());
+            mainSessionManager.SetPushersPerWave(GetPushersPerWave());
         }
     }
 
@@ -42,6 +43,17 @@ public class DifficultyManager : Singleton<DifficultyManager>
     public int GetChasersPerWave()
     {
         return 3 + (int)_clearedLevels / 2;
+    }
+
+    public int GetPushersPerWave()
+    {
+        var value = _clearedLevels;
+        if (value > 5)
+        {
+            value = 5;
+        }
+
+        return value;
     }
 
     public int GetAudienceMemberCount()

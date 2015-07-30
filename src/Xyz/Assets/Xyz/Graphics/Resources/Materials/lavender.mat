@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Box001Mat
+  m_Name: lavender
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -135,4 +135,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .747404814, g: .79411763, b: .788318813, a: 1}
+        second: {r: .750416279, g: .532115042, b: .977941155, a: 1}

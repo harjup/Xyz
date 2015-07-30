@@ -125,10 +125,15 @@ public class Move : MonoBehaviour
             .Play();
     }
 
-    public void AddVelocity(Vector3 velocity)
+    public void AddVelocity(Vector3 velocity, int maximum)
     {
         var difference = _rigidbody.velocity - velocity;
-        _rigidbody.velocity += difference * 2f;
+        _rigidbody.velocity += difference;
+        if (_rigidbody.velocity.magnitude > maximum)
+        {
+            _rigidbody.velocity = _rigidbody.velocity.normalized * maximum;
+        }
+
     }
 
     private Vector3 ApplyFriction(Vector3 velocity, float friction, float maxSpeed, float deltaTime)

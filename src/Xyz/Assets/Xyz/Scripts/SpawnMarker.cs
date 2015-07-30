@@ -8,7 +8,8 @@ public class SpawnMarker : MonoBehaviour {
         Unknown,
         Player,
         Chaser,
-        Beacon
+        Beacon,
+        Pusher
     }
 
     public Type SpawnType;

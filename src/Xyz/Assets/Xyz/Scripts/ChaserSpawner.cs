@@ -10,10 +10,12 @@ public class ChaserSpawner : Singleton<ChaserSpawner>
 {
     private List<SpawnMarker> _chaserSpawns;
     private GameObject _chaserPrefab;
+    private GameObject _pusherPrefab;
 
     public void Start()
     {
         _chaserPrefab = Resources.Load<GameObject>("Prefabs/Chaser");
+        _pusherPrefab = Resources.Load<GameObject>("Prefabs/Chaser-Bumper");
 
         _chaserSpawns = 
             FindObjectsOfType<SpawnMarker>()
@@ -26,22 +28,30 @@ public class ChaserSpawner : Singleton<ChaserSpawner>
         for (int i = 0; i < amount; i++)
         {
             var delay = Random.Range(.5f, 1f);
-            StartCoroutine(ExecuteAfterDelay(delay, SpawnChaser));
+            StartCoroutine(ExecuteAfterDelay(delay, SpawnChaser, _chaserPrefab));
         }
     }
 
-    private IEnumerator ExecuteAfterDelay(float time, Action action)
+    public void SpawnPushers(int amount = 0)
     {
-        yield return new WaitForSeconds(time);
-        action();
+        for (int i = 0; i < amount; i++)
+        {
+            var delay = Random.Range(.5f, 1f);
+            StartCoroutine(ExecuteAfterDelay(delay, SpawnChaser, _pusherPrefab));
+        }
     }
 
-    private void SpawnChaser()
+    private IEnumerator ExecuteAfterDelay(float time, Action<GameObject> action, GameObject prefab)
+    {
+        yield return new WaitForSeconds(time);
+        action(prefab);
+    }
+
+    private void SpawnChaser(GameObject prefab)
     {
         var index = Random.Range(0, _chaserSpawns.Count);
         var spawn = _chaserSpawns[index];
 
-        Instantiate(_chaserPrefab, spawn.transform.position, Quaternion.identity);
+        Instantiate(prefab, spawn.transform.position, Quaternion.identity);
     }
-
 }
