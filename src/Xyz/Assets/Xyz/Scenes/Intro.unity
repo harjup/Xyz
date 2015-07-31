@@ -406,6 +406,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 22415554, guid: 4c0d414d5b38f5544be5b29b9add73ef, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493876, guid: 4c0d414d5b38f5544be5b29b9add73ef, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493876, guid: 4c0d414d5b38f5544be5b29b9add73ef, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -41.2000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493876, guid: 4c0d414d5b38f5544be5b29b9add73ef, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 70.4000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 11421092, guid: 4c0d414d5b38f5544be5b29b9add73ef, type: 2}
+      propertyPath: m_Color.a
+      value: .621999979
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c0d414d5b38f5544be5b29b9add73ef, type: 2}
   m_IsPrefabParent: 0

@@ -15,6 +15,8 @@ public class Move : MonoBehaviour
     private InputManager _inputManger;
     private PlayerMesh _mesh;
 
+    private Animator _animator;
+
     // This is here so we can trade a push the the player's input for the current frame
     // I am paranoid about async problems if we're assigning rigidbody velocity in multiple spots
     private Vector3? _outstandingPush;
@@ -51,6 +53,8 @@ public class Move : MonoBehaviour
 
 	    _state = State.Run;
 	    _outstandingPush = null;
+
+        _animator = gameObject.GetComponentInChildren<Animator>();
 	}
 	
 	void Update()
@@ -99,13 +103,21 @@ public class Move : MonoBehaviour
 
         
 
-        if (currentVelocity.sqrMagnitude > 1f || grabCount > 0 || _player.IsPreGame())
+        if (currentVelocity.sqrMagnitude > 1f || grabCount > 0)
         {
             Run();
         }
         else
         {
-            Dance();
+
+            if (_player.IsPreGame())
+            {
+                Idle();
+            }
+            else
+            {
+                Dance();
+            }
         }
     }
 
@@ -154,8 +166,6 @@ public class Move : MonoBehaviour
         {
             force = force / 8f;
 
-            //TODO: You can steer or slow down, but not speed up
-            //TODO: Also remember to renable the stage trigger
             // We need to eliminate all force in the direction of velocity when applying our own force
 
             var normal = velocity.normalized;
@@ -204,23 +214,34 @@ public class Move : MonoBehaviour
     public void Run()
     {
         _state = State.Run;
+        // TODO: _animator.Play("Run");
         _mesh.StopDancing();
         // mess with animations
     }
 
-    private Tweener _danceTweener;
     public void Dance()
     {
         if (_state != State.Dance)
         {
+            // TODO: _animator.Play("Dance");
+
             _state = State.Dance;
             // play animations
             _mesh.DanceTween();
         }
     }
 
+    public void Idle()
+    {
+        _state = State.Run;
+        // TODO: _animator.Play("Idle");
+        _mesh.StopDancing();
+        // mess with animations
+    }
+
     public void Knockout()
     {
+        // TODO: _animator.Play("Knockout");
         _rigidbody.velocity = Vector3.zero;
         _state = State.Knockout;
         _rigidbody.DORotate(new Vector3(0, 180, 90), .5f, RotateMode.Fast);

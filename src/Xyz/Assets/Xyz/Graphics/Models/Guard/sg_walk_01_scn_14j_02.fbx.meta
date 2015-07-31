@@ -614,6 +614,7 @@ ModelImporter:
     7400002: Dive
     7400004: Shake
     7400006: FallDown
+    7400008: Idle
     9500000: //RootNode
     13700000: Security_Guard:Security_Guard_geo
   materials:
@@ -2531,6 +2532,636 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 72
       lastFrame: 92
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Security_Guard:Biped:Biped
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LeftRoll_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LeftRoll_NeutralPose/Security_Guard:Biped:LeftRoll
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LFootUpV1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1/Security_Guard:Biped:LFootGuide2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1/Security_Guard:Biped:LFootGuide2/Security_Guard:Biped:LFootGuide3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1/Security_Guard:Biped:LFootGuide2/Security_Guard:Biped:LFootGuide3/Security_Guard:Biped:LFootGuide4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1/Security_Guard:Biped:LFootGuide2/Security_Guard:Biped:LFootGuide3/Security_Guard:Biped:LFootGuide4/Security_Guard:Biped:LFootBind1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1/Security_Guard:Biped:LFootGuide2/Security_Guard:Biped:LFootGuide3/Security_Guard:Biped:LFootGuide4/Security_Guard:Biped:LFootBind1/Security_Guard:Biped:LToeOffset1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1/Security_Guard:Biped:LFootGuide2/Security_Guard:Biped:LFootGuide3/Security_Guard:Biped:LFootGuide4/Security_Guard:Biped:LFootBind1/Security_Guard:Biped:LToeOffset1/Security_Guard:Biped:LFootBind2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1/Security_Guard:Biped:LFootGuide2/Security_Guard:Biped:LFootGuide3/Security_Guard:Biped:LFootGuide4/Security_Guard:Biped:LFootBind1/Security_Guard:Biped:LToeOffset1/Security_Guard:Biped:LFootBind2/Security_Guard:Biped:LToeOffset2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1/Security_Guard:Biped:LFootGuide2/Security_Guard:Biped:LFootGuide3/Security_Guard:Biped:LFootGuide4/Security_Guard:Biped:LFootBind1/Security_Guard:Biped:LToeOffset1/Security_Guard:Biped:LFootBind2/Security_Guard:Biped:LToeOffset2/Security_Guard:Biped:LFootBind3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1/Security_Guard:Biped:LFootGuide2/Security_Guard:Biped:LFootGuide3/Security_Guard:Biped:LFootGuide4/Security_Guard:Biped:LFootBind1/Security_Guard:Biped:LToeOffset1/Security_Guard:Biped:LFootBind2/Security_Guard:Biped:LToeOffset2/Security_Guard:Biped:LFootUpV3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotBase/Security_Guard:Biped:LFootGuide1/Security_Guard:Biped:LFootGuide2/Security_Guard:Biped:LFootGuide3/Security_Guard:Biped:LFootGuide4/Security_Guard:Biped:LFootBind1/Security_Guard:Biped:LToeOffset1/Security_Guard:Biped:LFootUpV2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotLeft
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPivotRight
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:LeftFoot_NeutralPose/Security_Guard:Biped:LeftFoot/Security_Guard:Biped:LeftTip_NeutralPose/Security_Guard:Biped:LeftTip/Security_Guard:Biped:LPlacePivot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RFootUpV1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RightRoll_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RightRoll_NeutralPose/Security_Guard:Biped:RightRoll
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1/Security_Guard:Biped:RFootGuide2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1/Security_Guard:Biped:RFootGuide2/Security_Guard:Biped:RFootGuide3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1/Security_Guard:Biped:RFootGuide2/Security_Guard:Biped:RFootGuide3/Security_Guard:Biped:RFootGuide4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1/Security_Guard:Biped:RFootGuide2/Security_Guard:Biped:RFootGuide3/Security_Guard:Biped:RFootGuide4/Security_Guard:Biped:RFootBind1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1/Security_Guard:Biped:RFootGuide2/Security_Guard:Biped:RFootGuide3/Security_Guard:Biped:RFootGuide4/Security_Guard:Biped:RFootBind1/Security_Guard:Biped:RToeOffset1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1/Security_Guard:Biped:RFootGuide2/Security_Guard:Biped:RFootGuide3/Security_Guard:Biped:RFootGuide4/Security_Guard:Biped:RFootBind1/Security_Guard:Biped:RToeOffset1/Security_Guard:Biped:RFootBind2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1/Security_Guard:Biped:RFootGuide2/Security_Guard:Biped:RFootGuide3/Security_Guard:Biped:RFootGuide4/Security_Guard:Biped:RFootBind1/Security_Guard:Biped:RToeOffset1/Security_Guard:Biped:RFootBind2/Security_Guard:Biped:RToeOffset2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1/Security_Guard:Biped:RFootGuide2/Security_Guard:Biped:RFootGuide3/Security_Guard:Biped:RFootGuide4/Security_Guard:Biped:RFootBind1/Security_Guard:Biped:RToeOffset1/Security_Guard:Biped:RFootBind2/Security_Guard:Biped:RToeOffset2/Security_Guard:Biped:RFootBind3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1/Security_Guard:Biped:RFootGuide2/Security_Guard:Biped:RFootGuide3/Security_Guard:Biped:RFootGuide4/Security_Guard:Biped:RFootBind1/Security_Guard:Biped:RToeOffset1/Security_Guard:Biped:RFootBind2/Security_Guard:Biped:RToeOffset2/Security_Guard:Biped:RFootUpV3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotBase/Security_Guard:Biped:RFootGuide1/Security_Guard:Biped:RFootGuide2/Security_Guard:Biped:RFootGuide3/Security_Guard:Biped:RFootGuide4/Security_Guard:Biped:RFootBind1/Security_Guard:Biped:RToeOffset1/Security_Guard:Biped:RFootUpV2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotLeft
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPivotRight
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:RightFoot_NeutralPose/Security_Guard:Biped:RightFoot/Security_Guard:Biped:RightTip_NeutralPose/Security_Guard:Biped:RightTip/Security_Guard:Biped:RPlacePivot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Chest_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Chest_NeutralPose/Security_Guard:Biped:Chest
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Chest_NeutralPose/Security_Guard:Biped:Chest/Security_Guard:Biped:ChestDepth
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Chest_NeutralPose/Security_Guard:Biped:Chest/Security_Guard:Biped:SpineEnd
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipDepth
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:HeadRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:HeadRoot/Security_Guard:Biped:HeadEff
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:HeadRoot/Security_Guard:Biped:Neck
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:HeadRoot/Security_Guard:Biped:Neck/Security_Guard:Biped:Head
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulder
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LHand_grab
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LIndexRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LIndexRoot/Security_Guard:Biped:LIndex1_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LIndexRoot/Security_Guard:Biped:LIndex1_NeutralPose/Security_Guard:Biped:LIndex1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LIndexRoot/Security_Guard:Biped:LIndex1_NeutralPose/Security_Guard:Biped:LIndex1/Security_Guard:Biped:LIndex2_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LIndexRoot/Security_Guard:Biped:LIndex1_NeutralPose/Security_Guard:Biped:LIndex1/Security_Guard:Biped:LIndex2_NeutralPose/Security_Guard:Biped:LIndex2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LIndexRoot/Security_Guard:Biped:LIndex1_NeutralPose/Security_Guard:Biped:LIndex1/Security_Guard:Biped:LIndex2_NeutralPose/Security_Guard:Biped:LIndex2/Security_Guard:Biped:LIndex3_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LIndexRoot/Security_Guard:Biped:LIndex1_NeutralPose/Security_Guard:Biped:LIndex1/Security_Guard:Biped:LIndex2_NeutralPose/Security_Guard:Biped:LIndex2/Security_Guard:Biped:LIndex3_NeutralPose/Security_Guard:Biped:LIndex3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LIndexRoot/Security_Guard:Biped:LIndexEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LMiddleRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LMiddleRoot/Security_Guard:Biped:LMiddle1_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LMiddleRoot/Security_Guard:Biped:LMiddle1_NeutralPose/Security_Guard:Biped:LMiddle1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LMiddleRoot/Security_Guard:Biped:LMiddle1_NeutralPose/Security_Guard:Biped:LMiddle1/Security_Guard:Biped:LMiddle2_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LMiddleRoot/Security_Guard:Biped:LMiddle1_NeutralPose/Security_Guard:Biped:LMiddle1/Security_Guard:Biped:LMiddle2_NeutralPose/Security_Guard:Biped:LMiddle2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LMiddleRoot/Security_Guard:Biped:LMiddle1_NeutralPose/Security_Guard:Biped:LMiddle1/Security_Guard:Biped:LMiddle2_NeutralPose/Security_Guard:Biped:LMiddle2/Security_Guard:Biped:LMiddle3_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LMiddleRoot/Security_Guard:Biped:LMiddle1_NeutralPose/Security_Guard:Biped:LMiddle1/Security_Guard:Biped:LMiddle2_NeutralPose/Security_Guard:Biped:LMiddle2/Security_Guard:Biped:LMiddle3_NeutralPose/Security_Guard:Biped:LMiddle3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LMiddleRoot/Security_Guard:Biped:LMiddleEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LPinkyRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LPinkyRoot/Security_Guard:Biped:LPinky1_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LPinkyRoot/Security_Guard:Biped:LPinky1_NeutralPose/Security_Guard:Biped:LPinky1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LPinkyRoot/Security_Guard:Biped:LPinky1_NeutralPose/Security_Guard:Biped:LPinky1/Security_Guard:Biped:LPinky2_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LPinkyRoot/Security_Guard:Biped:LPinky1_NeutralPose/Security_Guard:Biped:LPinky1/Security_Guard:Biped:LPinky2_NeutralPose/Security_Guard:Biped:LPinky2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LPinkyRoot/Security_Guard:Biped:LPinky1_NeutralPose/Security_Guard:Biped:LPinky1/Security_Guard:Biped:LPinky2_NeutralPose/Security_Guard:Biped:LPinky2/Security_Guard:Biped:LPinky3_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LPinkyRoot/Security_Guard:Biped:LPinky1_NeutralPose/Security_Guard:Biped:LPinky1/Security_Guard:Biped:LPinky2_NeutralPose/Security_Guard:Biped:LPinky2/Security_Guard:Biped:LPinky3_NeutralPose/Security_Guard:Biped:LPinky3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LPinkyRoot/Security_Guard:Biped:LPinkyEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LRingRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LRingRoot/Security_Guard:Biped:LRing1_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LRingRoot/Security_Guard:Biped:LRing1_NeutralPose/Security_Guard:Biped:LRing1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LRingRoot/Security_Guard:Biped:LRing1_NeutralPose/Security_Guard:Biped:LRing1/Security_Guard:Biped:LRing2_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LRingRoot/Security_Guard:Biped:LRing1_NeutralPose/Security_Guard:Biped:LRing1/Security_Guard:Biped:LRing2_NeutralPose/Security_Guard:Biped:LRing2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LRingRoot/Security_Guard:Biped:LRing1_NeutralPose/Security_Guard:Biped:LRing1/Security_Guard:Biped:LRing2_NeutralPose/Security_Guard:Biped:LRing2/Security_Guard:Biped:LRing3_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LRingRoot/Security_Guard:Biped:LRing1_NeutralPose/Security_Guard:Biped:LRing1/Security_Guard:Biped:LRing2_NeutralPose/Security_Guard:Biped:LRing2/Security_Guard:Biped:LRing3_NeutralPose/Security_Guard:Biped:LRing3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LRingRoot/Security_Guard:Biped:LRingEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LThumbRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LThumbRoot/Security_Guard:Biped:LThumb1_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LThumbRoot/Security_Guard:Biped:LThumb1_NeutralPose/Security_Guard:Biped:LThumb1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LThumbRoot/Security_Guard:Biped:LThumb1_NeutralPose/Security_Guard:Biped:LThumb1/Security_Guard:Biped:LThumb2_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LThumbRoot/Security_Guard:Biped:LThumb1_NeutralPose/Security_Guard:Biped:LThumb1/Security_Guard:Biped:LThumb2_NeutralPose/Security_Guard:Biped:LThumb2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LThumbRoot/Security_Guard:Biped:LThumb1_NeutralPose/Security_Guard:Biped:LThumb1/Security_Guard:Biped:LThumb2_NeutralPose/Security_Guard:Biped:LThumb2/Security_Guard:Biped:LThumb3_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LThumbRoot/Security_Guard:Biped:LThumb1_NeutralPose/Security_Guard:Biped:LThumb1/Security_Guard:Biped:LThumb2_NeutralPose/Security_Guard:Biped:LThumb2/Security_Guard:Biped:LThumb3_NeutralPose/Security_Guard:Biped:LThumb3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHand/Security_Guard:Biped:LThumbRoot/Security_Guard:Biped:LThumbEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmEff/Security_Guard:Biped:LHandRoot/Security_Guard:Biped:LHandEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmUpV_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LArmUpV_NeutralPose/Security_Guard:Biped:LArmUpV
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LBicep
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:LShoulderRoot/Security_Guard:Biped:LShoulderEff/Security_Guard:Biped:LRoot/Security_Guard:Biped:LBicep/Security_Guard:Biped:LForearm
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulder
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RHand_grab
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RIndexRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RIndexRoot/Security_Guard:Biped:RIndex1_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RIndexRoot/Security_Guard:Biped:RIndex1_NeutralPose/Security_Guard:Biped:RIndex1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RIndexRoot/Security_Guard:Biped:RIndex1_NeutralPose/Security_Guard:Biped:RIndex1/Security_Guard:Biped:RIndex2_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RIndexRoot/Security_Guard:Biped:RIndex1_NeutralPose/Security_Guard:Biped:RIndex1/Security_Guard:Biped:RIndex2_NeutralPose/Security_Guard:Biped:RIndex2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RIndexRoot/Security_Guard:Biped:RIndex1_NeutralPose/Security_Guard:Biped:RIndex1/Security_Guard:Biped:RIndex2_NeutralPose/Security_Guard:Biped:RIndex2/Security_Guard:Biped:RIndex3_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RIndexRoot/Security_Guard:Biped:RIndex1_NeutralPose/Security_Guard:Biped:RIndex1/Security_Guard:Biped:RIndex2_NeutralPose/Security_Guard:Biped:RIndex2/Security_Guard:Biped:RIndex3_NeutralPose/Security_Guard:Biped:RIndex3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RIndexRoot/Security_Guard:Biped:RIndexEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RMiddleRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RMiddleRoot/Security_Guard:Biped:RMiddle1_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RMiddleRoot/Security_Guard:Biped:RMiddle1_NeutralPose/Security_Guard:Biped:RMiddle1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RMiddleRoot/Security_Guard:Biped:RMiddle1_NeutralPose/Security_Guard:Biped:RMiddle1/Security_Guard:Biped:RMiddle2_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RMiddleRoot/Security_Guard:Biped:RMiddle1_NeutralPose/Security_Guard:Biped:RMiddle1/Security_Guard:Biped:RMiddle2_NeutralPose/Security_Guard:Biped:RMiddle2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RMiddleRoot/Security_Guard:Biped:RMiddle1_NeutralPose/Security_Guard:Biped:RMiddle1/Security_Guard:Biped:RMiddle2_NeutralPose/Security_Guard:Biped:RMiddle2/Security_Guard:Biped:RMiddle3_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RMiddleRoot/Security_Guard:Biped:RMiddle1_NeutralPose/Security_Guard:Biped:RMiddle1/Security_Guard:Biped:RMiddle2_NeutralPose/Security_Guard:Biped:RMiddle2/Security_Guard:Biped:RMiddle3_NeutralPose/Security_Guard:Biped:RMiddle3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RMiddleRoot/Security_Guard:Biped:RMiddleEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RPinkyRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RPinkyRoot/Security_Guard:Biped:RPinky1_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RPinkyRoot/Security_Guard:Biped:RPinky1_NeutralPose/Security_Guard:Biped:RPinky1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RPinkyRoot/Security_Guard:Biped:RPinky1_NeutralPose/Security_Guard:Biped:RPinky1/Security_Guard:Biped:RPinky2_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RPinkyRoot/Security_Guard:Biped:RPinky1_NeutralPose/Security_Guard:Biped:RPinky1/Security_Guard:Biped:RPinky2_NeutralPose/Security_Guard:Biped:RPinky2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RPinkyRoot/Security_Guard:Biped:RPinky1_NeutralPose/Security_Guard:Biped:RPinky1/Security_Guard:Biped:RPinky2_NeutralPose/Security_Guard:Biped:RPinky2/Security_Guard:Biped:RPinky3_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RPinkyRoot/Security_Guard:Biped:RPinky1_NeutralPose/Security_Guard:Biped:RPinky1/Security_Guard:Biped:RPinky2_NeutralPose/Security_Guard:Biped:RPinky2/Security_Guard:Biped:RPinky3_NeutralPose/Security_Guard:Biped:RPinky3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RPinkyRoot/Security_Guard:Biped:RPinkyEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RRingRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RRingRoot/Security_Guard:Biped:RRing1_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RRingRoot/Security_Guard:Biped:RRing1_NeutralPose/Security_Guard:Biped:RRing1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RRingRoot/Security_Guard:Biped:RRing1_NeutralPose/Security_Guard:Biped:RRing1/Security_Guard:Biped:RRing2_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RRingRoot/Security_Guard:Biped:RRing1_NeutralPose/Security_Guard:Biped:RRing1/Security_Guard:Biped:RRing2_NeutralPose/Security_Guard:Biped:RRing2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RRingRoot/Security_Guard:Biped:RRing1_NeutralPose/Security_Guard:Biped:RRing1/Security_Guard:Biped:RRing2_NeutralPose/Security_Guard:Biped:RRing2/Security_Guard:Biped:RRing3_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RRingRoot/Security_Guard:Biped:RRing1_NeutralPose/Security_Guard:Biped:RRing1/Security_Guard:Biped:RRing2_NeutralPose/Security_Guard:Biped:RRing2/Security_Guard:Biped:RRing3_NeutralPose/Security_Guard:Biped:RRing3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RRingRoot/Security_Guard:Biped:RRingEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RThumbRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RThumbRoot/Security_Guard:Biped:RThumb1_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RThumbRoot/Security_Guard:Biped:RThumb1_NeutralPose/Security_Guard:Biped:RThumb1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RThumbRoot/Security_Guard:Biped:RThumb1_NeutralPose/Security_Guard:Biped:RThumb1/Security_Guard:Biped:RThumb2_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RThumbRoot/Security_Guard:Biped:RThumb1_NeutralPose/Security_Guard:Biped:RThumb1/Security_Guard:Biped:RThumb2_NeutralPose/Security_Guard:Biped:RThumb2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RThumbRoot/Security_Guard:Biped:RThumb1_NeutralPose/Security_Guard:Biped:RThumb1/Security_Guard:Biped:RThumb2_NeutralPose/Security_Guard:Biped:RThumb2/Security_Guard:Biped:RThumb3_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RThumbRoot/Security_Guard:Biped:RThumb1_NeutralPose/Security_Guard:Biped:RThumb1/Security_Guard:Biped:RThumb2_NeutralPose/Security_Guard:Biped:RThumb2/Security_Guard:Biped:RThumb3_NeutralPose/Security_Guard:Biped:RThumb3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHand/Security_Guard:Biped:RThumbRoot/Security_Guard:Biped:RThumbEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmEff/Security_Guard:Biped:RHandRoot/Security_Guard:Biped:RHandEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmUpV_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RArmUpV_NeutralPose/Security_Guard:Biped:RArmUpV
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RBicep
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:RShoulderRoot/Security_Guard:Biped:RShoulderEff/Security_Guard:Biped:RRoot/Security_Guard:Biped:RBicep/Security_Guard:Biped:RForearm
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:ChestBone/Security_Guard:Biped:Shadow_upVa3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2/Security_Guard:Biped:LlegEff
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2/Security_Guard:Biped:LlegEff/Security_Guard:Biped:LFootRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2/Security_Guard:Biped:LlegEff/Security_Guard:Biped:LFootRoot/Security_Guard:Biped:LFootBone1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2/Security_Guard:Biped:LlegEff/Security_Guard:Biped:LFootRoot/Security_Guard:Biped:LFootBone1/Security_Guard:Biped:LFootBone2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2/Security_Guard:Biped:LlegEff/Security_Guard:Biped:LFootRoot/Security_Guard:Biped:LFootBone1/Security_Guard:Biped:LFootBone2/Security_Guard:Biped:LFootBone3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2/Security_Guard:Biped:LlegEff/Security_Guard:Biped:LFootRoot/Security_Guard:Biped:LFootEff
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2/Security_Guard:Biped:LlegUpV_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2/Security_Guard:Biped:LlegUpV_NeutralPose/Security_Guard:Biped:LlegUpV
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2/Security_Guard:Biped:LThigh
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:LRoot2/Security_Guard:Biped:LThigh/Security_Guard:Biped:LShin
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2/Security_Guard:Biped:RlegEff
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2/Security_Guard:Biped:RlegEff/Security_Guard:Biped:RFootRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2/Security_Guard:Biped:RlegEff/Security_Guard:Biped:RFootRoot/Security_Guard:Biped:RFootBone1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2/Security_Guard:Biped:RlegEff/Security_Guard:Biped:RFootRoot/Security_Guard:Biped:RFootBone1/Security_Guard:Biped:RFootBone2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2/Security_Guard:Biped:RlegEff/Security_Guard:Biped:RFootRoot/Security_Guard:Biped:RFootBone1/Security_Guard:Biped:RFootBone2/Security_Guard:Biped:RFootBone3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2/Security_Guard:Biped:RlegEff/Security_Guard:Biped:RFootRoot/Security_Guard:Biped:RFootEff
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2/Security_Guard:Biped:RlegUpV_NeutralPose
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2/Security_Guard:Biped:RlegUpV_NeutralPose/Security_Guard:Biped:RlegUpV
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2/Security_Guard:Biped:RThigh
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:RRoot2/Security_Guard:Biped:RThigh/Security_Guard:Biped:RShin
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:shadowspinecurve
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:spinecurve
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:spinecurve/Security_Guard:Biped:SpineVertebra
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:spinecurve/Security_Guard:Biped:SpineVertebra/Security_Guard:Biped:Shadow_upVa
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:spinecurve/Security_Guard:Biped:SpineVertebra1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:spinecurve/Security_Guard:Biped:SpineVertebra1/Security_Guard:Biped:Shadow_upVa1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:spinecurve/Security_Guard:Biped:SpineVertebra2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:spinecurve/Security_Guard:Biped:SpineVertebra2/Security_Guard:Biped:Shadow_upVa2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:GlobalSRT/Security_Guard:Biped:UpperBody_NeutralPose/Security_Guard:Biped:UpperBody/Security_Guard:Biped:Hip/Security_Guard:Biped:HipPlate/Security_Guard:Biped:SpineStart
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:LRoot3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:LRoot3/Security_Guard:Biped:eff18
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:LRoot3/Security_Guard:Biped:eff18/Security_Guard:Biped:LFootRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:LRoot3/Security_Guard:Biped:eff18/Security_Guard:Biped:LFootRoot1/Security_Guard:Biped:eff20
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:LRoot3/Security_Guard:Biped:eff18/Security_Guard:Biped:LFootRoot1/Security_Guard:Biped:LFootBone4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:LRoot3/Security_Guard:Biped:eff18/Security_Guard:Biped:LFootRoot1/Security_Guard:Biped:LFootBone4/Security_Guard:Biped:LFootBone5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:LRoot3/Security_Guard:Biped:eff18/Security_Guard:Biped:LFootRoot1/Security_Guard:Biped:LFootBone4/Security_Guard:Biped:LFootBone5/Security_Guard:Biped:LFootBone6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:LRoot3/Security_Guard:Biped:LThigh1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:LRoot3/Security_Guard:Biped:LThigh1/Security_Guard:Biped:LShin1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:RRoot3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:RRoot3/Security_Guard:Biped:eff19
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:RRoot3/Security_Guard:Biped:eff19/Security_Guard:Biped:RFootRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:RRoot3/Security_Guard:Biped:eff19/Security_Guard:Biped:RFootRoot1/Security_Guard:Biped:eff21
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:RRoot3/Security_Guard:Biped:eff19/Security_Guard:Biped:RFootRoot1/Security_Guard:Biped:RFootBone4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:RRoot3/Security_Guard:Biped:eff19/Security_Guard:Biped:RFootRoot1/Security_Guard:Biped:RFootBone4/Security_Guard:Biped:RFootBone5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:RRoot3/Security_Guard:Biped:eff19/Security_Guard:Biped:RFootRoot1/Security_Guard:Biped:RFootBone4/Security_Guard:Biped:RFootBone5/Security_Guard:Biped:RFootBone6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:RRoot3/Security_Guard:Biped:RThigh1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:RRoot3/Security_Guard:Biped:RThigh1/Security_Guard:Biped:RShin1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:Chest1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:HeadRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:HeadRoot1/Security_Guard:Biped:eff3
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:HeadRoot1/Security_Guard:Biped:Neck1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:HeadRoot1/Security_Guard:Biped:Neck1/Security_Guard:Biped:Head1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LIndexRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LIndexRoot1/Security_Guard:Biped:eff8
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LIndexRoot1/Security_Guard:Biped:LIndex4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LIndexRoot1/Security_Guard:Biped:LIndex4/Security_Guard:Biped:LIndex5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LIndexRoot1/Security_Guard:Biped:LIndex4/Security_Guard:Biped:LIndex5/Security_Guard:Biped:LIndex6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LMiddleRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LMiddleRoot1/Security_Guard:Biped:eff7
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LMiddleRoot1/Security_Guard:Biped:LMiddle4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LMiddleRoot1/Security_Guard:Biped:LMiddle4/Security_Guard:Biped:LMiddle5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LMiddleRoot1/Security_Guard:Biped:LMiddle4/Security_Guard:Biped:LMiddle5/Security_Guard:Biped:LMiddle6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LPinkyRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LPinkyRoot1/Security_Guard:Biped:eff5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LPinkyRoot1/Security_Guard:Biped:LPinky4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LPinkyRoot1/Security_Guard:Biped:LPinky4/Security_Guard:Biped:LPinky5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LPinkyRoot1/Security_Guard:Biped:LPinky4/Security_Guard:Biped:LPinky5/Security_Guard:Biped:LPinky6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LRingRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LRingRoot1/Security_Guard:Biped:eff6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LRingRoot1/Security_Guard:Biped:LRing4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LRingRoot1/Security_Guard:Biped:LRing4/Security_Guard:Biped:LRing5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LRingRoot1/Security_Guard:Biped:LRing4/Security_Guard:Biped:LRing5/Security_Guard:Biped:LRing6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LThumbRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LThumbRoot1/Security_Guard:Biped:eff9
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LThumbRoot1/Security_Guard:Biped:LThumb4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LThumbRoot1/Security_Guard:Biped:LThumb4/Security_Guard:Biped:LThumb5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:eff4/Security_Guard:Biped:LThumbRoot1/Security_Guard:Biped:LThumb4/Security_Guard:Biped:LThumb5/Security_Guard:Biped:LThumb6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:eff17/Security_Guard:Biped:LHandRoot1/Security_Guard:Biped:LHand1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:LBicep1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:eff2/Security_Guard:Biped:LRoot1/Security_Guard:Biped:LBicep1/Security_Guard:Biped:LForearm1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:LShoulderRoot1/Security_Guard:Biped:LShoulder1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RIndexRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RIndexRoot1/Security_Guard:Biped:eff14
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RIndexRoot1/Security_Guard:Biped:RIndex4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RIndexRoot1/Security_Guard:Biped:RIndex4/Security_Guard:Biped:RIndex5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RIndexRoot1/Security_Guard:Biped:RIndex4/Security_Guard:Biped:RIndex5/Security_Guard:Biped:RIndex6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RMiddleRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RMiddleRoot1/Security_Guard:Biped:eff13
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RMiddleRoot1/Security_Guard:Biped:RMiddle4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RMiddleRoot1/Security_Guard:Biped:RMiddle4/Security_Guard:Biped:RMiddle5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RMiddleRoot1/Security_Guard:Biped:RMiddle4/Security_Guard:Biped:RMiddle5/Security_Guard:Biped:RMiddle6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RPinkyRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RPinkyRoot1/Security_Guard:Biped:eff11
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RPinkyRoot1/Security_Guard:Biped:RPinky4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RPinkyRoot1/Security_Guard:Biped:RPinky4/Security_Guard:Biped:RPinky5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RPinkyRoot1/Security_Guard:Biped:RPinky4/Security_Guard:Biped:RPinky5/Security_Guard:Biped:RPinky6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RRingRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RRingRoot1/Security_Guard:Biped:eff12
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RRingRoot1/Security_Guard:Biped:RRing4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RRingRoot1/Security_Guard:Biped:RRing4/Security_Guard:Biped:RRing5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RRingRoot1/Security_Guard:Biped:RRing4/Security_Guard:Biped:RRing5/Security_Guard:Biped:RRing6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RThumbRoot1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RThumbRoot1/Security_Guard:Biped:eff15
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RThumbRoot1/Security_Guard:Biped:RThumb4
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RThumbRoot1/Security_Guard:Biped:RThumb4/Security_Guard:Biped:RThumb5
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:eff10/Security_Guard:Biped:RThumbRoot1/Security_Guard:Biped:RThumb4/Security_Guard:Biped:RThumb5/Security_Guard:Biped:RThumb6
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:eff16/Security_Guard:Biped:RHandRoot1/Security_Guard:Biped:RHand1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:RBicep1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:eff1/Security_Guard:Biped:RRoot1/Security_Guard:Biped:RBicep1/Security_Guard:Biped:RForearm1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:eff/Security_Guard:Biped:ChestRoot/Security_Guard:Biped:ChestEffector/Security_Guard:Biped:RShoulderRoot1/Security_Guard:Biped:RShoulder1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:Spine1
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:Spine1/Security_Guard:Biped:Spine2
+        weight: 1
+      - path: Security_Guard:Biped:Biped/Security_Guard:Biped:Shadow_GlobalSRT/Security_Guard:Biped:UpperBody1/Security_Guard:Biped:SpineRoot/Security_Guard:Biped:Spine1/Security_Guard:Biped:Spine2/Security_Guard:Biped:Spine3
+        weight: 1
+      - path: Security_Guard:Security_Guard_geo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 4
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

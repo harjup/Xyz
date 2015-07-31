@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     private const float DancingMultiplier = 4f;
     private float _stamina;
 
+    private Animator _animator;
+
     public void Start()
     {
         _move = GetComponent<Move>();
