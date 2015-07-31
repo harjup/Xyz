@@ -39,6 +39,8 @@ public class Move : MonoBehaviour
     public float SpeedLostFromGrapple = 2f;
     public float inputMultiplier = 1f;
 
+    private bool _struggle = false;
+
 
 	void Start()
 	{
@@ -75,7 +77,9 @@ public class Move : MonoBehaviour
         var grabbedChasers = _player.GetGrabbedChasers();
         var grabCount = grabbedChasers.Count;
 
-        if (grabCount > 0)
+
+        _struggle = grabCount > 0;
+        if (_struggle)
         {
             acceleration = Acceleration/grabCount;
             maxSpeed = MaxSpeed - SpeedLostFromGrapple;
@@ -103,16 +107,19 @@ public class Move : MonoBehaviour
 
         
 
-        if (currentVelocity.sqrMagnitude > 1f || grabCount > 0)
+        if (currentVelocity.sqrMagnitude > 1f)
         {
             Run();
         }
         else
         {
-
             if (_player.IsPreGame())
             {
                 Idle();
+            }
+            else if (_struggle)
+            {
+                Struggle();
             }
             else
             {
@@ -214,37 +221,37 @@ public class Move : MonoBehaviour
     public void Run()
     {
         _state = State.Run;
-        // TODO: _animator.Play("Run");
-        _mesh.StopDancing();
-        // mess with animations
+        _animator.Play("Walk");
     }
 
     public void Dance()
     {
         if (_state != State.Dance)
         {
-            // TODO: _animator.Play("Dance");
-
+            _animator.Play("Dance");
             _state = State.Dance;
-            // play animations
-            _mesh.DanceTween();
         }
     }
 
     public void Idle()
     {
         _state = State.Run;
-        // TODO: _animator.Play("Idle");
-        _mesh.StopDancing();
-        // mess with animations
+        _animator.Play("Idle");
+    }
+
+    public void Struggle()
+    {
+        _state = State.Run;
+        _animator.Play("Struggle");
     }
 
     public void Knockout()
     {
-        // TODO: _animator.Play("Knockout");
+        _animator.Play("Fall");
         _rigidbody.velocity = Vector3.zero;
         _state = State.Knockout;
-        _rigidbody.DORotate(new Vector3(0, 180, 90), .5f, RotateMode.Fast);
+
+        //_rigidbody.DORotate(new Vector3(0, 180, 90), .5f, RotateMode.Fast);
     }
 
     public void LeaveArena(Vector3 target)

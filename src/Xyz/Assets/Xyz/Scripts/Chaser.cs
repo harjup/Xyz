@@ -165,7 +165,6 @@ namespace Assets.Xyz.Scripts
         private IEnumerator _fallRecoveryRoutine;
         public IEnumerator FallRecovery(Vector3 fallDirection)
         {
-            // TODO: Fall animation
             _animator.Play("FellDown");
             //_defaultMesh.SetActive(false);
             //_stunnedMesh.SetActive(true);
@@ -210,7 +209,15 @@ namespace Assets.Xyz.Scripts
         private Player _player;
         public void GrabPlayer(Player player)
         {
-            _animator.Play("Shake");
+            if (player.IsKnockedOut())
+            {
+                PlayerHasBeenKnockedOut();
+            }
+            else
+            {
+                _animator.Play("Shake");
+            }
+            
             _player = player;
 
             _state = State.Grabbed;
@@ -224,6 +231,12 @@ namespace Assets.Xyz.Scripts
 
             gameObject.SetLayerRecursively(_grabLayer);
             
+        }
+
+
+        public void PlayerHasBeenKnockedOut()
+        {
+            _animator.Play("FellDown");
         }
 
         void OnCollisionEnter(Collision collision)

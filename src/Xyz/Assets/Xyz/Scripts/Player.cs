@@ -16,8 +16,6 @@ public class Player : MonoBehaviour
     private const float DancingMultiplier = 4f;
     private float _stamina;
 
-    private Animator _animator;
-
     public void Start()
     {
         _move = GetComponent<Move>();
@@ -26,7 +24,7 @@ public class Player : MonoBehaviour
 
         _stamina = StaminaMax;
         _staminaCounter = StaminaCounter.Instance;
-        
+
         _speechBubbleDisplay = PlayerSpeechBubbleDisplay.Instance;
     }
 
@@ -119,6 +117,8 @@ public class Player : MonoBehaviour
 
     public IEnumerator Failure()
     {
+        _chaserContainer.GetChasers().ForEach(c => c.PlayerHasBeenKnockedOut());
+
         _speechBubbleDisplay.HideWaggleGraphic();
         _move.Knockout();
         SoundManager.Instance.PlayLossTrack();
@@ -178,5 +178,10 @@ public class Player : MonoBehaviour
     public void ResetAt(Vector3 position)
     {
         transform.position = position;
+    }
+
+    public bool IsKnockedOut()
+    {
+        return _move.IsKnockedOut();
     }
 }

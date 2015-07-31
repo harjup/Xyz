@@ -5,6 +5,6 @@ public class DetatchFromParentOnStart : MonoBehaviour
 {
     void Start()
     {
-        transform.parent = null;
+        transform.SetParent(null, false);
     }
 }
