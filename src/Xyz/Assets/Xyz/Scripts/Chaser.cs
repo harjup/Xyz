@@ -25,7 +25,8 @@ namespace Assets.Xyz.Scripts
         private int _stunnedLayer;
 
         private GameObject _defaultMesh;
-        private GameObject _stunnedMesh;
+        //private GameObject _stunnedMesh;
+        private Animator _animator;
 
         public enum State
         {
@@ -55,11 +56,13 @@ namespace Assets.Xyz.Scripts
 
             _cameraInput = Camera.main.GetComponent<CameraInput>();
 
+            _animator = GetComponentInChildren<Animator>();
+            _animator.Play("Walk");
             _defaultMesh = transform.FindChild("Mesh").gameObject;
-            _stunnedMesh = transform.FindChild("Mesh-Stunned").gameObject;
+            //_stunnedMesh = transform.FindChild("Mesh-Stunned").gameObject;
 
-            _defaultMesh.SetActive(true);
-            _stunnedMesh.SetActive(false);
+            //_defaultMesh.SetActive(true);
+            //_stunnedMesh.SetActive(false);
         }
 
         private IEnumerator _chargeInDirectionRoutine;
@@ -129,6 +132,7 @@ namespace Assets.Xyz.Scripts
         private const float MaxChargeSpeed = 30f;
         public IEnumerator ChargeInDirection(Vector3 targetDirection)
         {
+            _animator.Play("Dive");
             var inputVector = (targetDirection).normalized;
             var playerForce = (inputVector * Acceleration * 2f  * Time.smoothDeltaTime);
             var currentVelocity = _rigidbody.velocity.SetY(0);
@@ -150,9 +154,10 @@ namespace Assets.Xyz.Scripts
             yield return new WaitForSeconds(.5f);
 
             _chargeInDirectionRoutine = null;
-
+            
             if (_state != State.Grabbed)
             {
+                _animator.Play("Walk");
                 _state = State.Run;
             }
         }
@@ -160,8 +165,10 @@ namespace Assets.Xyz.Scripts
         private IEnumerator _fallRecoveryRoutine;
         public IEnumerator FallRecovery(Vector3 fallDirection)
         {
-            _defaultMesh.SetActive(false);
-            _stunnedMesh.SetActive(true);
+            // TODO: Fall animation
+            _animator.Play("FellDown");
+            //_defaultMesh.SetActive(false);
+            //_stunnedMesh.SetActive(true);
 
             _state = State.Fall;
            
@@ -189,8 +196,10 @@ namespace Assets.Xyz.Scripts
             _state = State.Run;
             gameObject.SetLayerRecursively(_defaultLayer);
 
-            _defaultMesh.SetActive(true);
-            _stunnedMesh.SetActive(false);
+            // TODO: Walk animation
+            _animator.Play("Walk");
+            //_defaultMesh.SetActive(true);
+            //_stunnedMesh.SetActive(false);
         }
 
         private Vector3 ApplyFriction(Vector3 vector, float friction, float deltaTime)
@@ -201,6 +210,7 @@ namespace Assets.Xyz.Scripts
         private Player _player;
         public void GrabPlayer(Player player)
         {
+            _animator.Play("Shake");
             _player = player;
 
             _state = State.Grabbed;
