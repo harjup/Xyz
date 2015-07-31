@@ -5,6 +5,8 @@ using DG.Tweening;
 public class DifficultyManager : Singleton<DifficultyManager>
 {
     private int _clearedLevels;
+
+    // Used for setting it to a higher level during testing. This should be a config value somewhere.
     public int ClearedLevelsInitialValue = 0;
 
     public void Start()

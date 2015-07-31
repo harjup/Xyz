@@ -140,10 +140,19 @@ public class MainSessionManager : Singleton<MainSessionManager>
             _state = State.Escape;
             _messageManager.ShowMessage("Get out of here!!!");
             _doorwayManager.EnableAllExits();
+
+            StartCoroutine(ShowheadForExitInstruction());
         } 
 
         return _newBeaconsNeeded;
     }
+
+    private IEnumerator ShowheadForExitInstruction()
+    {
+        yield return new WaitForSeconds(5f);
+        MainCanvasManager.Instance.ShowExitDisplay();
+    }
+
 
     public void Failure()
     {

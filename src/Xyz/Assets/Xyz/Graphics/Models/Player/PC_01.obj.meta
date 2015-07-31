@@ -7,11 +7,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Sphere001
+    100004: PC_01
     400000: //RootNode
     400002: Sphere001
+    400004: PC_01
     2300000: Sphere001
+    2300002: PC_01
     3300000: Sphere001
+    3300002: PC_01
     4300000: Sphere001
+    4300002: PC_01
   materials:
     importMaterials: 1
     materialName: 0

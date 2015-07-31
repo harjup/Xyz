@@ -51,7 +51,15 @@ public class Player : MonoBehaviour
             }
         }
 
-        _staminaCounter.SetImagePercent(_stamina / StaminaMax);
+        if (!_move.IsKnockedOut())
+        {
+            _staminaCounter.SetImagePercent(_stamina/StaminaMax);
+        }
+        else
+        {
+            _staminaCounter.DisableGraphic();
+        }
+        
 
         if (_currentBeacon != null)
         {
@@ -139,7 +147,6 @@ public class Player : MonoBehaviour
         if (_chaserContainer.GetChasers().Count == 0)
         {
             _speechBubbleDisplay.HideWaggleGraphic();
-            _speechBubbleDisplay.DisplayText(PlayerTaunts.GetRandomTaunt());
         }
     }
 

@@ -22,7 +22,7 @@ public class PlayerSpeechBubbleDisplay : Singleton<PlayerSpeechBubbleDisplay>
         _waggleGraphic = transform.FindChild("Waggle").gameObject;
 
         _speechBubble.SetActive(false);
-        _waggleGraphic.SetActive(false);
+        HideWaggleGraphic();
     }
 
     private IEnumerator _displayTextRoutine;
