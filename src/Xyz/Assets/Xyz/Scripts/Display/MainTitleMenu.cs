@@ -5,12 +5,14 @@ public class MainTitleMenu : MonoBehaviour
 {
     private GameObject _title;
     private GameObject _credit;
+    private GameObject _control;
 
     // Use this for initialization
     void Start()
     {
         _title = transform.FindChild("Title").gameObject;
         _credit = transform.FindChild("Credit").gameObject;
+        _control = transform.FindChild("Control").gameObject;
 
         ShowTitle();
     }
@@ -24,6 +26,10 @@ public class MainTitleMenu : MonoBehaviour
     {
         ShowCredits();
     }
+    public void OnControlsButtonClick()
+    {
+        ShowControl();
+    }
 
     public void OnBackButtonClick()
     {
@@ -34,11 +40,20 @@ public class MainTitleMenu : MonoBehaviour
     {
         _title.SetActive(true);
         _credit.SetActive(false);
+        _control.SetActive(false);
     }
 
     private void ShowCredits()
     {
         _title.SetActive(false);
         _credit.SetActive(true);
+        _control.SetActive(false);
+    }
+
+    private void ShowControl()
+    {
+        _control.SetActive(true);
+        _title.SetActive(false);
+        _credit.SetActive(false);
     }
 }
