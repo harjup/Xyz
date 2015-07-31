@@ -96,7 +96,8 @@ public class MainSessionManager : Singleton<MainSessionManager>
             {
                 ChaserSpawner.Instance.SpawnChasers(_chasersPerWave);
             }
-            
+
+            SoundManager.Instance.PlayWhistleEffect();
             _messageManager.ShowMessage(difficultyEvent.Message);
         }
 

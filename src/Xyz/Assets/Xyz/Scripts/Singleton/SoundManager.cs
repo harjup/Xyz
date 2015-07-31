@@ -14,6 +14,8 @@ public class SoundManager : Singleton<SoundManager>
     private AudioSource _grabbedEffectSource;
     private AudioSource _cameraDoneEffectSource;
     private AudioSource _cameraLoopEffectSource;
+
+    private AudioSource _whistleEffectSource;
     
 
 
@@ -30,6 +32,8 @@ public class SoundManager : Singleton<SoundManager>
         _cameraDoneEffectSource = transform.FindChild("Camera-Effect").GetComponent<AudioSource>();
 
         _cameraLoopEffectSource = transform.FindChild("Camera-Loop").GetComponent<AudioSource>();
+
+        _whistleEffectSource = transform.FindChild("Whistle-Effect").GetComponent<AudioSource>();
 
         _crowdSource.Play();
 
@@ -89,5 +93,10 @@ public class SoundManager : Singleton<SoundManager>
     public void StopCameraLoop()
     {
         _cameraLoopEffectSource.Stop();
+    }
+
+    public void PlayWhistleEffect()
+    {
+        _whistleEffectSource.Play();
     }
 }
