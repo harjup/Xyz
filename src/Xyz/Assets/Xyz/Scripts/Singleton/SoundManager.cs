@@ -8,7 +8,15 @@ public class SoundManager : Singleton<SoundManager>
     private AudioSource _crowdSource;
     private AudioSource _winSource;
     private AudioSource _lossSource;
+
+
+    private AudioSource _pushedEffectSource;
+    private AudioSource _grabbedEffectSource;
+    private AudioSource _cameraDoneEffectSource;
+    private AudioSource _cameraLoopEffectSource;
     
+
+
     void Start()
     {
         _musicSource = transform.FindChild("MainMusic").GetComponent<AudioSource>();
@@ -16,7 +24,15 @@ public class SoundManager : Singleton<SoundManager>
         _winSource = transform.FindChild("Win-Track").GetComponent<AudioSource>();
         _lossSource = transform.FindChild("Loss-Track").GetComponent<AudioSource>();
 
+
+        _pushedEffectSource = transform.FindChild("Pushed-Effect").GetComponent<AudioSource>();
+        _grabbedEffectSource = transform.FindChild("Grabbed-Effect").GetComponent<AudioSource>();
+        _cameraDoneEffectSource = transform.FindChild("Camera-Effect").GetComponent<AudioSource>();
+
+        _cameraLoopEffectSource = transform.FindChild("Camera-Loop").GetComponent<AudioSource>();
+
         _crowdSource.Play();
+
     }
 
     public void PlayMainTheme()
@@ -46,4 +62,32 @@ public class SoundManager : Singleton<SoundManager>
         }
     }
 
+
+    public void PlayGrabbedEffect()
+    {
+        _grabbedEffectSource.Play();
+    }
+
+    public void PlayPushedEffect()
+    {
+        _pushedEffectSource.Play();
+    }
+
+    public void PlayCameraDoneEffect()
+    {
+        _cameraDoneEffectSource.Play();
+    }
+
+    public void PlayCameraLoop()
+    {
+        if (!_cameraLoopEffectSource.isPlaying)
+        {
+            _cameraLoopEffectSource.Play();
+        }
+    }
+
+    public void StopCameraLoop()
+    {
+        _cameraLoopEffectSource.Stop();
+    }
 }

@@ -210,6 +210,8 @@ namespace Assets.Xyz.Scripts
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.constraints = RigidbodyConstraints.FreezeAll;
 
+            SoundManager.Instance.PlayGrabbedEffect();
+
             gameObject.SetLayerRecursively(_grabLayer);
             
         }

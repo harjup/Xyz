@@ -26,8 +26,8 @@ public class MainSessionManager : Singleton<MainSessionManager>
         new DifficultyEvent(10, "", DifficultyEvent.Type.AddPushers),
         new DifficultyEvent(30, "Security has increased.", DifficultyEvent.Type.AddChasers),
         new DifficultyEvent(30, "", DifficultyEvent.Type.AddPushers),
-        new DifficultyEvent(60, "Security has increased again.", DifficultyEvent.Type.AddChasers),
-        new DifficultyEvent(90, "We have reached max security!", DifficultyEvent.Type.AddChasers),
+        new DifficultyEvent(60, "We have reached max security!", DifficultyEvent.Type.AddChasers),
+        //new DifficultyEvent(90, "", DifficultyEvent.Type.AddChasers),
     };
 
     private MessageManager _messageManager;
@@ -88,13 +88,30 @@ public class MainSessionManager : Singleton<MainSessionManager>
         
         if (difficultyEvent.EventType == DifficultyEvent.Type.AddChasers)
         {
-            ChaserSpawner.Instance.SpawnChasers(_chasersPerWave);
+            if (difficultyEvent.Time >= 60)
+            {
+                ChaserSpawner.Instance.SpawnChasers(_chasersPerWave / 2);
+            }
+            else
+            {
+                ChaserSpawner.Instance.SpawnChasers(_chasersPerWave);
+            }
+            
             _messageManager.ShowMessage(difficultyEvent.Message);
         }
 
         if (difficultyEvent.EventType == DifficultyEvent.Type.AddPushers)
         {
-            ChaserSpawner.Instance.SpawnPushers(_pushersPerWave);
+            if (difficultyEvent.Time == 30)
+            {
+                // Let's have half the amount come in the second pusher wave
+                ChaserSpawner.Instance.SpawnPushers(_pushersPerWave/2);
+            }
+            else
+            {
+                ChaserSpawner.Instance.SpawnPushers(_pushersPerWave);
+            }
+            
         }
     }
 

@@ -81,6 +81,7 @@ public class Player : MonoBehaviour
     {
         Vector3 force = pusher.GetPushForce(this);
         pusher.PunchTowards(transform.position);
+        SoundManager.Instance.PlayPushedEffect();
         _move.Push(force);
     }
 

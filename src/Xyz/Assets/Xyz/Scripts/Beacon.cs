@@ -75,8 +75,19 @@ public class Beacon : MonoBehaviour
 
     public void SetState(State state)
     {
-        _localCamera.enabled = state == State.Capture;
-        
+        if (state == State.Capture)
+        {
+            // Ha ha, I am definitely managing a singleton inside an object of which many instances exist
+            // This is only working out because I can only interact with one beacon at a time.
+            SoundManager.Instance.PlayCameraLoop();
+            _localCamera.enabled = true;
+        }
+
+        if (state == State.Idle)
+        {
+            SoundManager.Instance.StopCameraLoop();
+        }
+
         if (_state == State.Done)
         {
             return;
@@ -89,9 +100,11 @@ public class Beacon : MonoBehaviour
     {
         _counter -= amount;
 
-        if (_counter <= 0)
+        if (_counter <= 0 && _state != State.Done)
         {
             _state = State.Done;
+            SoundManager.Instance.StopCameraLoop();
+            SoundManager.Instance.PlayCameraDoneEffect();
         }
     }
 }
