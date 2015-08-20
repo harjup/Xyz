@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
         _speechBubbleDisplay = PlayerSpeechBubbleDisplay.Instance;
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
         var grabbedChaserCount = GetGrabbedChasers().Count;
         if (grabbedChaserCount > 0)

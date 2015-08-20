@@ -66,7 +66,7 @@ namespace Assets.Xyz.Scripts
         }
 
         private IEnumerator _chargeInDirectionRoutine;
-        void Update()
+        void FixedUpdate()
         {
             if (_state == State.Grabbed || _state == State.Fall)
             {
