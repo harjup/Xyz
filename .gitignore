@@ -215,3 +215,4 @@ Thumbs.db
 # Some special Unity stuff
 src/Xyz/Assets/DialoguerExamples
 src/Xyz/Assets/DialoguerExamples.meta
+!src/Xyz.Tests/*.csproj

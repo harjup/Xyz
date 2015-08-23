@@ -2,6 +2,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using Assets.Xyz.Scripts;
+using UnityEngine.VR;
 
 public class MainSessionManager : Singleton<MainSessionManager>
 {
@@ -20,15 +22,7 @@ public class MainSessionManager : Singleton<MainSessionManager>
 
     public State CurrentState { get { return _state; } }
 
-    List<DifficultyEvent> _difficultIncreaseTimes = new List<DifficultyEvent>
-    {
-        new DifficultyEvent(10, "Security has arrived!", DifficultyEvent.Type.AddChasers),
-        new DifficultyEvent(10, "", DifficultyEvent.Type.AddPushers),
-        new DifficultyEvent(30, "Security has increased.", DifficultyEvent.Type.AddChasers),
-        new DifficultyEvent(30, "", DifficultyEvent.Type.AddPushers),
-        new DifficultyEvent(60, "We have reached max security!", DifficultyEvent.Type.AddChasers),
-        //new DifficultyEvent(90, "", DifficultyEvent.Type.AddChasers),
-    };
+    private List<DifficultyEvent> _difficultIncreaseTimes;
 
     private MessageManager _messageManager;
     private DoorwayManager _doorwayManager;
@@ -44,6 +38,9 @@ public class MainSessionManager : Singleton<MainSessionManager>
 
     public void Start()
     {
+        var scheduleGenerator = new SpawnScheduleGenerator();
+        _difficultIncreaseTimes = scheduleGenerator.GetSteppedSchedule();
+
         // Move player to random spawn point
         var player = FindObjectOfType<Player>();
 
