@@ -24,14 +24,14 @@ Start Level
 
 
 During Level (Speech bubble)
-- I only want to help!
-- Yes! Chase me!
-- Prove your mediocrity!
-- If you cannot catch me how can we be safe?
-- I only want to you to be safe!
-- I respect your position!
-- New hires probably won't decrease your wages!
-- I just want the world to see my message!
+"I only want to help!",
+"Yes! Chase me!",
+"Prove your mediocrity!",
+"If you cannot catch me how can we be safe?",
+"I only want to you to be safe!",
+"I respect your position!",
+"New hires probably won't decrease your wages!",
+"I just want the world to see my message!"
 
 Level Fail
 - You have been caught. Our safety will stagnate in this small victory.
