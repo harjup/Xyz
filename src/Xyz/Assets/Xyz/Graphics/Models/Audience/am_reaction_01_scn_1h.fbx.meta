@@ -1,0 +1,1107 @@
+fileFormatVersion: 2
+guid: 5ab8d21e30e37c44488145eb99818b6f
+timeCreated: 1438395332
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: AM:Audience_Male_01
+    100002: AM:Biped:Biped
+    100004: AM:Biped:Chest
+    100006: AM:Biped:Chest1
+    100008: AM:Biped:Chest_NeutralPose
+    100010: AM:Biped:ChestBone
+    100012: AM:Biped:ChestDepth
+    100014: AM:Biped:ChestEffector
+    100016: AM:Biped:ChestRoot
+    100018: AM:Biped:eff
+    100020: AM:Biped:eff1
+    100022: AM:Biped:eff10
+    100024: AM:Biped:eff11
+    100026: AM:Biped:eff2
+    100028: AM:Biped:eff3
+    100030: AM:Biped:eff4
+    100032: AM:Biped:eff5
+    100034: AM:Biped:eff6
+    100036: AM:Biped:eff7
+    100038: AM:Biped:eff8
+    100040: AM:Biped:eff9
+    100042: AM:Biped:GlobalSRT
+    100044: AM:Biped:Head
+    100046: AM:Biped:Head1
+    100048: AM:Biped:HeadEff
+    100050: AM:Biped:HeadRoot
+    100052: AM:Biped:HeadRoot1
+    100054: AM:Biped:Hip
+    100056: AM:Biped:HipDepth
+    100058: AM:Biped:HipPlate
+    100060: AM:Biped:LArmEff
+    100062: AM:Biped:LArmUpV
+    100064: AM:Biped:LArmUpV_NeutralPose
+    100066: AM:Biped:LBicep
+    100068: AM:Biped:LBicep1
+    100070: AM:Biped:LeftFoot
+    100072: AM:Biped:LeftFoot_NeutralPose
+    100074: AM:Biped:LeftRoll
+    100076: AM:Biped:LeftRoll_NeutralPose
+    100078: AM:Biped:LeftTip
+    100080: AM:Biped:LeftTip_NeutralPose
+    100082: AM:Biped:LFootBind1
+    100084: AM:Biped:LFootBind2
+    100086: AM:Biped:LFootBind3
+    100088: AM:Biped:LFootBone1
+    100090: AM:Biped:LFootBone2
+    100092: AM:Biped:LFootBone3
+    100094: AM:Biped:LFootBone4
+    100096: AM:Biped:LFootBone5
+    100098: AM:Biped:LFootBone6
+    100100: AM:Biped:LFootEff
+    100102: AM:Biped:LFootGuide1
+    100104: AM:Biped:LFootGuide2
+    100106: AM:Biped:LFootGuide3
+    100108: AM:Biped:LFootGuide4
+    100110: AM:Biped:LFootRoot
+    100112: AM:Biped:LFootRoot1
+    100114: AM:Biped:LFootUpV1
+    100116: AM:Biped:LFootUpV2
+    100118: AM:Biped:LFootUpV3
+    100120: AM:Biped:LForearm
+    100122: AM:Biped:LForearm1
+    100124: AM:Biped:LHand
+    100126: AM:Biped:LHand1
+    100128: AM:Biped:LHand_grab
+    100130: AM:Biped:LHandEffector
+    100132: AM:Biped:LHandRoot
+    100134: AM:Biped:LHandRoot1
+    100136: AM:Biped:LIndex1
+    100138: AM:Biped:LIndex1_NeutralPose
+    100140: AM:Biped:LIndex2
+    100142: AM:Biped:LIndex2_NeutralPose
+    100144: AM:Biped:LIndex3
+    100146: AM:Biped:LIndex3_NeutralPose
+    100148: AM:Biped:LIndexEffector
+    100150: AM:Biped:LIndexRoot
+    100152: AM:Biped:LlegEff
+    100154: AM:Biped:LlegUpV
+    100156: AM:Biped:LlegUpV_NeutralPose
+    100158: AM:Biped:LMiddle1
+    100160: AM:Biped:LMiddle1_NeutralPose
+    100162: AM:Biped:LMiddle2
+    100164: AM:Biped:LMiddle2_NeutralPose
+    100166: AM:Biped:LMiddle3
+    100168: AM:Biped:LMiddle3_NeutralPose
+    100170: AM:Biped:LMiddleEffector
+    100172: AM:Biped:LMiddleRoot
+    100174: AM:Biped:LPinky1
+    100176: AM:Biped:LPinky1_NeutralPose
+    100178: AM:Biped:LPinky2
+    100180: AM:Biped:LPinky2_NeutralPose
+    100182: AM:Biped:LPinky3
+    100184: AM:Biped:LPinky3_NeutralPose
+    100186: AM:Biped:LPinkyEffector
+    100188: AM:Biped:LPinkyRoot
+    100190: AM:Biped:LPivotBase
+    100192: AM:Biped:LPivotLeft
+    100194: AM:Biped:LPivotRight
+    100196: AM:Biped:LPlacePivot
+    100198: AM:Biped:LRing1
+    100200: AM:Biped:LRing1_NeutralPose
+    100202: AM:Biped:LRing2
+    100204: AM:Biped:LRing2_NeutralPose
+    100206: AM:Biped:LRing3
+    100208: AM:Biped:LRing3_NeutralPose
+    100210: AM:Biped:LRingEffector
+    100212: AM:Biped:LRingRoot
+    100214: AM:Biped:LRoot
+    100216: AM:Biped:LRoot1
+    100218: AM:Biped:LRoot2
+    100220: AM:Biped:LRoot3
+    100222: AM:Biped:LShin
+    100224: AM:Biped:LShin1
+    100226: AM:Biped:LShoulder
+    100228: AM:Biped:LShoulder1
+    100230: AM:Biped:LShoulderEff
+    100232: AM:Biped:LShoulderRoot
+    100234: AM:Biped:LShoulderRoot1
+    100236: AM:Biped:LThigh
+    100238: AM:Biped:LThigh1
+    100240: AM:Biped:LThumb1
+    100242: AM:Biped:LThumb1_NeutralPose
+    100244: AM:Biped:LThumb2
+    100246: AM:Biped:LThumb2_NeutralPose
+    100248: AM:Biped:LThumb3
+    100250: AM:Biped:LThumb3_NeutralPose
+    100252: AM:Biped:LThumbEffector
+    100254: AM:Biped:LThumbRoot
+    100256: AM:Biped:LToeOffset1
+    100258: AM:Biped:LToeOffset2
+    100260: AM:Biped:Neck
+    100262: AM:Biped:Neck1
+    100264: AM:Biped:RArmEff
+    100266: AM:Biped:RArmUpV
+    100268: AM:Biped:RArmUpV_NeutralPose
+    100270: AM:Biped:RBicep
+    100272: AM:Biped:RBicep1
+    100274: AM:Biped:RFootBind1
+    100276: AM:Biped:RFootBind2
+    100278: AM:Biped:RFootBind3
+    100280: AM:Biped:RFootBone1
+    100282: AM:Biped:RFootBone2
+    100284: AM:Biped:RFootBone3
+    100286: AM:Biped:RFootBone4
+    100288: AM:Biped:RFootBone5
+    100290: AM:Biped:RFootBone6
+    100292: AM:Biped:RFootEff
+    100294: AM:Biped:RFootGuide1
+    100296: AM:Biped:RFootGuide2
+    100298: AM:Biped:RFootGuide3
+    100300: AM:Biped:RFootGuide4
+    100302: AM:Biped:RFootRoot
+    100304: AM:Biped:RFootRoot1
+    100306: AM:Biped:RFootUpV1
+    100308: AM:Biped:RFootUpV2
+    100310: AM:Biped:RFootUpV3
+    100312: AM:Biped:RForearm
+    100314: AM:Biped:RForearm1
+    100316: AM:Biped:RHand
+    100318: AM:Biped:RHand1
+    100320: AM:Biped:RHand_grab
+    100322: AM:Biped:RHandEffector
+    100324: AM:Biped:RHandRoot
+    100326: AM:Biped:RHandRoot1
+    100328: AM:Biped:RightFoot
+    100330: AM:Biped:RightFoot_NeutralPose
+    100332: AM:Biped:RightRoll
+    100334: AM:Biped:RightRoll_NeutralPose
+    100336: AM:Biped:RightTip
+    100338: AM:Biped:RightTip_NeutralPose
+    100340: AM:Biped:RIndex1
+    100342: AM:Biped:RIndex1_NeutralPose
+    100344: AM:Biped:RIndex2
+    100346: AM:Biped:RIndex2_NeutralPose
+    100348: AM:Biped:RIndex3
+    100350: AM:Biped:RIndex3_NeutralPose
+    100352: AM:Biped:RIndexEffector
+    100354: AM:Biped:RIndexRoot
+    100356: AM:Biped:RlegEff
+    100358: AM:Biped:RlegUpV
+    100360: AM:Biped:RlegUpV_NeutralPose
+    100362: AM:Biped:RMiddle1
+    100364: AM:Biped:RMiddle1_NeutralPose
+    100366: AM:Biped:RMiddle2
+    100368: AM:Biped:RMiddle2_NeutralPose
+    100370: AM:Biped:RMiddle3
+    100372: AM:Biped:RMiddle3_NeutralPose
+    100374: AM:Biped:RMiddleEffector
+    100376: AM:Biped:RMiddleRoot
+    100378: AM:Biped:RPinky1
+    100380: AM:Biped:RPinky1_NeutralPose
+    100382: AM:Biped:RPinky2
+    100384: AM:Biped:RPinky2_NeutralPose
+    100386: AM:Biped:RPinky3
+    100388: AM:Biped:RPinky3_NeutralPose
+    100390: AM:Biped:RPinkyEffector
+    100392: AM:Biped:RPinkyRoot
+    100394: AM:Biped:RPivotBase
+    100396: AM:Biped:RPivotLeft
+    100398: AM:Biped:RPivotRight
+    100400: AM:Biped:RPlacePivot
+    100402: AM:Biped:RRing1
+    100404: AM:Biped:RRing1_NeutralPose
+    100406: AM:Biped:RRing2
+    100408: AM:Biped:RRing2_NeutralPose
+    100410: AM:Biped:RRing3
+    100412: AM:Biped:RRing3_NeutralPose
+    100414: AM:Biped:RRingEffector
+    100416: AM:Biped:RRingRoot
+    100418: AM:Biped:RRoot
+    100420: AM:Biped:RRoot1
+    100422: AM:Biped:RRoot2
+    100424: AM:Biped:RRoot3
+    100426: AM:Biped:RShin
+    100428: AM:Biped:RShin1
+    100430: AM:Biped:RShoulder
+    100432: AM:Biped:RShoulder1
+    100434: AM:Biped:RShoulderEff
+    100436: AM:Biped:RShoulderRoot
+    100438: AM:Biped:RShoulderRoot1
+    100440: AM:Biped:RThigh
+    100442: AM:Biped:RThigh1
+    100444: AM:Biped:RThumb1
+    100446: AM:Biped:RThumb1_NeutralPose
+    100448: AM:Biped:RThumb2
+    100450: AM:Biped:RThumb2_NeutralPose
+    100452: AM:Biped:RThumb3
+    100454: AM:Biped:RThumb3_NeutralPose
+    100456: AM:Biped:RThumbEffector
+    100458: AM:Biped:RThumbRoot
+    100460: AM:Biped:RToeOffset1
+    100462: AM:Biped:RToeOffset2
+    100464: AM:Biped:Shadow_GlobalSRT
+    100466: AM:Biped:Shadow_upVa
+    100468: AM:Biped:Shadow_upVa1
+    100470: AM:Biped:Shadow_upVa2
+    100472: AM:Biped:Shadow_upVa3
+    100474: AM:Biped:shadowspinecurve
+    100476: AM:Biped:Spine1
+    100478: AM:Biped:Spine2
+    100480: AM:Biped:Spine3
+    100482: AM:Biped:spinecurve
+    100484: AM:Biped:SpineEnd
+    100486: AM:Biped:SpineRoot
+    100488: AM:Biped:SpineStart
+    100490: AM:Biped:SpineVertebra
+    100492: AM:Biped:SpineVertebra1
+    100494: AM:Biped:SpineVertebra2
+    100496: AM:Biped:UpperBody
+    100498: AM:Biped:UpperBody1
+    100500: AM:Biped:UpperBody_NeutralPose
+    100502: //RootNode
+    400000: AM:Audience_Male_01
+    400002: AM:Biped:Biped
+    400004: AM:Biped:Chest
+    400006: AM:Biped:Chest1
+    400008: AM:Biped:Chest_NeutralPose
+    400010: AM:Biped:ChestBone
+    400012: AM:Biped:ChestDepth
+    400014: AM:Biped:ChestEffector
+    400016: AM:Biped:ChestRoot
+    400018: AM:Biped:eff
+    400020: AM:Biped:eff1
+    400022: AM:Biped:eff10
+    400024: AM:Biped:eff11
+    400026: AM:Biped:eff2
+    400028: AM:Biped:eff3
+    400030: AM:Biped:eff4
+    400032: AM:Biped:eff5
+    400034: AM:Biped:eff6
+    400036: AM:Biped:eff7
+    400038: AM:Biped:eff8
+    400040: AM:Biped:eff9
+    400042: AM:Biped:GlobalSRT
+    400044: AM:Biped:Head
+    400046: AM:Biped:Head1
+    400048: AM:Biped:HeadEff
+    400050: AM:Biped:HeadRoot
+    400052: AM:Biped:HeadRoot1
+    400054: AM:Biped:Hip
+    400056: AM:Biped:HipDepth
+    400058: AM:Biped:HipPlate
+    400060: AM:Biped:LArmEff
+    400062: AM:Biped:LArmUpV
+    400064: AM:Biped:LArmUpV_NeutralPose
+    400066: AM:Biped:LBicep
+    400068: AM:Biped:LBicep1
+    400070: AM:Biped:LeftFoot
+    400072: AM:Biped:LeftFoot_NeutralPose
+    400074: AM:Biped:LeftRoll
+    400076: AM:Biped:LeftRoll_NeutralPose
+    400078: AM:Biped:LeftTip
+    400080: AM:Biped:LeftTip_NeutralPose
+    400082: AM:Biped:LFootBind1
+    400084: AM:Biped:LFootBind2
+    400086: AM:Biped:LFootBind3
+    400088: AM:Biped:LFootBone1
+    400090: AM:Biped:LFootBone2
+    400092: AM:Biped:LFootBone3
+    400094: AM:Biped:LFootBone4
+    400096: AM:Biped:LFootBone5
+    400098: AM:Biped:LFootBone6
+    400100: AM:Biped:LFootEff
+    400102: AM:Biped:LFootGuide1
+    400104: AM:Biped:LFootGuide2
+    400106: AM:Biped:LFootGuide3
+    400108: AM:Biped:LFootGuide4
+    400110: AM:Biped:LFootRoot
+    400112: AM:Biped:LFootRoot1
+    400114: AM:Biped:LFootUpV1
+    400116: AM:Biped:LFootUpV2
+    400118: AM:Biped:LFootUpV3
+    400120: AM:Biped:LForearm
+    400122: AM:Biped:LForearm1
+    400124: AM:Biped:LHand
+    400126: AM:Biped:LHand1
+    400128: AM:Biped:LHand_grab
+    400130: AM:Biped:LHandEffector
+    400132: AM:Biped:LHandRoot
+    400134: AM:Biped:LHandRoot1
+    400136: AM:Biped:LIndex1
+    400138: AM:Biped:LIndex1_NeutralPose
+    400140: AM:Biped:LIndex2
+    400142: AM:Biped:LIndex2_NeutralPose
+    400144: AM:Biped:LIndex3
+    400146: AM:Biped:LIndex3_NeutralPose
+    400148: AM:Biped:LIndexEffector
+    400150: AM:Biped:LIndexRoot
+    400152: AM:Biped:LlegEff
+    400154: AM:Biped:LlegUpV
+    400156: AM:Biped:LlegUpV_NeutralPose
+    400158: AM:Biped:LMiddle1
+    400160: AM:Biped:LMiddle1_NeutralPose
+    400162: AM:Biped:LMiddle2
+    400164: AM:Biped:LMiddle2_NeutralPose
+    400166: AM:Biped:LMiddle3
+    400168: AM:Biped:LMiddle3_NeutralPose
+    400170: AM:Biped:LMiddleEffector
+    400172: AM:Biped:LMiddleRoot
+    400174: AM:Biped:LPinky1
+    400176: AM:Biped:LPinky1_NeutralPose
+    400178: AM:Biped:LPinky2
+    400180: AM:Biped:LPinky2_NeutralPose
+    400182: AM:Biped:LPinky3
+    400184: AM:Biped:LPinky3_NeutralPose
+    400186: AM:Biped:LPinkyEffector
+    400188: AM:Biped:LPinkyRoot
+    400190: AM:Biped:LPivotBase
+    400192: AM:Biped:LPivotLeft
+    400194: AM:Biped:LPivotRight
+    400196: AM:Biped:LPlacePivot
+    400198: AM:Biped:LRing1
+    400200: AM:Biped:LRing1_NeutralPose
+    400202: AM:Biped:LRing2
+    400204: AM:Biped:LRing2_NeutralPose
+    400206: AM:Biped:LRing3
+    400208: AM:Biped:LRing3_NeutralPose
+    400210: AM:Biped:LRingEffector
+    400212: AM:Biped:LRingRoot
+    400214: AM:Biped:LRoot
+    400216: AM:Biped:LRoot1
+    400218: AM:Biped:LRoot2
+    400220: AM:Biped:LRoot3
+    400222: AM:Biped:LShin
+    400224: AM:Biped:LShin1
+    400226: AM:Biped:LShoulder
+    400228: AM:Biped:LShoulder1
+    400230: AM:Biped:LShoulderEff
+    400232: AM:Biped:LShoulderRoot
+    400234: AM:Biped:LShoulderRoot1
+    400236: AM:Biped:LThigh
+    400238: AM:Biped:LThigh1
+    400240: AM:Biped:LThumb1
+    400242: AM:Biped:LThumb1_NeutralPose
+    400244: AM:Biped:LThumb2
+    400246: AM:Biped:LThumb2_NeutralPose
+    400248: AM:Biped:LThumb3
+    400250: AM:Biped:LThumb3_NeutralPose
+    400252: AM:Biped:LThumbEffector
+    400254: AM:Biped:LThumbRoot
+    400256: AM:Biped:LToeOffset1
+    400258: AM:Biped:LToeOffset2
+    400260: AM:Biped:Neck
+    400262: AM:Biped:Neck1
+    400264: AM:Biped:RArmEff
+    400266: AM:Biped:RArmUpV
+    400268: AM:Biped:RArmUpV_NeutralPose
+    400270: AM:Biped:RBicep
+    400272: AM:Biped:RBicep1
+    400274: AM:Biped:RFootBind1
+    400276: AM:Biped:RFootBind2
+    400278: AM:Biped:RFootBind3
+    400280: AM:Biped:RFootBone1
+    400282: AM:Biped:RFootBone2
+    400284: AM:Biped:RFootBone3
+    400286: AM:Biped:RFootBone4
+    400288: AM:Biped:RFootBone5
+    400290: AM:Biped:RFootBone6
+    400292: AM:Biped:RFootEff
+    400294: AM:Biped:RFootGuide1
+    400296: AM:Biped:RFootGuide2
+    400298: AM:Biped:RFootGuide3
+    400300: AM:Biped:RFootGuide4
+    400302: AM:Biped:RFootRoot
+    400304: AM:Biped:RFootRoot1
+    400306: AM:Biped:RFootUpV1
+    400308: AM:Biped:RFootUpV2
+    400310: AM:Biped:RFootUpV3
+    400312: AM:Biped:RForearm
+    400314: AM:Biped:RForearm1
+    400316: AM:Biped:RHand
+    400318: AM:Biped:RHand1
+    400320: AM:Biped:RHand_grab
+    400322: AM:Biped:RHandEffector
+    400324: AM:Biped:RHandRoot
+    400326: AM:Biped:RHandRoot1
+    400328: AM:Biped:RightFoot
+    400330: AM:Biped:RightFoot_NeutralPose
+    400332: AM:Biped:RightRoll
+    400334: AM:Biped:RightRoll_NeutralPose
+    400336: AM:Biped:RightTip
+    400338: AM:Biped:RightTip_NeutralPose
+    400340: AM:Biped:RIndex1
+    400342: AM:Biped:RIndex1_NeutralPose
+    400344: AM:Biped:RIndex2
+    400346: AM:Biped:RIndex2_NeutralPose
+    400348: AM:Biped:RIndex3
+    400350: AM:Biped:RIndex3_NeutralPose
+    400352: AM:Biped:RIndexEffector
+    400354: AM:Biped:RIndexRoot
+    400356: AM:Biped:RlegEff
+    400358: AM:Biped:RlegUpV
+    400360: AM:Biped:RlegUpV_NeutralPose
+    400362: AM:Biped:RMiddle1
+    400364: AM:Biped:RMiddle1_NeutralPose
+    400366: AM:Biped:RMiddle2
+    400368: AM:Biped:RMiddle2_NeutralPose
+    400370: AM:Biped:RMiddle3
+    400372: AM:Biped:RMiddle3_NeutralPose
+    400374: AM:Biped:RMiddleEffector
+    400376: AM:Biped:RMiddleRoot
+    400378: AM:Biped:RPinky1
+    400380: AM:Biped:RPinky1_NeutralPose
+    400382: AM:Biped:RPinky2
+    400384: AM:Biped:RPinky2_NeutralPose
+    400386: AM:Biped:RPinky3
+    400388: AM:Biped:RPinky3_NeutralPose
+    400390: AM:Biped:RPinkyEffector
+    400392: AM:Biped:RPinkyRoot
+    400394: AM:Biped:RPivotBase
+    400396: AM:Biped:RPivotLeft
+    400398: AM:Biped:RPivotRight
+    400400: AM:Biped:RPlacePivot
+    400402: AM:Biped:RRing1
+    400404: AM:Biped:RRing1_NeutralPose
+    400406: AM:Biped:RRing2
+    400408: AM:Biped:RRing2_NeutralPose
+    400410: AM:Biped:RRing3
+    400412: AM:Biped:RRing3_NeutralPose
+    400414: AM:Biped:RRingEffector
+    400416: AM:Biped:RRingRoot
+    400418: AM:Biped:RRoot
+    400420: AM:Biped:RRoot1
+    400422: AM:Biped:RRoot2
+    400424: AM:Biped:RRoot3
+    400426: AM:Biped:RShin
+    400428: AM:Biped:RShin1
+    400430: AM:Biped:RShoulder
+    400432: AM:Biped:RShoulder1
+    400434: AM:Biped:RShoulderEff
+    400436: AM:Biped:RShoulderRoot
+    400438: AM:Biped:RShoulderRoot1
+    400440: AM:Biped:RThigh
+    400442: AM:Biped:RThigh1
+    400444: AM:Biped:RThumb1
+    400446: AM:Biped:RThumb1_NeutralPose
+    400448: AM:Biped:RThumb2
+    400450: AM:Biped:RThumb2_NeutralPose
+    400452: AM:Biped:RThumb3
+    400454: AM:Biped:RThumb3_NeutralPose
+    400456: AM:Biped:RThumbEffector
+    400458: AM:Biped:RThumbRoot
+    400460: AM:Biped:RToeOffset1
+    400462: AM:Biped:RToeOffset2
+    400464: AM:Biped:Shadow_GlobalSRT
+    400466: AM:Biped:Shadow_upVa
+    400468: AM:Biped:Shadow_upVa1
+    400470: AM:Biped:Shadow_upVa2
+    400472: AM:Biped:Shadow_upVa3
+    400474: AM:Biped:shadowspinecurve
+    400476: AM:Biped:Spine1
+    400478: AM:Biped:Spine2
+    400480: AM:Biped:Spine3
+    400482: AM:Biped:spinecurve
+    400484: AM:Biped:SpineEnd
+    400486: AM:Biped:SpineRoot
+    400488: AM:Biped:SpineStart
+    400490: AM:Biped:SpineVertebra
+    400492: AM:Biped:SpineVertebra1
+    400494: AM:Biped:SpineVertebra2
+    400496: AM:Biped:UpperBody
+    400498: AM:Biped:UpperBody1
+    400500: AM:Biped:UpperBody_NeutralPose
+    400502: //RootNode
+    4300000: AM:Audience_Male_01
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: AM:Audience_Male_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AM:Audience_Male_01
+        weight: 1
+      - path: AM:Biped:Biped
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LeftRoll_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LeftRoll_NeutralPose/AM:Biped:LeftRoll
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LFootUpV1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1/AM:Biped:LFootGuide2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1/AM:Biped:LFootGuide2/AM:Biped:LFootGuide3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1/AM:Biped:LFootGuide2/AM:Biped:LFootGuide3/AM:Biped:LFootGuide4
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1/AM:Biped:LFootGuide2/AM:Biped:LFootGuide3/AM:Biped:LFootGuide4/AM:Biped:LFootBind1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1/AM:Biped:LFootGuide2/AM:Biped:LFootGuide3/AM:Biped:LFootGuide4/AM:Biped:LFootBind1/AM:Biped:LToeOffset1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1/AM:Biped:LFootGuide2/AM:Biped:LFootGuide3/AM:Biped:LFootGuide4/AM:Biped:LFootBind1/AM:Biped:LToeOffset1/AM:Biped:LFootBind2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1/AM:Biped:LFootGuide2/AM:Biped:LFootGuide3/AM:Biped:LFootGuide4/AM:Biped:LFootBind1/AM:Biped:LToeOffset1/AM:Biped:LFootBind2/AM:Biped:LToeOffset2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1/AM:Biped:LFootGuide2/AM:Biped:LFootGuide3/AM:Biped:LFootGuide4/AM:Biped:LFootBind1/AM:Biped:LToeOffset1/AM:Biped:LFootBind2/AM:Biped:LToeOffset2/AM:Biped:LFootBind3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1/AM:Biped:LFootGuide2/AM:Biped:LFootGuide3/AM:Biped:LFootGuide4/AM:Biped:LFootBind1/AM:Biped:LToeOffset1/AM:Biped:LFootBind2/AM:Biped:LToeOffset2/AM:Biped:LFootUpV3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotBase/AM:Biped:LFootGuide1/AM:Biped:LFootGuide2/AM:Biped:LFootGuide3/AM:Biped:LFootGuide4/AM:Biped:LFootBind1/AM:Biped:LToeOffset1/AM:Biped:LFootUpV2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotLeft
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPivotRight
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:LeftFoot_NeutralPose/AM:Biped:LeftFoot/AM:Biped:LeftTip_NeutralPose/AM:Biped:LeftTip/AM:Biped:LPlacePivot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RFootUpV1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RightRoll_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RightRoll_NeutralPose/AM:Biped:RightRoll
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1/AM:Biped:RFootGuide2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1/AM:Biped:RFootGuide2/AM:Biped:RFootGuide3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1/AM:Biped:RFootGuide2/AM:Biped:RFootGuide3/AM:Biped:RFootGuide4
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1/AM:Biped:RFootGuide2/AM:Biped:RFootGuide3/AM:Biped:RFootGuide4/AM:Biped:RFootBind1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1/AM:Biped:RFootGuide2/AM:Biped:RFootGuide3/AM:Biped:RFootGuide4/AM:Biped:RFootBind1/AM:Biped:RToeOffset1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1/AM:Biped:RFootGuide2/AM:Biped:RFootGuide3/AM:Biped:RFootGuide4/AM:Biped:RFootBind1/AM:Biped:RToeOffset1/AM:Biped:RFootBind2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1/AM:Biped:RFootGuide2/AM:Biped:RFootGuide3/AM:Biped:RFootGuide4/AM:Biped:RFootBind1/AM:Biped:RToeOffset1/AM:Biped:RFootBind2/AM:Biped:RToeOffset2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1/AM:Biped:RFootGuide2/AM:Biped:RFootGuide3/AM:Biped:RFootGuide4/AM:Biped:RFootBind1/AM:Biped:RToeOffset1/AM:Biped:RFootBind2/AM:Biped:RToeOffset2/AM:Biped:RFootBind3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1/AM:Biped:RFootGuide2/AM:Biped:RFootGuide3/AM:Biped:RFootGuide4/AM:Biped:RFootBind1/AM:Biped:RToeOffset1/AM:Biped:RFootBind2/AM:Biped:RToeOffset2/AM:Biped:RFootUpV3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotBase/AM:Biped:RFootGuide1/AM:Biped:RFootGuide2/AM:Biped:RFootGuide3/AM:Biped:RFootGuide4/AM:Biped:RFootBind1/AM:Biped:RToeOffset1/AM:Biped:RFootUpV2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotLeft
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPivotRight
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:RightFoot_NeutralPose/AM:Biped:RightFoot/AM:Biped:RightTip_NeutralPose/AM:Biped:RightTip/AM:Biped:RPlacePivot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Chest_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Chest_NeutralPose/AM:Biped:Chest
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Chest_NeutralPose/AM:Biped:Chest/AM:Biped:ChestDepth
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Chest_NeutralPose/AM:Biped:Chest/AM:Biped:SpineEnd
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipDepth
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:HeadRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:HeadRoot/AM:Biped:HeadEff
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:HeadRoot/AM:Biped:Neck
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:HeadRoot/AM:Biped:Neck/AM:Biped:Head
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulder
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LHand_grab
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LIndexRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LIndexRoot/AM:Biped:LIndex1_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LIndexRoot/AM:Biped:LIndex1_NeutralPose/AM:Biped:LIndex1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LIndexRoot/AM:Biped:LIndex1_NeutralPose/AM:Biped:LIndex1/AM:Biped:LIndex2_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LIndexRoot/AM:Biped:LIndex1_NeutralPose/AM:Biped:LIndex1/AM:Biped:LIndex2_NeutralPose/AM:Biped:LIndex2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LIndexRoot/AM:Biped:LIndex1_NeutralPose/AM:Biped:LIndex1/AM:Biped:LIndex2_NeutralPose/AM:Biped:LIndex2/AM:Biped:LIndex3_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LIndexRoot/AM:Biped:LIndex1_NeutralPose/AM:Biped:LIndex1/AM:Biped:LIndex2_NeutralPose/AM:Biped:LIndex2/AM:Biped:LIndex3_NeutralPose/AM:Biped:LIndex3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LIndexRoot/AM:Biped:LIndexEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LMiddleRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LMiddleRoot/AM:Biped:LMiddle1_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LMiddleRoot/AM:Biped:LMiddle1_NeutralPose/AM:Biped:LMiddle1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LMiddleRoot/AM:Biped:LMiddle1_NeutralPose/AM:Biped:LMiddle1/AM:Biped:LMiddle2_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LMiddleRoot/AM:Biped:LMiddle1_NeutralPose/AM:Biped:LMiddle1/AM:Biped:LMiddle2_NeutralPose/AM:Biped:LMiddle2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LMiddleRoot/AM:Biped:LMiddle1_NeutralPose/AM:Biped:LMiddle1/AM:Biped:LMiddle2_NeutralPose/AM:Biped:LMiddle2/AM:Biped:LMiddle3_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LMiddleRoot/AM:Biped:LMiddle1_NeutralPose/AM:Biped:LMiddle1/AM:Biped:LMiddle2_NeutralPose/AM:Biped:LMiddle2/AM:Biped:LMiddle3_NeutralPose/AM:Biped:LMiddle3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LMiddleRoot/AM:Biped:LMiddleEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LPinkyRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LPinkyRoot/AM:Biped:LPinky1_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LPinkyRoot/AM:Biped:LPinky1_NeutralPose/AM:Biped:LPinky1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LPinkyRoot/AM:Biped:LPinky1_NeutralPose/AM:Biped:LPinky1/AM:Biped:LPinky2_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LPinkyRoot/AM:Biped:LPinky1_NeutralPose/AM:Biped:LPinky1/AM:Biped:LPinky2_NeutralPose/AM:Biped:LPinky2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LPinkyRoot/AM:Biped:LPinky1_NeutralPose/AM:Biped:LPinky1/AM:Biped:LPinky2_NeutralPose/AM:Biped:LPinky2/AM:Biped:LPinky3_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LPinkyRoot/AM:Biped:LPinky1_NeutralPose/AM:Biped:LPinky1/AM:Biped:LPinky2_NeutralPose/AM:Biped:LPinky2/AM:Biped:LPinky3_NeutralPose/AM:Biped:LPinky3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LPinkyRoot/AM:Biped:LPinkyEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LRingRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LRingRoot/AM:Biped:LRing1_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LRingRoot/AM:Biped:LRing1_NeutralPose/AM:Biped:LRing1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LRingRoot/AM:Biped:LRing1_NeutralPose/AM:Biped:LRing1/AM:Biped:LRing2_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LRingRoot/AM:Biped:LRing1_NeutralPose/AM:Biped:LRing1/AM:Biped:LRing2_NeutralPose/AM:Biped:LRing2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LRingRoot/AM:Biped:LRing1_NeutralPose/AM:Biped:LRing1/AM:Biped:LRing2_NeutralPose/AM:Biped:LRing2/AM:Biped:LRing3_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LRingRoot/AM:Biped:LRing1_NeutralPose/AM:Biped:LRing1/AM:Biped:LRing2_NeutralPose/AM:Biped:LRing2/AM:Biped:LRing3_NeutralPose/AM:Biped:LRing3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LRingRoot/AM:Biped:LRingEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LThumbRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LThumbRoot/AM:Biped:LThumb1_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LThumbRoot/AM:Biped:LThumb1_NeutralPose/AM:Biped:LThumb1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LThumbRoot/AM:Biped:LThumb1_NeutralPose/AM:Biped:LThumb1/AM:Biped:LThumb2_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LThumbRoot/AM:Biped:LThumb1_NeutralPose/AM:Biped:LThumb1/AM:Biped:LThumb2_NeutralPose/AM:Biped:LThumb2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LThumbRoot/AM:Biped:LThumb1_NeutralPose/AM:Biped:LThumb1/AM:Biped:LThumb2_NeutralPose/AM:Biped:LThumb2/AM:Biped:LThumb3_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LThumbRoot/AM:Biped:LThumb1_NeutralPose/AM:Biped:LThumb1/AM:Biped:LThumb2_NeutralPose/AM:Biped:LThumb2/AM:Biped:LThumb3_NeutralPose/AM:Biped:LThumb3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHand/AM:Biped:LThumbRoot/AM:Biped:LThumbEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmEff/AM:Biped:LHandRoot/AM:Biped:LHandEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmUpV_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LArmUpV_NeutralPose/AM:Biped:LArmUpV
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LBicep
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:LShoulderRoot/AM:Biped:LShoulderEff/AM:Biped:LRoot/AM:Biped:LBicep/AM:Biped:LForearm
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulder
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RHand_grab
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RIndexRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RIndexRoot/AM:Biped:RIndex1_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RIndexRoot/AM:Biped:RIndex1_NeutralPose/AM:Biped:RIndex1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RIndexRoot/AM:Biped:RIndex1_NeutralPose/AM:Biped:RIndex1/AM:Biped:RIndex2_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RIndexRoot/AM:Biped:RIndex1_NeutralPose/AM:Biped:RIndex1/AM:Biped:RIndex2_NeutralPose/AM:Biped:RIndex2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RIndexRoot/AM:Biped:RIndex1_NeutralPose/AM:Biped:RIndex1/AM:Biped:RIndex2_NeutralPose/AM:Biped:RIndex2/AM:Biped:RIndex3_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RIndexRoot/AM:Biped:RIndex1_NeutralPose/AM:Biped:RIndex1/AM:Biped:RIndex2_NeutralPose/AM:Biped:RIndex2/AM:Biped:RIndex3_NeutralPose/AM:Biped:RIndex3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RIndexRoot/AM:Biped:RIndexEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RMiddleRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RMiddleRoot/AM:Biped:RMiddle1_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RMiddleRoot/AM:Biped:RMiddle1_NeutralPose/AM:Biped:RMiddle1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RMiddleRoot/AM:Biped:RMiddle1_NeutralPose/AM:Biped:RMiddle1/AM:Biped:RMiddle2_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RMiddleRoot/AM:Biped:RMiddle1_NeutralPose/AM:Biped:RMiddle1/AM:Biped:RMiddle2_NeutralPose/AM:Biped:RMiddle2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RMiddleRoot/AM:Biped:RMiddle1_NeutralPose/AM:Biped:RMiddle1/AM:Biped:RMiddle2_NeutralPose/AM:Biped:RMiddle2/AM:Biped:RMiddle3_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RMiddleRoot/AM:Biped:RMiddle1_NeutralPose/AM:Biped:RMiddle1/AM:Biped:RMiddle2_NeutralPose/AM:Biped:RMiddle2/AM:Biped:RMiddle3_NeutralPose/AM:Biped:RMiddle3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RMiddleRoot/AM:Biped:RMiddleEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RPinkyRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RPinkyRoot/AM:Biped:RPinky1_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RPinkyRoot/AM:Biped:RPinky1_NeutralPose/AM:Biped:RPinky1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RPinkyRoot/AM:Biped:RPinky1_NeutralPose/AM:Biped:RPinky1/AM:Biped:RPinky2_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RPinkyRoot/AM:Biped:RPinky1_NeutralPose/AM:Biped:RPinky1/AM:Biped:RPinky2_NeutralPose/AM:Biped:RPinky2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RPinkyRoot/AM:Biped:RPinky1_NeutralPose/AM:Biped:RPinky1/AM:Biped:RPinky2_NeutralPose/AM:Biped:RPinky2/AM:Biped:RPinky3_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RPinkyRoot/AM:Biped:RPinky1_NeutralPose/AM:Biped:RPinky1/AM:Biped:RPinky2_NeutralPose/AM:Biped:RPinky2/AM:Biped:RPinky3_NeutralPose/AM:Biped:RPinky3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RPinkyRoot/AM:Biped:RPinkyEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RRingRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RRingRoot/AM:Biped:RRing1_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RRingRoot/AM:Biped:RRing1_NeutralPose/AM:Biped:RRing1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RRingRoot/AM:Biped:RRing1_NeutralPose/AM:Biped:RRing1/AM:Biped:RRing2_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RRingRoot/AM:Biped:RRing1_NeutralPose/AM:Biped:RRing1/AM:Biped:RRing2_NeutralPose/AM:Biped:RRing2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RRingRoot/AM:Biped:RRing1_NeutralPose/AM:Biped:RRing1/AM:Biped:RRing2_NeutralPose/AM:Biped:RRing2/AM:Biped:RRing3_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RRingRoot/AM:Biped:RRing1_NeutralPose/AM:Biped:RRing1/AM:Biped:RRing2_NeutralPose/AM:Biped:RRing2/AM:Biped:RRing3_NeutralPose/AM:Biped:RRing3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RRingRoot/AM:Biped:RRingEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RThumbRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RThumbRoot/AM:Biped:RThumb1_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RThumbRoot/AM:Biped:RThumb1_NeutralPose/AM:Biped:RThumb1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RThumbRoot/AM:Biped:RThumb1_NeutralPose/AM:Biped:RThumb1/AM:Biped:RThumb2_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RThumbRoot/AM:Biped:RThumb1_NeutralPose/AM:Biped:RThumb1/AM:Biped:RThumb2_NeutralPose/AM:Biped:RThumb2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RThumbRoot/AM:Biped:RThumb1_NeutralPose/AM:Biped:RThumb1/AM:Biped:RThumb2_NeutralPose/AM:Biped:RThumb2/AM:Biped:RThumb3_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RThumbRoot/AM:Biped:RThumb1_NeutralPose/AM:Biped:RThumb1/AM:Biped:RThumb2_NeutralPose/AM:Biped:RThumb2/AM:Biped:RThumb3_NeutralPose/AM:Biped:RThumb3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHand/AM:Biped:RThumbRoot/AM:Biped:RThumbEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmEff/AM:Biped:RHandRoot/AM:Biped:RHandEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmUpV_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RArmUpV_NeutralPose/AM:Biped:RArmUpV
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RBicep
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:RShoulderRoot/AM:Biped:RShoulderEff/AM:Biped:RRoot/AM:Biped:RBicep/AM:Biped:RForearm
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:ChestBone/AM:Biped:Shadow_upVa3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2/AM:Biped:LlegEff
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2/AM:Biped:LlegEff/AM:Biped:LFootRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2/AM:Biped:LlegEff/AM:Biped:LFootRoot/AM:Biped:LFootBone1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2/AM:Biped:LlegEff/AM:Biped:LFootRoot/AM:Biped:LFootBone1/AM:Biped:LFootBone2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2/AM:Biped:LlegEff/AM:Biped:LFootRoot/AM:Biped:LFootBone1/AM:Biped:LFootBone2/AM:Biped:LFootBone3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2/AM:Biped:LlegEff/AM:Biped:LFootRoot/AM:Biped:LFootEff
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2/AM:Biped:LlegUpV_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2/AM:Biped:LlegUpV_NeutralPose/AM:Biped:LlegUpV
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2/AM:Biped:LThigh
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:LRoot2/AM:Biped:LThigh/AM:Biped:LShin
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2/AM:Biped:RlegEff
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2/AM:Biped:RlegEff/AM:Biped:RFootRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2/AM:Biped:RlegEff/AM:Biped:RFootRoot/AM:Biped:RFootBone1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2/AM:Biped:RlegEff/AM:Biped:RFootRoot/AM:Biped:RFootBone1/AM:Biped:RFootBone2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2/AM:Biped:RlegEff/AM:Biped:RFootRoot/AM:Biped:RFootBone1/AM:Biped:RFootBone2/AM:Biped:RFootBone3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2/AM:Biped:RlegEff/AM:Biped:RFootRoot/AM:Biped:RFootEff
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2/AM:Biped:RlegUpV_NeutralPose
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2/AM:Biped:RlegUpV_NeutralPose/AM:Biped:RlegUpV
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2/AM:Biped:RThigh
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:RRoot2/AM:Biped:RThigh/AM:Biped:RShin
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:shadowspinecurve
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:spinecurve
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:spinecurve/AM:Biped:SpineVertebra
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:spinecurve/AM:Biped:SpineVertebra/AM:Biped:Shadow_upVa
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:spinecurve/AM:Biped:SpineVertebra1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:spinecurve/AM:Biped:SpineVertebra1/AM:Biped:Shadow_upVa1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:spinecurve/AM:Biped:SpineVertebra2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:spinecurve/AM:Biped:SpineVertebra2/AM:Biped:Shadow_upVa2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:GlobalSRT/AM:Biped:UpperBody_NeutralPose/AM:Biped:UpperBody/AM:Biped:Hip/AM:Biped:HipPlate/AM:Biped:SpineStart
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:LRoot3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:LRoot3/AM:Biped:eff8
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:LRoot3/AM:Biped:eff8/AM:Biped:LFootRoot1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:LRoot3/AM:Biped:eff8/AM:Biped:LFootRoot1/AM:Biped:eff10
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:LRoot3/AM:Biped:eff8/AM:Biped:LFootRoot1/AM:Biped:LFootBone4
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:LRoot3/AM:Biped:eff8/AM:Biped:LFootRoot1/AM:Biped:LFootBone4/AM:Biped:LFootBone5
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:LRoot3/AM:Biped:eff8/AM:Biped:LFootRoot1/AM:Biped:LFootBone4/AM:Biped:LFootBone5/AM:Biped:LFootBone6
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:LRoot3/AM:Biped:LThigh1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:LRoot3/AM:Biped:LThigh1/AM:Biped:LShin1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:RRoot3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:RRoot3/AM:Biped:eff9
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:RRoot3/AM:Biped:eff9/AM:Biped:RFootRoot1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:RRoot3/AM:Biped:eff9/AM:Biped:RFootRoot1/AM:Biped:eff11
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:RRoot3/AM:Biped:eff9/AM:Biped:RFootRoot1/AM:Biped:RFootBone4
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:RRoot3/AM:Biped:eff9/AM:Biped:RFootRoot1/AM:Biped:RFootBone4/AM:Biped:RFootBone5
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:RRoot3/AM:Biped:eff9/AM:Biped:RFootRoot1/AM:Biped:RFootBone4/AM:Biped:RFootBone5/AM:Biped:RFootBone6
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:RRoot3/AM:Biped:RThigh1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:RRoot3/AM:Biped:RThigh1/AM:Biped:RShin1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:Chest1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:HeadRoot1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:HeadRoot1/AM:Biped:eff3
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:HeadRoot1/AM:Biped:Neck1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:HeadRoot1/AM:Biped:Neck1/AM:Biped:Head1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:LShoulderRoot1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:LShoulderRoot1/AM:Biped:eff2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:LShoulderRoot1/AM:Biped:eff2/AM:Biped:LRoot1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:LShoulderRoot1/AM:Biped:eff2/AM:Biped:LRoot1/AM:Biped:eff7
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:LShoulderRoot1/AM:Biped:eff2/AM:Biped:LRoot1/AM:Biped:eff7/AM:Biped:LHandRoot1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:LShoulderRoot1/AM:Biped:eff2/AM:Biped:LRoot1/AM:Biped:eff7/AM:Biped:LHandRoot1/AM:Biped:eff4
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:LShoulderRoot1/AM:Biped:eff2/AM:Biped:LRoot1/AM:Biped:eff7/AM:Biped:LHandRoot1/AM:Biped:LHand1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:LShoulderRoot1/AM:Biped:eff2/AM:Biped:LRoot1/AM:Biped:LBicep1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:LShoulderRoot1/AM:Biped:eff2/AM:Biped:LRoot1/AM:Biped:LBicep1/AM:Biped:LForearm1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:LShoulderRoot1/AM:Biped:LShoulder1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:RShoulderRoot1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:RShoulderRoot1/AM:Biped:eff1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:RShoulderRoot1/AM:Biped:eff1/AM:Biped:RRoot1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:RShoulderRoot1/AM:Biped:eff1/AM:Biped:RRoot1/AM:Biped:eff6
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:RShoulderRoot1/AM:Biped:eff1/AM:Biped:RRoot1/AM:Biped:eff6/AM:Biped:RHandRoot1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:RShoulderRoot1/AM:Biped:eff1/AM:Biped:RRoot1/AM:Biped:eff6/AM:Biped:RHandRoot1/AM:Biped:eff5
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:RShoulderRoot1/AM:Biped:eff1/AM:Biped:RRoot1/AM:Biped:eff6/AM:Biped:RHandRoot1/AM:Biped:RHand1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:RShoulderRoot1/AM:Biped:eff1/AM:Biped:RRoot1/AM:Biped:RBicep1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:RShoulderRoot1/AM:Biped:eff1/AM:Biped:RRoot1/AM:Biped:RBicep1/AM:Biped:RForearm1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:eff/AM:Biped:ChestRoot/AM:Biped:ChestEffector/AM:Biped:RShoulderRoot1/AM:Biped:RShoulder1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:Spine1
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:Spine1/AM:Biped:Spine2
+        weight: 1
+      - path: AM:Biped:Biped/AM:Biped:Shadow_GlobalSRT/AM:Biped:UpperBody1/AM:Biped:SpineRoot/AM:Biped:Spine1/AM:Biped:Spine2/AM:Biped:Spine3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
