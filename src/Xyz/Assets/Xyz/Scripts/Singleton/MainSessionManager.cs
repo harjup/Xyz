@@ -32,14 +32,15 @@ public class MainSessionManager : Singleton<MainSessionManager>
     
 
     private int _beaconsRequired = 5;
-    private int _chasersPerWave = 2;
+    private int _chasersPerWave = 1;
+    private int _totalChasersForLevel = 3;
     private int _pushersPerWave = 0;
     private int beaconCount;
 
     public void Start()
     {
         var scheduleGenerator = new SpawnScheduleGenerator();
-        _difficultIncreaseTimes = scheduleGenerator.GetSteppedSchedule();
+        _difficultIncreaseTimes = scheduleGenerator.GetGradualSchedule(10, 60, _totalChasersForLevel);
 
         // Move player to random spawn point
         var player = FindObjectOfType<Player>();
@@ -87,11 +88,11 @@ public class MainSessionManager : Singleton<MainSessionManager>
         {
             if (difficultyEvent.Time >= 60)
             {
-                ChaserSpawner.Instance.SpawnChasers(_chasersPerWave / 2);
+                ChaserSpawner.Instance.SpawnChasers(1);
             }
             else
             {
-                ChaserSpawner.Instance.SpawnChasers(_chasersPerWave);
+                ChaserSpawner.Instance.SpawnChasers(1);
             }
 
             SoundManager.Instance.PlayWhistleEffect();
@@ -205,5 +206,10 @@ public class MainSessionManager : Singleton<MainSessionManager>
         MainCanvasManager.Instance.HideAll();
         yield return new WaitForSeconds(1.5f);
         DifficultyManager.Instance.LevelComplete();
+    }
+
+    public void SetTotalChasersForLevel(int count)
+    {
+        _totalChasersForLevel = count;
     }
 }
