@@ -27,6 +27,9 @@ public class IntroCutsceneCanvas : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        var censoredMode = Options.CensoredMode;
+
+
         _image = transform.FindChild("Image").GetComponent<Image>();
 
         var frameOne = new List<Sprite>
@@ -35,8 +38,13 @@ public class IntroCutsceneCanvas : MonoBehaviour
             Resources.Load<Sprite>("Cards/Intro-01-2")
         }; 
 
-        var frameTwo = new List<Sprite>{Resources.Load<Sprite>("Cards/Intro-02")}; 
-        var frameThree = new List<Sprite>{Resources.Load<Sprite>("Cards/Intro-03")};
+        var frameTwo = new List<Sprite>{Resources.Load<Sprite>("Cards/Intro-02")};
+
+        Sprite frameThreeSprite = censoredMode
+            ? Resources.Load<Sprite>("Cards/Intro-03-Censored")
+            : Resources.Load<Sprite>("Cards/Intro-03");
+
+        var frameThree = new List<Sprite> { frameThreeSprite };
         var frameFour = new List<Sprite> 
         { 
             Resources.Load<Sprite>("Cards/Intro-04-1"), 

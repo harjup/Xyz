@@ -12,8 +12,13 @@ public class MainCanvasManager : Singleton<MainCanvasManager>
     // Use this for initialization
     void Start()
     {
+        var censoredMode = Options.CensoredMode;
+
         _mainDisplay = transform.FindChild("MainDisplay").gameObject;
-        _winDisplay = transform.FindChild("WinDisplay").gameObject;
+        _winDisplay = censoredMode 
+            ? transform.FindChild("WinDisplay-Censored").gameObject 
+            : transform.FindChild("WinDisplay").gameObject;
+
         _failureDisplay = transform.FindChild("FailureDisplay").gameObject;
         _exitDisplay = transform.FindChild("ExitDisplay").gameObject;
     }

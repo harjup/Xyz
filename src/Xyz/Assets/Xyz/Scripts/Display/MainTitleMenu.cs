@@ -10,7 +10,13 @@ public class MainTitleMenu : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        _title = transform.FindChild("Title").gameObject;
+        // Options.CensoredMode = true;
+
+        var censoredMode = Options.CensoredMode;
+
+        _title = censoredMode 
+            ? transform.FindChild("Title-Censored").gameObject 
+            : transform.FindChild("Title").gameObject;
         _credit = transform.FindChild("Credit").gameObject;
         _control = transform.FindChild("Control").gameObject;
 
