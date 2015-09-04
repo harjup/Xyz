@@ -10,8 +10,6 @@ public class MainTitleMenu : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        // Options.CensoredMode = true;
-
         var censoredMode = Options.CensoredMode;
 
         _title = censoredMode 
